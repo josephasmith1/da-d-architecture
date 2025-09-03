@@ -1,0 +1,33 @@
+{
+  "slug": "shia-project",
+  "title": "Shia Project",
+  "category": "Residential",
+  "location": "Pacific Palisades, CA",
+  "year": "2023",
+  "size": "4,800 sq ft",
+  "status": "Built",
+  "services": ["Architecture", "Interior Design", "Landscape Architecture"],
+  "coverImage": "shia/Shia 1-L",
+  "description": [
+    "The Shia Project is a contemporary home that embraces the natural topography of its Pacific Palisades site.",
+    "Built into the hillside, the design maximizes ocean views while minimizing its visual impact on the landscape."
+  ],
+  "additionalInfo": {
+    "Client": "Private",
+    "Contractor": "Hillside Construction Co.",
+    "Photographer": "Coastal Home Imagery"
+  },
+  "floorPlans": [
+    { "image": "shia/Shia 2-L.jpg", "caption": "Entry Level Floor Plan" },
+    { "image": "shia/Shia 3-L.jpg", "caption": "Living Level Floor Plan" },
+    { "image": "shia/Shia 4-L.jpg", "caption": "Bedroom Level Floor Plan" }
+  ],
+  "gallery": [
+    { "image": "shia/Shia 1-L.jpg", "caption": "Ocean-view facade with natural materials" },
+    { "image": "shia/Shia 2-L.jpg", "caption": "Entry courtyard with water feature" },
+    { "image": "shia/Shia 3-L.jpg", "caption": "Living room with floor-to-ceiling glass" },
+    { "image": "shia/Shia 4-L.jpg", "caption": "Kitchen with panoramic ocean views" },
+    { "image": "shia/Shia 5-L.jpg", "caption": "Master bedroom with private terrace" },
+    { "image": "shia/Shia 6-L.jpg", "caption": "Pool area integrated with landscape" }
+  ]
+}

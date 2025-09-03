@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Turbopack
+.turbo
+
+# Project-specific files to exclude
+New Projects.zip
+New Projects/
+public.zip
+
+# Temporary files
+*.tmp
+*.temp

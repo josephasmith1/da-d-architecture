@@ -1,0 +1,29 @@
+{
+  "slug": "legend-project",
+  "title": "Legend Project",
+  "category": "Landscape",
+  "location": "Beverly Hills, CA",
+  "year": "2023",
+  "size": "5,200 sq ft",
+  "status": "Built",
+  "services": ["Architecture", "Interior Design", "Landscape Architecture"],
+  "coverImage": "legend/Legend LGD Cam 1-L",
+  "description": [
+    "The Legend Project is a modern interpretation of luxury living in one of Beverly Hills' most prestigious neighborhoods.",
+    "This home features a dramatic central atrium that brings natural light deep into the interior while creating a visual connection between all levels."
+  ],
+  "additionalInfo": {
+    "Client": "Private",
+    "Contractor": "Luxury Home Builders",
+    "Photographer": "Premier Property Photography"
+  },
+  "floorPlans": [
+    { "image": "legend/Legend LGD Cam 4-L.jpg", "caption": "Main Level Floor Plan" },
+    { "image": "legend/Legend LGD Cam 5-L.jpg", "caption": "Upper Level Floor Plan" }
+  ],
+  "gallery": [
+    { "image": "legend/Legend LGD Cam 1-L.jpg", "caption": "Front facade with minimalist design" },
+    { "image": "legend/Legend LGD Cam 4-L.jpg", "caption": "Living spaces with panoramic windows" },
+    { "image": "legend/Legend LGD Cam 5-L.jpg", "caption": "Master suite with private balcony" }
+  ]
+}

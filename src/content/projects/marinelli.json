@@ -1,0 +1,33 @@
+{
+  "slug": "marinelli-project",
+  "title": "Marinelli Project",
+  "category": "Commercial",
+  "location": "West Hollywood, CA",
+  "year": "2024",
+  "size": "12,000 sq ft",
+  "status": "In Progress",
+  "services": ["Architecture", "Project Management"],
+  "coverImage": "marinelli/Marinelli render1-L",
+  "description": [
+    "The Marinelli Project is a mixed-use development that combines retail spaces with office areas in a dynamic urban environment.",
+    "The design features a distinctive facade system that responds to the varying needs of different tenant types while maintaining visual cohesion."
+  ],
+  "additionalInfo": {
+    "Client": "Marinelli Development Group",
+    "Contractor": "Urban Construction Solutions",
+    "Photographer": "Architecture Visuals"
+  },
+  "floorPlans": [
+    { "image": "marinelli/Marinelli render2-L.jpg", "caption": "Ground Floor Retail Plan" },
+    { "image": "marinelli/Marinelli render3-L.jpg", "caption": "Office Levels Floor Plan" }
+  ],
+  "gallery": [
+    { "image": "marinelli/Marinelli render1-L.jpg", "caption": "Concept rendering showing facade details" },
+    { "image": "marinelli/Marinelli render2-L.jpg", "caption": "Retail space layout with flexible partitions" },
+    { "image": "marinelli/Marinelli render3-L.jpg", "caption": "Office floor with collaborative zones" },
+    { "image": "marinelli/Marinelli render4-L.jpg", "caption": "Rooftop amenity space" },
+    { "image": "marinelli/Marinelli render5-L.jpg", "caption": "Street level facade detail" },
+    { "image": "marinelli/Marinelli render6-L.jpg", "caption": "Building context within neighborhood" },
+    { "image": "marinelli/Marinelli render7-L.jpg", "caption": "Interior perspective" }
+  ]
+}

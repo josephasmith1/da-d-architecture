@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Scott Demetrius",
+    "role": "Principal Architect",
+    "bio": "Scott leads DA+D Inc. with over 20 years of experience in residential and commercial architecture. His design philosophy centers on creating spaces that enhance human connection with the environment.",
+    "image": "bel-air/Bel Air 1"
+  },
+  {
+    "id": "2",
+    "name": "Derek Au",
+    "role": "Senior Designer",
+    "bio": "Derek brings expertise in interior design and sustainable building practices. He specializes in creating cohesive design narratives that bridge architecture and interiors.",
+    "image": "bel-air/Bel Air 2"
+  },
+  {
+    "id": "3",
+    "name": "James Wilson",
+    "role": "Project Manager",
+    "bio": "James oversees project execution from concept through completion. His background in construction management ensures that designs are realized with precision and efficiency.",
+    "image": "bel-air/Bel Air 3"
+  },
+  {
+    "id": "4",
+    "name": "Sarah Chen",
+    "role": "Landscape Architect",
+    "bio": "Sarah integrates natural systems into architectural design, creating outdoor spaces that complement and enhance the built environment.",
+    "image": "bel-air/Bel Air Living 1"
+  },
+  {
+    "id": "5",
+    "name": "Michael Torres",
+    "role": "Design Director",
+    "bio": "Michael brings over 15 years of experience in high-end residential design. His expertise lies in creating innovative spaces that seamlessly blend modern aesthetics with traditional functionality.",
+    "image": "bel-air/Bel Air Bed 1"
+  },
+  {
+    "id": "6",
+    "name": "Elena Vasquez",
+    "role": "Sustainability Specialist",
+    "bio": "Elena focuses on integrating eco-friendly solutions into all projects. She has a background in environmental science and specializes in LEED certification and energy-efficient building systems.",
+    "image": "bel-air/Bel Air Living 1"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "category": "General",
+    "question": "What is your design process?",
+    "answer": "Our design process begins with understanding your needs, site conditions, and project goals. We then develop conceptual designs, refine them through iterative feedback, and produce detailed construction documents. Throughout, we maintain close communication to ensure the design aligns with your vision."
+  },
+  {
+    "id": "2",
+    "category": "General",
+    "question": "How long does a project typically take?",
+    "answer": "Project timelines vary significantly based on scope and complexity. Residential projects typically take 12-18 months from concept to completion, while commercial projects can range from 18 months to several years. We provide detailed schedules during the design phase."
+  },
+  {
+    "id": "3",
+    "category": "Services",
+    "question": "Do you offer interior design services?",
+    "answer": "Yes, we provide comprehensive interior design services for both residential and commercial projects. Our approach integrates interior design with architecture to create cohesive, functional spaces."
+  },
+  {
+    "id": "4",
+    "category": "Services",
+    "question": "What sustainable practices do you implement?",
+    "answer": "We prioritize energy efficiency, sustainable materials, and environmental integration in all our projects. This includes solar design, natural ventilation strategies, water conservation systems, and LEED certification where appropriate."
+  },
+  {
+    "id": "5",
+    "category": "Fire Mitigation",
+    "question": "How do you approach fire-resistant design?",
+    "answer": "Our fire mitigation designs incorporate ember-resistant construction, strategic landscaping, defensible space planning, and material selection that meets or exceeds local fire codes. We work closely with fire safety experts to ensure comprehensive protection."
+  },
+  {
+    "id": "6",
+    "category": "Fire Mitigation",
+    "question": "Do you design for other natural disasters?",
+    "answer": "Yes, we specialize in resilient design for earthquakes, floods, and high winds in addition to fire. Our projects are engineered to withstand multiple hazards while maintaining architectural quality."
+  },
+  {
+    "id": "7",
+    "category": "General",
+    "question": "What is your fee structure?",
+    "answer": "Our fees are based on project complexity, size, and scope of services. We typically charge a percentage of construction costs for full architectural services, with options for design-only or consultation packages. Detailed fee proposals are provided for each project."
+  },
+  {
+    "id": "8",
+    "category": "Services",
+    "question": "Do you work outside of California?",
+    "answer": "While our office is based in California, we have completed projects across the western United States. We can work remotely on select projects and partner with local architects for construction administration when needed."
+  }
+]
