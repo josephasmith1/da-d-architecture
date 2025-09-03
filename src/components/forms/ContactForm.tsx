@@ -1,11 +1,22 @@
 'use client';
 
-import { Input, Textarea, Select, SelectItem, Button, Card, CardBody, Divider, Checkbox, RadioGroup, Radio } from "@heroui/react";
+import { 
+  Input, 
+  Textarea, 
+  Select, 
+  SelectItem, 
+  Button, 
+  Card, 
+  CardBody, 
+  CheckboxGroup, 
+  Checkbox, 
+  RadioGroup, 
+  Radio 
+} from "@heroui/react";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -61,268 +72,256 @@ const timelines = [
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   
-  const { handleSubmit, control, formState: { errors, isSubmitting }, reset, watch } = useForm<ContactFormData>({
+  const { 
+    handleSubmit, 
+    control, 
+    formState: { errors, isSubmitting }, 
+    reset 
+  } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
-      services: []
+      services: [],
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      company: '',
+      projectType: '',
+      budget: '',
+      timeline: '',
+      location: '',
+      description: ''
     }
   });
-
-  const selectedServices = watch("services");
 
   const onSubmit = async (data: ContactFormData) => {
     try {
       console.log("Form data:", data);
-      // Simulate form submission
       await new Promise(resolve => setTimeout(resolve, 2000));
       setIsSubmitted(true);
-      // In a real app, you would send this data to your backend
-      // reset();
     } catch (error) {
       console.error("Form submission error:", error);
-      // Handle error - show toast notification
     }
   };
 
   if (isSubmitted) {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Card className="border-0 bg-success/10 backdrop-blur-md">
-          <CardBody className="text-center py-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
-              <h3 className="font-display text-2xl font-bold text-success mb-4">
-                Thank You for Your Inquiry!
-              </h3>
-              <p className="text-foreground-700 mb-6">
-                We've received your project details and will review them carefully. Our team will get back to you within 24-48 hours to discuss your architectural needs.
-              </p>
-              <Button 
-                color="success" 
-                variant="flat"
-                onClick={() => {
-                  setIsSubmitted(false);
-                  reset();
-                }}
-              >
-                Submit Another Inquiry
-              </Button>
-            </motion.div>
-          </CardBody>
-        </Card>
-      </motion.div>
+      <Card>
+        <CardBody className="text-center py-12">
+          <h3 className="text-2xl font-bold text-success mb-4">
+            Thank You for Your Inquiry!
+          </h3>
+          <p className="text-default-600 mb-6">
+            We&apos;ve received your project details and will review them carefully. 
+            Our team will get back to you within 24-48 hours to discuss your architectural needs.
+          </p>
+          <Button 
+            color="success" 
+            variant="flat"
+            onPress={() => {
+              setIsSubmitted(false);
+              reset();
+            }}
+          >
+            Submit Another Inquiry
+          </Button>
+        </CardBody>
+      </Card>
     );
   }
 
   return (
-    <motion.form 
-      onSubmit={handleSubmit(onSubmit)} 
-      className="space-y-8"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      {/* Personal Information */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1, duration: 0.5 }}
-      >
-        <h3 className="font-display text-xl font-semibold mb-4 text-primary">Personal Information</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Controller
-            name="firstName"
-            control={control}
-            render={({ field }) => (
-              <Input
-                {...field}
-                label="First Name"
-                variant="bordered"
-                isRequired
-                isInvalid={!!errors.firstName}
-                errorMessage={errors.firstName?.message}
-                classNames={{
-                  inputWrapper: "bg-background/50 backdrop-blur-sm"
-                }}
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8" noValidate>
+      <Card>
+        <CardBody className="space-y-6 p-6">
+          <h3 className="text-xl font-semibold">Personal Information</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="text-sm font-medium">
+                First Name <span className="text-danger">*</span>
+              </label>
+              <Controller
+                name="firstName"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    type="text"
+                    placeholder="Enter your first name"
+                    variant="bordered"
+                    size="md"
+                    isInvalid={!!errors.firstName}
+                    errorMessage={errors.firstName?.message}
+                  />
+                )}
               />
-            )}
-          />
-          <Controller
-            name="lastName"
-            control={control}
-            render={({ field }) => (
-              <Input
-                {...field}
-                label="Last Name"
-                variant="bordered"
-                isRequired
-                isInvalid={!!errors.lastName}
-                errorMessage={errors.lastName?.message}
-                classNames={{
-                  inputWrapper: "bg-background/50 backdrop-blur-sm"
-                }}
+            </div>
+            
+            <div className="space-y-2">
+              <label className="text-sm font-medium">
+                Last Name <span className="text-danger">*</span>
+              </label>
+              <Controller
+                name="lastName"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    type="text"
+                    placeholder="Enter your last name"
+                    variant="bordered"
+                    size="md"
+                    isInvalid={!!errors.lastName}
+                    errorMessage={errors.lastName?.message}
+                  />
+                )}
               />
-            )}
-          />
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <Controller
-            name="email"
-            control={control}
-            render={({ field }) => (
-              <Input
-                {...field}
-                label="Email Address"
-                type="email"
-                variant="bordered"
-                isRequired
-                isInvalid={!!errors.email}
-                errorMessage={errors.email?.message}
-                classNames={{
-                  inputWrapper: "bg-background/50 backdrop-blur-sm"
-                }}
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="text-sm font-medium">
+                Email Address <span className="text-danger">*</span>
+              </label>
+              <Controller
+                name="email"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    type="email"
+                    placeholder="john@example.com"
+                    variant="bordered"
+                    size="md"
+                    isInvalid={!!errors.email}
+                    errorMessage={errors.email?.message}
+                  />
+                )}
               />
-            )}
-          />
-          <Controller
-            name="phone"
-            control={control}
-            render={({ field }) => (
-              <Input
-                {...field}
-                label="Phone Number"
-                type="tel"
-                variant="bordered"
-                placeholder="(Optional)"
-                classNames={{
-                  inputWrapper: "bg-background/50 backdrop-blur-sm"
-                }}
+            </div>
+            
+            <div className="space-y-2">
+              <label className="text-sm font-medium">Phone Number</label>
+              <Controller
+                name="phone"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    {...field}
+                    type="tel"
+                    placeholder="(555) 123-4567"
+                    variant="bordered"
+                    size="md"
+                  />
+                )}
               />
-            )}
-          />
-        </div>
-        
-        <div className="mt-4">
-          <Controller
-            name="company"
-            control={control}
-            render={({ field }) => (
-              <Input
-                {...field}
-                label="Company/Organization"
-                variant="bordered"
-                placeholder="(Optional)"
-                classNames={{
-                  inputWrapper: "bg-background/50 backdrop-blur-sm"
-                }}
-              />
-            )}
-          />
-        </div>
-      </motion.div>
-
-      <Divider />
-
-      {/* Project Details */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-      >
-        <h3 className="font-display text-xl font-semibold mb-4 text-primary">Project Details</h3>
-        
-        <div className="space-y-6">
-          <Controller
-            name="projectType"
-            control={control}
-            render={({ field }) => (
-              <Select
-                label="Project Type"
-                placeholder="Select your project type"
-                variant="bordered"
-                isRequired
-                isInvalid={!!errors.projectType}
-                errorMessage={errors.projectType?.message}
-                selectedKeys={field.value ? [field.value] : []}
-                onSelectionChange={(keys) => {
-                  const selectedKey = Array.from(keys)[0] as string;
-                  field.onChange(selectedKey);
-                }}
-                classNames={{
-                  trigger: "bg-background/50 backdrop-blur-sm"
-                }}
-              >
-                {projectTypes.map((type) => (
-                  <SelectItem key={type.key} value={type.key}>
-                    {type.label}
-                  </SelectItem>
-                ))}
-              </Select>
-            )}
-          />
-
-          <div>
-            <label className="block text-sm font-medium mb-3">Services Needed (Select all that apply)</label>
+            </div>
+          </div>
+          
+          <div className="space-y-2">
+            <label className="text-sm font-medium">Company/Organization</label>
             <Controller
-              name="services"
+              name="company"
               control={control}
               render={({ field }) => (
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {services.map((service) => (
-                    <Checkbox
-                      key={service.key}
-                      isSelected={field.value.includes(service.key)}
-                      onValueChange={(checked) => {
-                        if (checked) {
-                          field.onChange([...field.value, service.key]);
-                        } else {
-                          field.onChange(field.value.filter((s: string) => s !== service.key));
-                        }
-                      }}
-                      classNames={{
-                        base: "max-w-full",
-                        label: "text-sm"
-                      }}
-                    >
-                      {service.label}
-                    </Checkbox>
-                  ))}
-                </div>
+                <Input
+                  {...field}
+                  type="text"
+                  placeholder="Your company name (optional)"
+                  variant="bordered"
+                  size="md"
+                />
               )}
             />
-            {errors.services && (
-              <p className="text-danger text-sm mt-2">{errors.services.message}</p>
-            )}
+          </div>
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardBody className="space-y-6 p-6">
+          <h3 className="text-xl font-semibold">Project Details</h3>
+          
+          <div className="space-y-2">
+            <label className="text-sm font-medium">
+              Project Type <span className="text-danger">*</span>
+            </label>
+            <Controller
+              name="projectType"
+              control={control}
+              render={({ field }) => (
+                <Select
+                  placeholder="Select your project type"
+                  variant="bordered"
+                  size="md"
+                  isInvalid={!!errors.projectType}
+                  errorMessage={errors.projectType?.message}
+                  selectedKeys={field.value ? new Set([field.value]) : new Set()}
+                  onSelectionChange={(keys) => {
+                    const selectedKey = Array.from(keys as Set<string>)[0] ?? "";
+                    field.onChange(selectedKey);
+                  }}
+                  disallowEmptySelection={false}
+                >
+                  {projectTypes.map((type) => (
+                    <SelectItem key={type.key}>
+                      {type.label}
+                    </SelectItem>
+                  ))}
+                </Select>
+              )}
+            />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Controller
+            name="services"
+            control={control}
+            render={({ field }) => (
+              <CheckboxGroup
+                label="Services Needed"
+                value={field.value}
+                onValueChange={field.onChange}
+                isRequired
+                isInvalid={!!errors.services}
+                errorMessage={errors.services?.message}
+                description="Select all that apply"
+                classNames={{
+                  label: "text-sm font-medium mb-3",
+                  wrapper: "grid grid-cols-1 md:grid-cols-2 gap-3"
+                }}
+              >
+                {services.map((service) => (
+                  <Checkbox key={service.key} value={service.key} size="md">
+                    {service.label}
+                  </Checkbox>
+                ))}
+              </CheckboxGroup>
+            )}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Controller
               name="budget"
               control={control}
               render={({ field }) => (
-                <div>
-                  <label className="block text-sm font-medium mb-3">Budget Range</label>
-                  <RadioGroup
-                    value={field.value}
-                    onValueChange={field.onChange}
-                    isInvalid={!!errors.budget}
-                    errorMessage={errors.budget?.message}
-                  >
-                    {budgetRanges.map((budget) => (
-                      <Radio key={budget.key} value={budget.key} size="sm">
-                        {budget.label}
-                      </Radio>
-                    ))}
-                  </RadioGroup>
-                </div>
+                <RadioGroup
+                  label="Budget Range"
+                  value={field.value}
+                  onValueChange={field.onChange}
+                  isRequired
+                  isInvalid={!!errors.budget}
+                  errorMessage={errors.budget?.message}
+                  classNames={{
+                    label: "text-sm font-medium mb-3"
+                  }}
+                >
+                  {budgetRanges.map((budget) => (
+                    <Radio key={budget.key} value={budget.key} size="md">
+                      {budget.label}
+                    </Radio>
+                  ))}
+                </RadioGroup>
               )}
             />
 
@@ -330,97 +329,91 @@ export function ContactForm() {
               name="timeline"
               control={control}
               render={({ field }) => (
-                <div>
-                  <label className="block text-sm font-medium mb-3">Project Timeline</label>
-                  <RadioGroup
-                    value={field.value}
-                    onValueChange={field.onChange}
-                    isInvalid={!!errors.timeline}
-                    errorMessage={errors.timeline?.message}
-                  >
-                    {timelines.map((timeline) => (
-                      <Radio key={timeline.key} value={timeline.key} size="sm">
-                        {timeline.label}
-                      </Radio>
-                    ))}
-                  </RadioGroup>
-                </div>
+                <RadioGroup
+                  label="Project Timeline"
+                  value={field.value}
+                  onValueChange={field.onChange}
+                  isRequired
+                  isInvalid={!!errors.timeline}
+                  errorMessage={errors.timeline?.message}
+                  classNames={{
+                    label: "text-sm font-medium mb-3"
+                  }}
+                >
+                  {timelines.map((timeline) => (
+                    <Radio key={timeline.key} value={timeline.key} size="md">
+                      {timeline.label}
+                    </Radio>
+                  ))}
+                </RadioGroup>
               )}
             />
           </div>
 
-          <Controller
-            name="location"
-            control={control}
-            render={({ field }) => (
-              <Input
-                {...field}
-                label="Project Location"
-                variant="bordered"
-                isRequired
-                placeholder="City, State"
-                isInvalid={!!errors.location}
-                errorMessage={errors.location?.message}
-                classNames={{
-                  inputWrapper: "bg-background/50 backdrop-blur-sm"
-                }}
-              />
-            )}
-          />
-        </div>
-      </motion.div>
-
-      <Divider />
-
-      {/* Project Description */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-      >
-        <h3 className="font-display text-xl font-semibold mb-4 text-primary">Project Description</h3>
-        <Controller
-          name="description"
-          control={control}
-          render={({ field }) => (
-            <Textarea
-              {...field}
-              label="Tell us about your project"
-              variant="bordered"
-              minRows={6}
-              isRequired
-              placeholder="Please describe your vision, goals, specific requirements, site conditions, and any other details that would help us understand your project better..."
-              isInvalid={!!errors.description}
-              errorMessage={errors.description?.message}
-              classNames={{
-                inputWrapper: "bg-background/50 backdrop-blur-sm"
-              }}
+          <div className="space-y-2">
+            <label className="text-sm font-medium">
+              Project Location <span className="text-danger">*</span>
+            </label>
+            <Controller
+              name="location"
+              control={control}
+              render={({ field }) => (
+                <Input
+                  {...field}
+                  type="text"
+                  placeholder="City, State"
+                  variant="bordered"
+                  size="md"
+                  isInvalid={!!errors.location}
+                  errorMessage={errors.location?.message}
+                />
+              )}
             />
-          )}
-        />
-      </motion.div>
+          </div>
+        </CardBody>
+      </Card>
 
-      {/* Submit Button */}
-      <motion.div
-        className="pt-6"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
-      >
+      <Card>
+        <CardBody className="space-y-6 p-6">
+          <h3 className="text-xl font-semibold">Project Description</h3>
+          
+          <div className="space-y-2">
+            <label className="text-sm font-medium">
+              Tell us about your project <span className="text-danger">*</span>
+            </label>
+            <Controller
+              name="description"
+              control={control}
+              render={({ field }) => (
+                <Textarea
+                  {...field}
+                  placeholder="Please describe your vision, goals, specific requirements, site conditions, and any other details that would help us understand your project better..."
+                  variant="bordered"
+                  size="md"
+                  minRows={6}
+                  isInvalid={!!errors.description}
+                  errorMessage={errors.description?.message}
+                />
+              )}
+            />
+          </div>
+        </CardBody>
+      </Card>
+
+      <div className="flex flex-col gap-3">
         <Button
           type="submit"
           color="primary"
           size="lg"
           isLoading={isSubmitting}
-          className="w-full md:w-auto px-8"
-          disabled={isSubmitting}
+          className="w-full min-w-[200px]"
         >
           {isSubmitting ? "Sending Your Inquiry..." : "Send Inquiry"}
         </Button>
-        <p className="text-foreground-500 text-sm mt-3">
+        <p className="text-sm text-default-500">
           By submitting this form, you agree to be contacted by our team regarding your project inquiry.
         </p>
-      </motion.div>
-    </motion.form>
+      </div>
+    </form>
   );
 }

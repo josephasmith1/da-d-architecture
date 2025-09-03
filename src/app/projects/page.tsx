@@ -2,212 +2,230 @@
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Section } from "@/components/ui/Section";
-import { ProjectsGrid } from "@/components/projects/ProjectsGrid";
-import { ProjectFilters } from "@/components/projects/ProjectFilters";
-import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
-type Project = {
-  slug: string;
-  title: string;
-  location: string;
-  year: string;
-  type: string;
-  category: string;
-  coverImage: string;
-};
+// Import all project JSON files
+import marinelliProject from "@/content/projects/marinelli.json";
+import shiaProject from "@/content/projects/shia.json";
+import legendProject from "@/content/projects/legend.json";
+import markupsProject from "@/content/projects/markups.json";
+import beachHouseProject from "@/content/projects/beach-house.json";
+import hillsideProject from "@/content/projects/hillside-residence.json";
+import urbanOfficeProject from "@/content/projects/urban-office.json";
 
-type Filters = {
-  type: string;
-  sortBy: string;
-};
-import { motion } from "framer-motion";
-
-// Mock data - in a real app this would come from a data fetching solution
-const mockProjects = [
-  {
-    slug: "beach-house",
-    title: "Modern Beach House",
-    location: "Malibu, CA",
-    year: "2023",
-    type: "Residential",
-    category: "Residential",
-    coverImage: "bel-air/Bel Air 1"
-  },
-  {
-    slug: "hillside-residence",
-    title: "Hillside Residence",
-    location: "Los Angeles, CA",
-    year: "2022",
-    type: "Residential",
-    category: "Residential",
-    coverImage: "bel-air/Bel Air 2"
-  },
-  {
-    slug: "urban-office",
-    title: "Urban Office Complex",
-    location: "Santa Monica, CA",
-    year: "2021",
-    type: "Commercial",
-    category: "Commercial",
-    coverImage: "bel-air/Bel Air 3"
-  },
-  {
-    slug: "shia-project",
-    title: "Shia Project",
-    location: "Unknown Location",
-    year: "2024",
-    type: "Residential",
-    category: "Residential",
-    coverImage: "shia/Shia 1"
-  },
-  {
-    slug: "marinelli-project",
-    title: "Marinelli Project",
-    location: "Unknown Location",
-    year: "2024",
-    type: "Commercial",
-    category: "Commercial",
-    coverImage: "marinelli/Marinelli render1"
-  },
-  {
-    slug: "legend-project",
-    title: "Legend Project",
-    location: "Unknown Location",
-    year: "2024",
-    type: "Landscape",
-    category: "Landscape",
-    coverImage: "legend/Legend LGD Cam 1"
-  },
-  {
-    slug: "markups-project",
-    title: "Rendering Markups Project",
-    location: "Unknown Location",
-    year: "2024",
-    type: "Interior",
-    category: "Interior",
-    coverImage: "markups/Markups Ariel1"
-  }
-];
+// Transform project data
+const allProjects = [
+  marinelliProject,
+  shiaProject,
+  legendProject,
+  markupsProject,
+  beachHouseProject,
+  hillsideProject,
+  urbanOfficeProject
+].map(project => ({
+  slug: project.slug,
+  title: project.title,
+  location: project.location,
+  year: project.year,
+  category: project.category,
+  coverImage: project.coverImage.endsWith('.jpg') ? project.coverImage : `${project.coverImage}.jpg`,
+  size: project.size,
+  status: project.status,
+  services: project.services
+}));
 
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
-  const [filters, setFilters] = useState<Filters>({
-    type: "all",
-    sortBy: "newest"
+  const containerRef = useRef(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
   });
   
-  useEffect(() => {
-    // Simulate data fetching
-    setProjects(mockProjects);
-    setFilteredProjects(mockProjects);
-  }, []);
-  
-  const handleFilterChange = (category: string) => {
-    setFilters({
-      ...filters,
-      type: category
-    });
-    
-    let result = [...projects];
-    
-    // Filter by type
-    if (category !== "all") {
-      result = result.filter(project => project.type === category);
-    }
-    
-    // Sort projects
-    if (filters.sortBy === "newest") {
-      result.sort((a, b) => b.year.localeCompare(a.year));
-    } else if (filters.sortBy === "oldest") {
-      result.sort((a, b) => a.year.localeCompare(b.year));
-    } else if (filters.sortBy === "alphabetical") {
-      result.sort((a, b) => a.title.localeCompare(b.title));
-    }
-    
-    setFilteredProjects(result);
-  };
-  
-  const handleSortChange = (sortBy: string) => {
-    setFilters({
-      ...filters,
-      sortBy
-    });
-    
-    let result = [...projects];
-    
-    // Filter by type
-    if (filters.type !== "all") {
-      result = result.filter(project => project.type === filters.type);
-    }
-    
-    // Sort projects
-    if (sortBy === "newest") {
-      result.sort((a, b) => b.year.localeCompare(a.year));
-    } else if (sortBy === "oldest") {
-      result.sort((a, b) => a.year.localeCompare(b.year));
-    } else if (sortBy === "alphabetical") {
-      result.sort((a, b) => a.title.localeCompare(b.title));
-    }
-    
-    setFilteredProjects(result);
-  };
-  
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="bg-black text-white" ref={containerRef}>
       <Header />
       
-      <main className="flex-grow">
-        <Section className="py-24 md:py-32">
-          <motion.div 
-            className="text-center"
+      {/* Full-screen project showcase */}
+      {allProjects.map((project, index) => {
+        const sectionRef = useRef(null);
+        
+        const { scrollYProgress: sectionScroll } = useScroll({
+          target: sectionRef,
+          offset: ["start end", "end start"]
+        });
+        
+        // Create parallax effect for each image
+        const yImage = useTransform(sectionScroll, [0, 1], ["0%", "20%"]);
+        const scale = useTransform(sectionScroll, [0, 0.5, 1], [1.2, 1, 1.2]);
+        
+        return (
+          <section 
+            key={project.slug} 
+            ref={sectionRef}
+            className="relative h-screen overflow-hidden"
+          >
+            <Link href={`/projects/${project.slug}`}>
+              <div className="relative h-full group cursor-pointer">
+                {/* Parallax Image Background */}
+                <motion.div 
+                  className="absolute inset-0 w-full h-full"
+                  style={{ y: yImage, scale }}
+                >
+                  <Image
+                    src={`/projects/${project.coverImage}`}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="100vw"
+                    priority={index < 2}
+                    quality={90}
+                  />
+                </motion.div>
+                
+                {/* Gradient overlays for text legibility */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-700" />
+                
+                {/* Project Information - Bold Typography */}
+                <div className="absolute inset-0 flex items-end">
+                  <motion.div 
+                    className="p-8 md:p-16 lg:p-24 w-full"
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "-200px" }}
+                  >
+                    {/* Project Number */}
+                    <motion.div 
+                      className="mb-4"
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      <span className="text-white/50 font-mono text-sm md:text-base">
+                        {String(index + 1).padStart(2, '0')} / {String(allProjects.length).padStart(2, '0')}
+                      </span>
+                    </motion.div>
+                    
+                    {/* Project Title - Extra Bold */}
+                    <motion.h2 
+                      className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white mb-4 tracking-tight leading-none"
+                      initial={{ opacity: 0, x: -50 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.8, delay: 0.3 }}
+                      viewport={{ once: true }}
+                    >
+                      {project.title.toUpperCase()}
+                    </motion.h2>
+                    
+                    {/* Project Details */}
+                    <motion.div 
+                      className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 0.6, delay: 0.4 }}
+                      viewport={{ once: true }}
+                    >
+                      <p className="text-white/80 text-lg md:text-xl lg:text-2xl">
+                        {project.location}
+                      </p>
+                      <div className="flex gap-4 items-center">
+                        <span className="h-px w-12 bg-white/40" />
+                        <span className="text-white/60 text-base md:text-lg">
+                          {project.category}
+                        </span>
+                        <span className="text-white/60 text-base md:text-lg">
+                          {project.year}
+                        </span>
+                      </div>
+                    </motion.div>
+                    
+                    {/* Hover indicator */}
+                    <motion.div 
+                      className="mt-8 inline-flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      initial={{ x: -20 }}
+                      whileHover={{ x: 0 }}
+                    >
+                      <span className="text-white text-sm md:text-base uppercase tracking-widest">
+                        View Project
+                      </span>
+                      <svg 
+                        className="w-6 h-6 text-white" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                      >
+                        <path 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          strokeWidth={1.5} 
+                          d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                        />
+                      </svg>
+                    </motion.div>
+                  </motion.div>
+                </div>
+                
+                {/* Side navigation dots */}
+                <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3">
+                  {allProjects.map((_, i) => (
+                    <div 
+                      key={i} 
+                      className={`w-1 transition-all duration-300 ${
+                        i === index 
+                          ? 'h-12 bg-white' 
+                          : 'h-6 bg-white/30 hover:bg-white/50'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </section>
+        );
+      })}
+      
+      {/* Contact CTA Section */}
+      <section className="relative h-screen flex items-center justify-center bg-white text-black">
+        <div className="text-center max-w-4xl mx-auto px-8">
+          <motion.h2 
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-8"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            START YOUR PROJECT
+          </motion.h2>
+          <motion.p 
+            className="text-xl md:text-2xl text-gray-700 mb-12 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Let&apos;s collaborate to bring your architectural vision to life.
+          </motion.p>
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
           >
-            <motion.h1 
-              className="font-display text-4xl md:text-6xl font-bold mb-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
+            <Link 
+              href="/contact" 
+              className="inline-block px-12 py-5 bg-black text-white text-lg font-medium uppercase tracking-wider hover:bg-gray-900 transition-colors duration-300"
             >
-              Our Projects
-            </motion.h1>
-            <motion.p 
-              className="text-xl max-w-2xl mx-auto text-foreground-500"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-            >
-              Explore our portfolio of architectural designs and completed projects.
-            </motion.p>
+              Get in Touch
+            </Link>
           </motion.div>
-        </Section>
-        
-        <Section>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-          >
-            <ProjectFilters 
-              onFilterChange={handleFilterChange}
-              onSortChange={handleSortChange}
-            />
-          </motion.div>
-        </Section>
-        
-        <Section>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.5 }}
-          >
-            <ProjectsGrid projects={filteredProjects} />
-          </motion.div>
-        </Section>
-      </main>
+        </div>
+      </section>
       
       <Footer />
     </div>

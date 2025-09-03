@@ -10,8 +10,8 @@ type TeamMember = {
 
 export function TeamCard({ member }: { member: TeamMember }) {
   return (
-    <Card className="border-0 bg-background/60 backdrop-blur-md">
-      <CardBody>
+    <Card className="bg-content1 border-1 border-divider">
+      <CardBody className="p-6">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/3">
             <ResponsiveImage
@@ -21,15 +21,19 @@ export function TeamCard({ member }: { member: TeamMember }) {
             />
           </div>
           <div className="md:w-2/3">
-            <h3 className="font-display text-xl">{member.name}</h3>
+            <h3 className="font-display text-xl font-semibold">{member.name}</h3>
             <p className="text-primary font-medium mb-4">{member.role}</p>
-            <Accordion>
+            <Accordion variant="light">
               <AccordionItem 
                 key="bio" 
                 aria-label="Bio" 
                 title="Bio"
+                classNames={{
+                  title: "text-medium",
+                  content: "text-default-600"
+                }}
               >
-                <p className="text-foreground-500">{member.bio}</p>
+                {member.bio}
               </AccordionItem>
             </Accordion>
           </div>

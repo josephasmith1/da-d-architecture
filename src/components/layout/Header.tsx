@@ -3,7 +3,7 @@
 import { useState } from "react";
 import NextLink from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 export function Header() {
@@ -17,7 +17,6 @@ export function Header() {
     { label: "FAQ", href: "/faq" },
     { label: "CONTACT", href: "/contact" }
   ];
-
 
   return (
     <header className="bg-black z-50 relative">
@@ -44,33 +43,35 @@ export function Header() {
         </button>
 
         {/* Full Screen Menu */}
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black z-40"
-          >
-            <div className="flex flex-col items-center justify-center h-full space-y-8">
-              {menuItems.map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <NextLink
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="text-white text-3xl md:text-4xl font-light tracking-wider hover:text-gray-300 transition-colors duration-200"
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black z-40"
+            >
+              <div className="flex flex-col items-center justify-center h-full space-y-8">
+                {menuItems.map((item, index) => (
+                  <motion.div
+                    key={item.label}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
                   >
-                    {item.label}
-                  </NextLink>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        )}
+                    <NextLink
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-white text-3xl md:text-4xl font-light tracking-wider hover:text-gray-300 transition-colors duration-200"
+                    >
+                      {item.label}
+                    </NextLink>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </header>
   );

@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
 type Project = {
@@ -104,16 +104,9 @@ function ParallaxHome() {
     offset: ["start end", "end start"]
   });
   
-  // Individual scroll progress for each text section
-  const { scrollYProgress: firstTextProgress } = useScroll({
-    target: firstTextRef,
-    offset: ["start 0.8", "end 0.2"]
-  });
-  
-  const { scrollYProgress: secondTextProgress } = useScroll({
-    target: secondTextRef,
-    offset: ["start 0.8", "end 0.2"]
-  });
+  // Use useInView for triggering animations when elements enter viewport
+  const isFirstTextInView = useInView(firstTextRef, { once: true, margin: "-20%" });
+  const isSecondTextInView = useInView(secondTextRef, { once: true, margin: "-20%" });
   
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
@@ -141,9 +134,6 @@ function ParallaxHome() {
             <motion.h1 
               className="text-4xl md:text-6xl lg:text-8xl font-bold leading-none"
               style={{ y }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.2 }}
             >
               {(() => {
                 const text = "Our design approach seeks to discover the unknown while remembering and re-imagining what has come before.";
@@ -151,23 +141,21 @@ function ParallaxHome() {
                 return (
                   <span className="relative">
                     {words.map((word, i) => {
-                      const start = i / words.length;
-                      const end = (i + 1) / words.length;
                       return (
                         <span key={i} className="relative inline-block mr-2 md:mr-3 lg:mr-4">
                           <span className="text-gray-400">{word}</span>
                           <motion.span 
-                            className="absolute inset-0 bg-gradient-to-r from-slate-400 to-slate-500 bg-clip-text text-transparent"
-                            style={{
-                              opacity: useTransform(firstTextProgress, [start * 0.8, end * 0.8], [0, 1])
-                            }}
+                            className="absolute inset-0 bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: isFirstTextInView ? 1 : 0 }}
+                            transition={{ duration: 0.5, delay: i * 0.05 }}
                           >
                             {word}
                           </motion.span>
                         </span>
                       );
-                    })}
-                  </span>
+                    })
+                  }</span>
                 );
               })()}
             </motion.h1>
@@ -177,7 +165,7 @@ function ParallaxHome() {
         {/* 2-Image Per Row Gallery - No Gaps */}
         <section>
           <div className="grid grid-cols-2">
-            {projectData.map((project, index) => (
+            {projectData.map((project) => (
               <Link key={project.slug} href={`/projects/${project.slug}`}>
                 <div className="relative aspect-square overflow-hidden group cursor-pointer">
                   <Image
@@ -208,9 +196,6 @@ function ParallaxHome() {
             <motion.p 
               className="text-2xl md:text-4xl lg:text-5xl font-bold leading-none"
               style={{ y: y2 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.2, delay: 0.3 }}
             >
               {(() => {
                 const text = "We lead the design process with inspiration and excitement. We create homes that have a high value on design and reflect the importance of comfort and functionality.";
@@ -218,23 +203,21 @@ function ParallaxHome() {
                 return (
                   <span className="relative">
                     {words.map((word, i) => {
-                      const start = i / words.length;
-                      const end = (i + 1) / words.length;
                       return (
                         <span key={i} className="relative inline-block mr-2 md:mr-3 lg:mr-4">
                           <span className="text-gray-400">{word}</span>
                           <motion.span 
-                            className="absolute inset-0 bg-gradient-to-r from-slate-400 to-slate-500 bg-clip-text text-transparent"
-                            style={{
-                              opacity: useTransform(secondTextProgress, [start * 0.8, end * 0.8], [0, 1])
-                            }}
+                            className="absolute inset-0 bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: isSecondTextInView ? 1 : 0 }}
+                            transition={{ duration: 0.5, delay: i * 0.05 }}
                           >
                             {word}
                           </motion.span>
                         </span>
                       );
-                    })}
-                  </span>
+                    })
+                  }</span>
                 );
               })()}
             </motion.p>
