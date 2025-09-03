@@ -7,7 +7,7 @@
   "size": "15,000 sq ft",
   "status": "In Progress",
   "services": ["Architecture", "Interior Design", "Project Management"],
-  "coverImage": "bel-air/Bel Air 3-L",
+  "coverImage": "modern-luxury-residence/driveway-evening",
   "description": [
     "This adaptive reuse project transforms a historic warehouse into a modern creative office space while preserving its industrial character.",
     "The design features flexible workspaces, collaborative areas, and sustainable technologies integrated into the existing structure."
@@ -18,15 +18,15 @@
     "Photographer": "Cityscape Studios"
   },
   "floorPlans": [
-    { "image": "bel-air/Bel Air 1-L.jpg", "caption": "Ground Floor Plan" },
-    { "image": "bel-air/Bel Air 2-L.jpg", "caption": "Mezzanine Level Plan" },
-    { "image": "bel-air/Bel Air Living 1-L.jpg", "caption": "Roof Level Plan" }
+    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Ground Floor Plan" },
+    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Mezzanine Level Plan" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Roof Level Plan" }
   ],
   "gallery": [
-    { "image": "bel-air/Bel Air 3-L.jpg", "caption": "Original facade with new glass insertions" },
-    { "image": "bel-air/Bel Air 1-L.jpg", "caption": "Open office layout with exposed beams" },
-    { "image": "bel-air/Bel Air 2-L.jpg", "caption": "Conference room with smart glass partitions" },
-    { "image": "bel-air/Bel Air Living 1-L.jpg", "caption": "Rooftop terrace with city views" },
-    { "image": "bel-air/Bel Air Bed 1-L.jpg", "caption": "Breakout spaces with custom furniture" }
+    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Original facade with new glass insertions" },
+    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Open office layout with exposed beams" },
+    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Conference room with smart glass partitions" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Rooftop terrace with city views" },
+    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Breakout spaces with custom furniture" }
   ]
 }
