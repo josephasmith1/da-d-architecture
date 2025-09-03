@@ -1,50 +1,32 @@
 [
   {
     "id": "1",
-    "category": "General",
-    "question": "What is your design process?",
-    "answer": "Our design process begins with understanding your needs, site conditions, and project goals. We then develop conceptual designs, refine them through iterative feedback, and produce detailed construction documents. Throughout, we maintain close communication to ensure the design aligns with your vision."
+    "category": "Getting Started",
+    "question": "Why should you hire an architect?",
+    "answer": "Few people realize how complicated it is to build - that is until they find themselves lost in the maze of design options, building codes, zoning laws, contractors, and so on. No two building projects are exactly alike, so there is no single, clear-cut path to follow.\n\nThe architect is the one professional who has the education, training, experience, and vision to guide you through the entire design and construction process, from helping you define what you want to build to helping you get the most for your construction dollar. Architects see the big picture. They don't just design four walls and a roof - they create total environments, interiors and exteriors, that satisfy functional needs and are exciting, dynamic spaces in which to work and live.\n\nWhether you are remodeling, adding on, or building from scratch, the architect can guide the way. Working with contractors and other construction professionals, architects can help you end up with a well-designed project that meets your needs and works with your budget and time frame."
   },
   {
     "id": "2",
-    "category": "General",
-    "question": "How long does a project typically take?",
-    "answer": "Project timelines vary significantly based on scope and complexity. Residential projects typically take 12-18 months from concept to completion, while commercial projects can range from 18 months to several years. We provide detailed schedules during the design phase."
+    "category": "Design Process",
+    "question": "What are the steps in completing a project?",
+    "answer": "Design and construction projects involve several steps. Typically, projects go through the following six phases. However, on some projects, several of these steps may be combined or there may be additional ones.\n\n**STEP 1: Programming/Deciding What to Build**\nThe homeowner and architect discuss the requirements for the project (how many rooms, the function of the spaces, etc.), testing the fit between the owner's needs, wants, and budget.\n\n**STEP 2: Schematic Design/Rough Sketches**\nThe architect prepares a series of rough sketches, known as schematic design, which show the general arrangement of rooms and of the site. Some architects also prepare models to help visualize the project. The homeowner approves these sketches before proceeding to the next phase.\n\n**STEP 3: Design Development/Refining the Design**\nThe architect prepares more detailed drawings to illustrate other aspects of the proposed design. Floor plans show all the rooms in correct size and shape. Outline specifications are prepared, listing the major materials and room finishes. Once the Design Development drawings have been approved the architect can begin developing the submission set for the required building permits.\n\n**STEP 4: Preparation of Construction Documents**\nOnce the homeowner has approved the design, the architect prepares detailed drawings and specifications, which the contractor will use to establish actual construction cost and build the project. These drawings and specifications become part of the building contract.\n\n**STEP 5: Hiring the Contractor**\nThe homeowner selects and hires the contractor. The architect may be willing to make some recommendations. In many cases, homeowners choose from among several contractors they've asked to submit bids on the job. The architect can help you prepare bidding documents as well as invitations to bid and instructions to bidders.\n\n**STEP 6: Construction Administration**\nWhile the contractor will physically build the home or addition, the architect can assist the homeowner in making sure that the project is built according to the plans and specifications. The architect can make site visits to observe construction, review and approve the contractor's applications for payment, and generally keep the homeowner informed of the project's progress. The contractor is solely responsible for construction methods, techniques, schedules and procedures."
   },
   {
     "id": "3",
-    "category": "Services",
-    "question": "Do you offer interior design services?",
-    "answer": "Yes, we provide comprehensive interior design services for both residential and commercial projects. Our approach integrates interior design with architecture to create cohesive, functional spaces."
+    "category": "Fees & Payment",
+    "question": "How does an architect get paid?",
+    "answer": "How architects charge for their services can be confusing to first-time clients. There is no set fee for a particular type of project. Fees are established in a number of ways, depending on the sort of project, and the amount and nature of the services best suited to your unique needs.\n\nSome projects are best done at hourly rates; others for a stipulated sum per unit, based on what is to be built (for example, the number of square feet, apartments, rooms, etc.). Some architects charge a fixed fee; others charge a percentage of construction costs. The architect may suggest a combination of the above methods. The basis for the fee, the amount, and payment schedule are issues for you and your architect to work out together."
   },
   {
     "id": "4",
-    "category": "Services",
-    "question": "What sustainable practices do you implement?",
-    "answer": "We prioritize energy efficiency, sustainable materials, and environmental integration in all our projects. This includes solar design, natural ventilation strategies, water conservation systems, and LEED certification where appropriate."
+    "category": "Sustainability",
+    "question": "Why build green?",
+    "answer": "Buildings consume up to two-thirds of a city's electricity. In addition, they use a significant fraction of water and other natural resources, as well as contribute 12% of landfill waste. Given that thousands of new construction and remodel building projects are permitted each year, improvements to building layout, design and material selection, combined with the installation of more efficient fixtures, appliances, and heating and cooling systems could contribute to significant savings of electricity, gas, and water consumption and a reduction in the quality of solid waste leading to our landfills.\n\n**DA+D green building program addresses five key areas:**\n\n• **Site Location** – site planning, landscaping, stormwater management, construction & demolition recycling\n\n• **Water Efficiency** – efficient fixtures, wastewater reuse, efficient irrigation\n\n• **Energy and Atmosphere** – energy efficient appliances and temperature controls, clean/renewable energy sources\n\n• **Materials & Resources** – materials reuse, efficient building systems, use of recycled & rapidly renewable materials\n\n• **Indoor Environmental Quality** – improved air quality, increased daylighting & improved thermal comfort/control"
   },
   {
     "id": "5",
-    "category": "Fire Mitigation",
-    "question": "How do you approach fire-resistant design?",
-    "answer": "Our fire mitigation designs incorporate ember-resistant construction, strategic landscaping, defensible space planning, and material selection that meets or exceeds local fire codes. We work closely with fire safety experts to ensure comprehensive protection."
-  },
-  {
-    "id": "6",
-    "category": "Fire Mitigation",
-    "question": "Do you design for other natural disasters?",
-    "answer": "Yes, we specialize in resilient design for earthquakes, floods, and high winds in addition to fire. Our projects are engineered to withstand multiple hazards while maintaining architectural quality."
-  },
-  {
-    "id": "7",
-    "category": "General",
-    "question": "What is your fee structure?",
-    "answer": "Our fees are based on project complexity, size, and scope of services. We typically charge a percentage of construction costs for full architectural services, with options for design-only or consultation packages. Detailed fee proposals are provided for each project."
-  },
-  {
-    "id": "8",
-    "category": "Services",
-    "question": "Do you work outside of California?",
-    "answer": "While our office is based in California, we have completed projects across the western United States. We can work remotely on select projects and partner with local architects for construction administration when needed."
+    "category": "Working Together",
+    "question": "A word about collaboration and teamwork",
+    "answer": "The best building projects are created when the client and architect work together as a team. Take an active role. Don't delegate decision-making to a spouse or business partner unless you are prepared to live with his or her decisions.\n\nDesigning a building is an exciting, creative challenge. The process can be fun, satisfying, and positive. If at any time in the design process you are uncomfortable, discuss your concerns with your architect. You don't want the architect to control the project to the point that the building is no longer yours. But you also want to be careful not to restrict the architect so much that you are not getting your money's worth in terms of design creativity."
   }
 ]

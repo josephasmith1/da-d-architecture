@@ -13,9 +13,9 @@ export default function ContactPage() {
       <Header />
       
       <main className="flex-grow">
-        <Section className="py-24 md:py-32">
+        <Section className="pt-8 pb-12 md:pt-12 md:pb-16">
           <motion.div 
-            className="text-center max-w-3xl mx-auto"
+            className="text-center max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -29,19 +29,19 @@ export default function ContactPage() {
               Contact Us
             </motion.h1>
             <motion.p 
-              className="text-xl text-foreground-500"
+              className="text-xl text-foreground-500 mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              Get in touch with our team to discuss your project needs.
+              Ready to bring your architectural vision to life? Get in touch with our team to discuss your project needs.
             </motion.p>
           </motion.div>
         </Section>
         
-        <Section>
+        <Section className="pb-8">
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -49,16 +49,15 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.5 }}
+              transition={{ delay: 0.7, duration: 0.5 }}
             >
-              <Card className="border-0 bg-background/60 backdrop-blur-md">
-                <CardBody>
-                  <h2 className="font-display text-2xl font-bold mb-4">Studio Location</h2>
-                  <p className="text-foreground-500 mb-2">123 Architecture Way</p>
-                  <p className="text-foreground-500 mb-2">Los Angeles, CA 90210</p>
-                  <p className="text-foreground-500 mb-4">United States</p>
-                  <p className="text-foreground-500">
-                    We&apos;re available for consultations Monday through Friday, 9am to 6pm PST.
+              <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                <CardBody className="text-center">
+                  <h3 className="font-display text-lg font-bold mb-3">Studio Location</h3>
+                  <p className="text-foreground-500 text-sm">
+                    123 Architecture Way<br />
+                    Los Angeles, CA 90210<br />
+                    United States
                   </p>
                 </CardBody>
               </Card>
@@ -67,19 +66,32 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.0, duration: 0.5 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
             >
-              <Card className="border-0 bg-background/60 backdrop-blur-md">
-                <CardBody>
-                  <h2 className="font-display text-2xl font-bold mb-4">Business Hours</h2>
-                  <p className="text-foreground-500">
+              <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                <CardBody className="text-center">
+                  <h3 className="font-display text-lg font-bold mb-3">Business Hours</h3>
+                  <p className="text-foreground-500 text-sm">
                     Monday - Friday: 9am - 6pm<br />
                     Saturday: 10am - 4pm<br />
                     Sunday: Closed
                   </p>
-                  <p className="text-foreground-500">
+                </CardBody>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.5 }}
+            >
+              <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                <CardBody className="text-center">
+                  <h3 className="font-display text-lg font-bold mb-3">Get in Touch</h3>
+                  <p className="text-foreground-500 text-sm">
                     Phone: (310) 555-0123<br />
-                    Email: info@dadinc.com
+                    Email: info@dadinc.com<br />
+                    Quick response guaranteed
                   </p>
                 </CardBody>
               </Card>
@@ -89,7 +101,7 @@ export default function ContactPage() {
         
         <Section>
           <motion.div 
-            className="max-w-3xl mx-auto"
+            className="max-w-5xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.0, duration: 0.5 }}
@@ -97,11 +109,16 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.0, duration: 0.5 }}
+              transition={{ delay: 1.1, duration: 0.5 }}
             >
               <Card className="border-0 bg-background/60 backdrop-blur-md">
-                <CardBody>
-                  <h2 className="font-display text-2xl font-bold mb-4">Get in Touch</h2>
+                <CardBody className="p-8">
+                  <div className="text-center mb-8">
+                    <h2 className="font-display text-3xl font-bold mb-4">Start Your Project</h2>
+                    <p className="text-foreground-600 max-w-2xl mx-auto">
+                      Tell us about your project and we'll get back to you within 24-48 hours with next steps and a consultation proposal.
+                    </p>
+                  </div>
                   <ContactForm />
                 </CardBody>
               </Card>
