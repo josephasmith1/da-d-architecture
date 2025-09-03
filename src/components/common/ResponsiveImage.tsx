@@ -39,16 +39,6 @@ export function ResponsiveImage({ name, alt, className }: ResponsiveImageProps) 
   // Check if the name already has the landscape/portrait suffix
   const alreadyHasSuffix = name.endsWith('-L') || name.endsWith('-P');
   
-  // Extract extension if present
-  let extension = '.jpg'; // default
-  let baseName = name;
-  
-  if (hasExtension) {
-    const lastDotIndex = name.lastIndexOf('.');
-    extension = name.substring(lastDotIndex);
-    baseName = name.substring(0, lastDotIndex);
-  }
-  
   let imagePath;
   if (hasExtension) {
     // If it has an extension, use as-is

@@ -1,10 +1,3 @@
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { Section } from "@/components/ui/Section";
-import { ResponsiveImage } from "@/components/common/ResponsiveImage";
-import { PlanLightbox } from "@/components/projects/PlanLightbox";
-import { Card, CardBody, Button } from "@heroui/react";
-import { ServiceChip } from "@/components/common/ServiceChip";
 import { notFound } from "next/navigation";
 import { getProject, getAllProjects } from "@/lib/projects";
 import ProjectDetailClient from "./ProjectDetailClient";
