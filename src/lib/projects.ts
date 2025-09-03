@@ -29,9 +29,22 @@ function getBaseUrl() {
     // Browser should use current origin
     return '';
   }
+  // Prefer a fully qualified public site URL if provided
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    const url = process.env.NEXT_PUBLIC_SITE_URL;
+    return url.startsWith('http') ? url : `https://${url}`;
+  }
+  // Vercel deployments expose VERCEL_URL without protocol
   if (process.env.VERCEL_URL) {
-    // Reference for vercel.com deployments
     return `https://${process.env.VERCEL_URL}`;
+  }
+  // Netlify provides URL (full URL) or SITE_URL
+  if (process.env.URL) {
+    return process.env.URL;
+  }
+  if (process.env.SITE_URL) {
+    const url = process.env.SITE_URL as string;
+    return url.startsWith('http') ? url : `https://${url}`;
   }
   // Assume localhost
   return 'http://localhost:3000';

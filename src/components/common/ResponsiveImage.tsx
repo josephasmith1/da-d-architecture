@@ -11,6 +11,7 @@ interface ResponsiveImageProps {
 
 export function ResponsiveImage({ name, alt, className }: ResponsiveImageProps) {
   const [isPortrait, setIsPortrait] = useState(false);
+  const [src, setSrc] = useState<string | null>(null);
 
   useEffect(() => {
     // Check if the viewport is taller than it is wide (portrait)
@@ -51,15 +52,27 @@ export function ResponsiveImage({ name, alt, className }: ResponsiveImageProps) 
     imagePath = `/projects/${name}${suffix}.jpg`;
   }
 
+  // Encode spaces and unsafe characters to avoid 400s from the image optimizer
+  const encodedPath = imagePath.replace(/ /g, "%20");
+
+  useEffect(() => {
+    setSrc(encodedPath);
+  }, [encodedPath]);
+
   return (
     <Image
-      src={imagePath}
+      src={src || encodedPath}
       alt={alt}
       fill
       className={className}
       sizes="100vw"
       style={{ objectFit: 'cover' }}
       priority={false}
+      onError={() => {
+        // Fallback to a safe placeholder if requested image is missing
+        // This avoids broken images when content references files that are not present yet.
+        setSrc('/hero-marinelli.jpg');
+      }}
     />
   );
 }
