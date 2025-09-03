@@ -31,7 +31,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
         const resolvedParams = await params;
         const projectData = await getProject(resolvedParams.slug);
         setProject(projectData);
-      } catch (error) {
+      } catch {
         setProject(null);
       } finally {
         setLoading(false);

@@ -3,9 +3,9 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Section } from "@/components/ui/Section";
-import { Card, CardBody, CardHeader, Divider, Chip, Avatar, Button, Spacer } from "@heroui/react";
+import { Card, CardBody, CardHeader, Chip, Avatar, Button, Spacer } from "@heroui/react";
 import { motion } from "framer-motion";
-import { Building2, Users, Award, MapPin, Calendar, GraduationCap, Briefcase, Globe } from "lucide-react";
+import { Building2, Users, Award, MapPin, GraduationCap, Briefcase, Globe } from "lucide-react";
 
 export default function AboutPage() {
   const services = [
@@ -138,7 +138,7 @@ export default function AboutPage() {
                   </p>
                   <p className="text-foreground-600 leading-relaxed">
                     Our goal is to produce buildings that seamlessly combine great design and functionality, 
-                    creating spaces that not only meet today's needs but adapt to tomorrow's possibilities.
+                    creating spaces that not only meet today&apos;s needs but adapt to tomorrow&apos;s possibilities.
                   </p>
                   <Spacer y={4} />
                   <Button color="primary" variant="flat" size="lg" className="w-fit">
@@ -367,7 +367,7 @@ export default function AboutPage() {
                 <h2 className="font-display text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
                 <p className="text-foreground-600 text-lg mb-8 leading-relaxed">
                   We are committed to creating exceptional architectural solutions that enhance 
-                  the way people live and work. Let's discuss how we can bring your vision to life.
+                  the way people live and work. Let&apos;s discuss how we can bring your vision to life.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

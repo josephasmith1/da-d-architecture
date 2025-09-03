@@ -2,232 +2,179 @@
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { getAllProjects, type Project } from "@/lib/projects";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
-// Import all project JSON files
-import marinelliProject from "@/content/projects/marinelli.json";
-import shiaProject from "@/content/projects/shia.json";
-import legendProject from "@/content/projects/legend.json";
-import markupsProject from "@/content/projects/markups.json";
-import beachHouseProject from "@/content/projects/beach-house.json";
-import hillsideProject from "@/content/projects/hillside-residence.json";
-import urbanOfficeProject from "@/content/projects/urban-office.json";
-
-// Transform project data
-const allProjects = [
-  marinelliProject,
-  shiaProject,
-  legendProject,
-  markupsProject,
-  beachHouseProject,
-  hillsideProject,
-  urbanOfficeProject
-].map(project => ({
-  slug: project.slug,
-  title: project.title,
-  location: project.location,
-  year: project.year,
-  category: project.category,
-  coverImage: project.coverImage.endsWith('.jpg') ? project.coverImage : `${project.coverImage}.jpg`,
-  size: project.size,
-  status: project.status,
-  services: project.services
-}));
-
-export default function ProjectsPage() {
-  const containerRef = useRef(null);
+// Separate component for each project section
+function ProjectSection({ project, index }: { project: Project; index: number }) {
+  const sectionRef = useRef(null);
   
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
+  const { scrollYProgress: sectionScroll } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
   });
   
+  // Create parallax effect for each image
+  const yImage = useTransform(sectionScroll, [0, 1], ["0%", "20%"]);
+  const scale = useTransform(sectionScroll, [0, 0.5, 1], [1.2, 1, 1.2]);
+  
   return (
-    <div className="bg-black text-white" ref={containerRef}>
+    <section 
+      ref={sectionRef}
+      className="relative h-screen overflow-hidden"
+    >
+      <Link href={`/projects/${project.slug}`} className="block h-full group cursor-pointer">
+        <motion.div 
+          className="absolute inset-0 w-full h-full"
+          style={{ y: yImage, scale }}
+        >
+          <Image
+            src={`/projects/${project.coverImage}.jpg`}
+            alt={project.title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority={index < 2}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
+        </motion.div>
+        
+        {/* Project info overlay */}
+        <div className="relative h-full flex items-end">
+          <motion.div 
+            className="w-full p-8 md:p-16 lg:p-24 pb-12 md:pb-20"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <div className="max-w-4xl">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="text-white/70 text-sm uppercase tracking-wider">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div className="h-px bg-white/30 w-12"></div>
+                <span className="text-white/70 text-sm uppercase tracking-wider">
+                  {project.category}
+                </span>
+              </div>
+              
+              <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                {project.title}
+              </h2>
+              
+              <div className="flex items-center gap-6 text-white/80">
+                <span className="text-lg">{project.location}</span>
+                <span className="text-white/40">•</span>
+                <span className="text-lg">{project.year}</span>
+              </div>
+              
+              <motion.div 
+                className="mt-8 inline-block"
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 400 }}
+              >
+                <span className="text-white flex items-center gap-2 text-lg group-hover:gap-4 transition-all">
+                  View Project
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </Link>
+    </section>
+  );
+}
+
+export default function ProjectsPage() {
+  const [allProjects, setAllProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+  
+  const { scrollYProgress } = useScroll();
+  const strokeDashoffset = useTransform(scrollYProgress, [0, 1], [175.93, 0]);
+  
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const projects = await getAllProjects();
+        setAllProjects(projects);
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchProjects();
+  }, []);
+  
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <motion.div 
+          className="text-white"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="w-16 h-16 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
+        </motion.div>
+      </div>
+    );
+  }
+  
+  return (
+    <div className="min-h-screen bg-black">
       <Header />
       
       {/* Full-screen project showcase */}
-      {allProjects.map((project, index) => {
-        const sectionRef = useRef(null);
-        
-        const { scrollYProgress: sectionScroll } = useScroll({
-          target: sectionRef,
-          offset: ["start end", "end start"]
-        });
-        
-        // Create parallax effect for each image
-        const yImage = useTransform(sectionScroll, [0, 1], ["0%", "20%"]);
-        const scale = useTransform(sectionScroll, [0, 0.5, 1], [1.2, 1, 1.2]);
-        
-        return (
-          <section 
-            key={project.slug} 
-            ref={sectionRef}
-            className="relative h-screen overflow-hidden"
-          >
-            <Link href={`/projects/${project.slug}`}>
-              <div className="relative h-full group cursor-pointer">
-                {/* Parallax Image Background */}
-                <motion.div 
-                  className="absolute inset-0 w-full h-full"
-                  style={{ y: yImage, scale }}
-                >
-                  <Image
-                    src={`/projects/${project.coverImage}`}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                    sizes="100vw"
-                    priority={index < 2}
-                    quality={90}
-                  />
-                </motion.div>
-                
-                {/* Gradient overlays for text legibility */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-700" />
-                
-                {/* Project Information - Bold Typography */}
-                <div className="absolute inset-0 flex items-end">
-                  <motion.div 
-                    className="p-8 md:p-16 lg:p-24 w-full"
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, margin: "-200px" }}
-                  >
-                    {/* Project Number */}
-                    <motion.div 
-                      className="mb-4"
-                      initial={{ opacity: 0, x: -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
-                      viewport={{ once: true }}
-                    >
-                      <span className="text-white/50 font-mono text-sm md:text-base">
-                        {String(index + 1).padStart(2, '0')} / {String(allProjects.length).padStart(2, '0')}
-                      </span>
-                    </motion.div>
-                    
-                    {/* Project Title - Extra Bold */}
-                    <motion.h2 
-                      className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white mb-4 tracking-tight leading-none"
-                      initial={{ opacity: 0, x: -50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.8, delay: 0.3 }}
-                      viewport={{ once: true }}
-                    >
-                      {project.title.toUpperCase()}
-                    </motion.h2>
-                    
-                    {/* Project Details */}
-                    <motion.div 
-                      className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 0.6, delay: 0.4 }}
-                      viewport={{ once: true }}
-                    >
-                      <p className="text-white/80 text-lg md:text-xl lg:text-2xl">
-                        {project.location}
-                      </p>
-                      <div className="flex gap-4 items-center">
-                        <span className="h-px w-12 bg-white/40" />
-                        <span className="text-white/60 text-base md:text-lg">
-                          {project.category}
-                        </span>
-                        <span className="text-white/60 text-base md:text-lg">
-                          {project.year}
-                        </span>
-                      </div>
-                    </motion.div>
-                    
-                    {/* Hover indicator */}
-                    <motion.div 
-                      className="mt-8 inline-flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      initial={{ x: -20 }}
-                      whileHover={{ x: 0 }}
-                    >
-                      <span className="text-white text-sm md:text-base uppercase tracking-widest">
-                        View Project
-                      </span>
-                      <svg 
-                        className="w-6 h-6 text-white" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        stroke="currentColor"
-                      >
-                        <path 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
-                          strokeWidth={1.5} 
-                          d="M17 8l4 4m0 0l-4 4m4-4H3" 
-                        />
-                      </svg>
-                    </motion.div>
-                  </motion.div>
-                </div>
-                
-                {/* Side navigation dots */}
-                <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3">
-                  {allProjects.map((_, i) => (
-                    <div 
-                      key={i} 
-                      className={`w-1 transition-all duration-300 ${
-                        i === index 
-                          ? 'h-12 bg-white' 
-                          : 'h-6 bg-white/30 hover:bg-white/50'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </Link>
-          </section>
-        );
-      })}
+      {allProjects.map((project, index) => (
+        <ProjectSection key={project.slug} project={project} index={index} />
+      ))}
       
-      {/* Contact CTA Section */}
-      <section className="relative h-screen flex items-center justify-center bg-white text-black">
-        <div className="text-center max-w-4xl mx-auto px-8">
-          <motion.h2 
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-8"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            START YOUR PROJECT
-          </motion.h2>
-          <motion.p 
-            className="text-xl md:text-2xl text-gray-700 mb-12 max-w-2xl mx-auto"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Let&apos;s collaborate to bring your architectural vision to life.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <Link 
-              href="/contact" 
-              className="inline-block px-12 py-5 bg-black text-white text-lg font-medium uppercase tracking-wider hover:bg-gray-900 transition-colors duration-300"
-            >
-              Get in Touch
-            </Link>
-          </motion.div>
-        </div>
+      {/* Footer */}
+      <section className="relative bg-background">
+        <Footer />
       </section>
       
-      <Footer />
+      {/* Progress indicator */}
+      <motion.div 
+        className="fixed bottom-8 right-8 w-16 h-16 z-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+      >
+        <svg className="w-16 h-16 -rotate-90">
+          <circle
+            cx="32"
+            cy="32"
+            r="28"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            className="text-white/20"
+          />
+          <motion.circle
+            cx="32"
+            cy="32"
+            r="28"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            className="text-white"
+            strokeDasharray={175.93}
+            style={{
+              strokeDashoffset,
+            }}
+          />
+        </svg>
+      </motion.div>
     </div>
   );
 }

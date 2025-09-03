@@ -116,7 +116,7 @@ export default function ContactPage() {
                   <div className="text-center mb-8">
                     <h2 className="font-display text-3xl font-bold mb-4">Start Your Project</h2>
                     <p className="text-foreground-600 max-w-2xl mx-auto">
-                      Tell us about your project and we'll get back to you within 24-48 hours with next steps and a consultation proposal.
+                      Tell us about your project and we&apos;ll get back to you within 24-48 hours with next steps and a consultation proposal.
                     </p>
                   </div>
                   <ContactForm />
