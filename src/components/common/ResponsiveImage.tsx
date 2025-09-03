@@ -32,17 +32,32 @@ export function ResponsiveImage({ name, alt, className }: ResponsiveImageProps) 
 
   // Determine the suffix based on orientation
   const suffix = isPortrait ? '-P' : '-L';
-  // Handle different file extensions (.jpg and .png)
+  
+  // Check if the name already has an extension
   const hasExtension = name.includes('.jpg') || name.includes('.png');
+  
   // Check if the name already has the landscape/portrait suffix
   const alreadyHasSuffix = name.endsWith('-L') || name.endsWith('-P');
   
+  // Extract extension if present
+  let extension = '.jpg'; // default
+  let baseName = name;
+  
+  if (hasExtension) {
+    const lastDotIndex = name.lastIndexOf('.');
+    extension = name.substring(lastDotIndex);
+    baseName = name.substring(0, lastDotIndex);
+  }
+  
   let imagePath;
   if (hasExtension) {
+    // If it has an extension, use as-is
     imagePath = `/projects/${name}`;
   } else if (alreadyHasSuffix) {
+    // If it has a suffix but no extension, add .jpg
     imagePath = `/projects/${name}.jpg`;
   } else {
+    // Add suffix and extension
     imagePath = `/projects/${name}${suffix}.jpg`;
   }
 

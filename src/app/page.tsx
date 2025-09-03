@@ -119,7 +119,7 @@ function ParallaxHome() {
         {/* Large Hero Image */}
         <section className="relative h-screen">
           <Image
-            src="/projects/legend/Legend LGD Cam 1-L.jpg"
+            src="/hero-marinelli.jpg"
             alt="Hero Image"
             fill
             className="object-cover"
