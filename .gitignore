@@ -51,3 +51,6 @@ public.zip
 # Temporary files
 *.tmp
 *.temp
+
+# Claude Code configuration
+CLAUDE.md
