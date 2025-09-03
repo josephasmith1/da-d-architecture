@@ -7,7 +7,7 @@
   "size": "8,500 sq ft",
   "status": "Design Phase",
   "services": ["Architecture", "Interior Design"],
-  "coverImage": "markups/Markups Ariel1-L",
+  "coverImage": "markups/Markups_Ariel1-L",
   "description": [
     "Rendering Markups Project is a purpose-built facility for a digital design agency, featuring flexible workspaces that can adapt to evolving creative processes.",
     "The design emphasizes transparency and connectivity with glass partitions and open sightlines that encourage collaboration while maintaining focus areas."
@@ -18,16 +18,16 @@
     "Photographer": "Design Visualization Studio"
   },
   "floorPlans": [
-    { "image": "markups/Markups Daylight1-L.png", "caption": "Main Floor Plan" },
-    { "image": "markups/Markups Daylight3-L.png", "caption": "Upper Level Plan" }
+    { "image": "markups/Markups_Daylight1-L.png", "caption": "Main Floor Plan" },
+    { "image": "markups/Markups_Daylight3-L.png", "caption": "Upper Level Plan" }
   ],
   "gallery": [
-    { "image": "markups/Markups Ariel1-L.png", "caption": "Aerial view of the proposed site" },
-    { "image": "markups/Markups Daylight1-L.png", "caption": "Daylighting analysis floor plan" },
-    { "image": "markups/Markups Daylight3-L.png", "caption": "Daylighting analysis upper level" },
-    { "image": "markups/Markups Interior1_9-L.png", "caption": "Concept rendering of main workspace" },
-    { "image": "markups/Markups Interior2-L.png", "caption": "Meeting room with smart technology" },
-    { "image": "markups/Markups Interior3-L.png", "caption": "Quiet focus areas with acoustic panels" },
-    { "image": "markups/Markups Night1-L.png", "caption": "Nighttime rendering showing lighting design" }
+    { "image": "markups/Markups_Ariel1-L.png", "caption": "Aerial view of the proposed site" },
+    { "image": "markups/Markups_Daylight1-L.png", "caption": "Daylighting analysis floor plan" },
+    { "image": "markups/Markups_Daylight3-L.png", "caption": "Daylighting analysis upper level" },
+    { "image": "markups/Markups_Interior1_9-L.png", "caption": "Concept rendering of main workspace" },
+    { "image": "markups/Markups_Interior2-L.png", "caption": "Meeting room with smart technology" },
+    { "image": "markups/Markups_Interior3-L.png", "caption": "Quiet focus areas with acoustic panels" },
+    { "image": "markups/Markups_Night1-L.png", "caption": "Nighttime rendering showing lighting design" }
   ]
 }
