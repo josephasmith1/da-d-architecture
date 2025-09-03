@@ -7,7 +7,7 @@
   "size": "4,200 sq ft",
   "status": "Built",
   "services": ["Architecture", "Interior Design"],
-  "coverImage": "bel-air/Bel Air 2-L",
+  "coverImage": "modern-luxury-residence/pool-deck-lounge",
   "description": [
     "Perched on a dramatic hillside, this residence maximizes views while minimizing environmental impact through thoughtful terracing and native landscaping.",
     "The design features a central courtyard that brings natural light deep into the interior spaces and creates a focal point for family life."
@@ -18,15 +18,15 @@
     "Photographer": "Hillside Imagery"
   },
   "floorPlans": [
-    { "image": "bel-air/Bel Air 3-L.jpg", "caption": "Basement Level Floor Plan" },
-    { "image": "bel-air/Bel Air Living 1-L.jpg", "caption": "Main Level Floor Plan" },
-    { "image": "bel-air/Bel Air Bed 1-L.jpg", "caption": "Upper Level Floor Plan" }
+    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Basement Level Floor Plan" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Main Level Floor Plan" },
+    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Upper Level Floor Plan" }
   ],
   "gallery": [
-    { "image": "bel-air/Bel Air 2-L.jpg", "caption": "Entry facade with corten steel elements" },
-    { "image": "bel-air/Bel Air 3-L.jpg", "caption": "Living room with floor-to-ceiling windows" },
-    { "image": "bel-air/Bel Air 1-L.jpg", "caption": "Kitchen with custom oak cabinetry" },
-    { "image": "bel-air/Bel Air Living 1-L.jpg", "caption": "Master suite with private terrace" },
-    { "image": "bel-air/Bel Air Bed 1-L.jpg", "caption": "Home office with built-in shelving" }
+    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Entry facade with corten steel elements" },
+    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Living room with floor-to-ceiling windows" },
+    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Kitchen with custom oak cabinetry" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Master suite with private terrace" },
+    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Home office with built-in shelving" }
   ]
 }
