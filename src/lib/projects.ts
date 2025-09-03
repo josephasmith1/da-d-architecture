@@ -23,9 +23,24 @@ export type Project = {
   gallery: ProjectImage[];
 };
 
+// Helper to get the base URL
+function getBaseUrl() {
+  if (typeof window !== 'undefined') {
+    // Browser should use current origin
+    return '';
+  }
+  if (process.env.VERCEL_URL) {
+    // Reference for vercel.com deployments
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  // Assume localhost
+  return 'http://localhost:3000';
+}
+
 export async function getProject(slug: string): Promise<Project | null> {
   try {
-    const response = await fetch(`/api/projects/${slug}`);
+    const baseUrl = getBaseUrl();
+    const response = await fetch(`${baseUrl}/api/projects/${slug}`);
     if (!response.ok) {
       return null;
     }
@@ -38,7 +53,8 @@ export async function getProject(slug: string): Promise<Project | null> {
 
 export async function getAllProjects(): Promise<Project[]> {
   try {
-    const response = await fetch('/api/projects');
+    const baseUrl = getBaseUrl();
+    const response = await fetch(`${baseUrl}/api/projects`);
     if (!response.ok) {
       return [];
     }
