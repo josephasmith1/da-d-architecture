@@ -2,6 +2,7 @@
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { HeroCarousel } from "@/components/common/HeroCarousel";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
@@ -37,16 +38,7 @@ export default function Home() {
       <div className="min-h-screen bg-black text-white">
         <Header />
         <main>
-          <section className="relative h-screen">
-            <Image
-              src="/projects/legend/Legend LGD Cam 1-L.jpg"
-              alt="Hero Image"
-              fill
-              className="object-cover"
-              sizes="100vw"
-              priority
-            />
-          </section>
+          <HeroCarousel />
           <section className="h-screen bg-black flex items-center justify-center">
             <div className="text-left px-6 max-w-6xl mx-auto">
               <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-none text-gray-400">
@@ -116,17 +108,8 @@ function ParallaxHome() {
       <Header />
       
       <main>
-        {/* Large Hero Image */}
-        <section className="relative h-screen">
-          <Image
-            src="/hero-marinelli.jpg"
-            alt="Hero Image"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-        </section>
+        {/* Hero Carousel with Framer Motion */}
+        <HeroCarousel />
 
         {/* Full VH Text Section */}
         <section className="h-screen bg-black flex items-center justify-center" ref={firstTextRef}>
