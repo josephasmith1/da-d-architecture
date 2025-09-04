@@ -7,54 +7,51 @@ import { useState, useEffect } from 'react';
 const featuredImages = [
   '/projects/legend/Legend LGD Cam 1-L.jpg',
   '/projects/shia/Shia 1-L.jpg',
-  '/projects/marinelli/Marinelli 1-L.jpg',
-  '/projects/markups/Markups_Ariel1-L.png',
+  '/projects/contemporary-residence/front-facade-evening.jpg',
   '/projects/malibu-oceanfront-rebuild/ariel.png',
+  '/projects/modern-luxury-residence/pool-deck-lounge.jpg',
+  '/projects/contemporary-residence/aerial-perspective.jpg',
+  '/projects/markups/Markups_Ariel1-L.png',
   '/hero-marinelli.jpg',
 ];
 
 const transitions = [
   {
-    name: 'fade',
+    name: 'crossfade',
     initial: { opacity: 0 },
     animate: { opacity: 1 },
     exit: { opacity: 0 },
-    transition: { duration: 1.5, ease: 'easeInOut' }
+    transition: { duration: 0.7, ease: 'easeInOut' as const }
   },
   {
-    name: 'slideScale',
-    initial: { x: 300, scale: 0.9, opacity: 0 },
-    animate: { x: 0, scale: 1, opacity: 1 },
-    exit: { x: -300, scale: 1.1, opacity: 0 },
-    transition: { duration: 1.2, ease: [0.68, -0.55, 0.265, 1.55] }
+    name: 'slide',
+    initial: { x: '100%', opacity: 0.8 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: '-100%', opacity: 0.8 },
+    transition: { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] as const }
   },
   {
-    name: 'zoom',
-    initial: { scale: 1.2, opacity: 0 },
+    name: 'scale',
+    initial: { scale: 1.1, opacity: 0 },
     animate: { scale: 1, opacity: 1 },
-    exit: { scale: 0.8, opacity: 0 },
-    transition: { duration: 1.3, ease: 'easeInOut' }
+    exit: { scale: 0.95, opacity: 0 },
+    transition: { duration: 0.8, ease: 'easeInOut' as const }
   },
   {
-    name: 'rotate',
-    initial: { rotateY: 90, opacity: 0, scale: 0.9 },
-    animate: { rotateY: 0, opacity: 1, scale: 1 },
-    exit: { rotateY: -90, opacity: 0, scale: 0.9 },
-    transition: { duration: 1.4, ease: 'easeInOut' }
-  },
-  {
-    name: 'blur',
-    initial: { filter: 'blur(20px)', opacity: 0 },
-    animate: { filter: 'blur(0px)', opacity: 1 },
-    exit: { filter: 'blur(20px)', opacity: 0 },
-    transition: { duration: 1.2, ease: 'easeInOut' }
+    name: 'parallax',
+    initial: { scale: 1.3, x: 100, opacity: 0 },
+    animate: { scale: 1, x: 0, opacity: 1 },
+    exit: { scale: 1.1, x: -100, opacity: 0 },
+    transition: { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] as const }
   }
 ];
 
 export function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState(1);
   const [shuffledImages, setShuffledImages] = useState<string[]>([]);
   const [currentTransition, setCurrentTransition] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const shuffled = [...featuredImages].sort(() => Math.random() - 0.5);
@@ -65,20 +62,46 @@ export function HeroCarousel() {
     if (shuffledImages.length === 0) return;
     
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % shuffledImages.length);
-      setCurrentTransition((prevTransition) => (prevTransition + 1) % transitions.length);
-    }, 4000);
+      if (!isTransitioning) {
+        setIsTransitioning(true);
+        setNextIndex((currentIndex + 1) % shuffledImages.length);
+        setTimeout(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % shuffledImages.length);
+          setCurrentTransition((prevTransition) => (prevTransition + 1) % transitions.length);
+          setIsTransitioning(false);
+        }, 50);
+      }
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [shuffledImages]);
+  }, [shuffledImages, currentIndex, isTransitioning]);
+
+  useEffect(() => {
+    if (shuffledImages.length > 0) {
+      setNextIndex((currentIndex + 1) % shuffledImages.length);
+    }
+  }, [currentIndex, shuffledImages]);
 
   if (shuffledImages.length === 0) return null;
 
   const currentEffect = transitions[currentTransition];
 
   return (
-    <section className="relative h-screen overflow-hidden">
-      <AnimatePresence mode="wait">
+    <section className="relative h-screen overflow-hidden bg-black">
+      {/* Preload next image */}
+      {shuffledImages[nextIndex] && (
+        <div className="absolute inset-0 opacity-0 pointer-events-none">
+          <Image
+            src={shuffledImages[nextIndex]}
+            alt="Preload"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      )}
+      
+      <AnimatePresence mode="sync">
         <motion.div
           key={currentIndex}
           className="absolute inset-0"

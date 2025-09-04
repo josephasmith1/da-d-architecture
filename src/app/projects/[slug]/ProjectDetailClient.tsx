@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { PlanLightbox } from "@/components/projects/PlanLightbox";
 import { Button } from "@heroui/react";
+import Image from "next/image";
 import { Download } from 'lucide-react';
 import { ServiceChip } from "@/components/common/ServiceChip";
 import { useRef } from "react";
@@ -180,12 +181,12 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                       transition={{ duration: 0.8, delay: 0.1 * index }}
                     >
                       <div className="relative overflow-hidden rounded-lg bg-foreground-50 dark:bg-foreground-900 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <ResponsiveImage
-                          name={plan.image}
+                        <Image
+                          src={`/projects/${plan.image}`}
                           alt={plan.caption}
                           width={1200}
                           height={800}
-                          className="w-full h-auto"
+                          className="w-full h-auto object-contain"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                       </div>
