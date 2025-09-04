@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack -p 3001",
+    "dev": "node scripts/kill-port.js 3000 && next dev --turbopack",
+    "dev:clean": "npx kill-port 3000 && next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

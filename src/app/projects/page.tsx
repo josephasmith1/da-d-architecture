@@ -32,7 +32,7 @@ function ProjectSection({ project, index }: { project: Project; index: number })
           style={{ y: yImage, scale }}
         >
           <Image
-            src={`/projects/${project.coverImage}.jpg`}
+            src={`/projects/${project.coverImage}`}
             alt={project.title}
             fill
             className="object-cover"

@@ -1,0 +1,58 @@
+{
+  "slug": "malibu-oceanfront-rebuild",
+  "title": "Malibu Oceanfront Rebuild",
+  "category": "Residential",
+  "location": "Malibu, CA",
+  "year": "2025",
+  "size": "2,546 sq ft",
+  "status": "Built",
+  "services": ["Architecture", "Structural Engineering", "Landscape Design", "Fire Mitigation"],
+  "coverImage": "malibu-oceanfront-rebuild/ariel.png",
+  "description": [
+    "The 2025 wildfire devastated the previous home, destroying it down to its concrete foundation. After a thorough assessment with the homeowner's insurance company, rebuilding was determined to be the best course of action. The existing raised concrete platform and foundation caissons were carefully examined by DA+D Inc's structural engineers and found to be structurally sound for reuse.",
+    "Throughout the design process, our team worked hand-in-hand with the owner to create a home that not only provides significant protection against wildfires but also fulfills the evolving needs of a growing family. The new design features an open floor plan and incorporates passive solar elements along with modern amenities.",
+    "The resilience of the home was reinforced by implementing fire hardening measures that exceeded local building codes. As a result, the homeowner received a Wildfire Prepared Home Designation certificate from the Insurance Institute for Business & Home Safety (IBHS), leading to significant annual premium savings."
+  ],
+  "features": [
+    "3 Bedroom/3.5 Bath",
+    "Open floor plan",
+    "Master suite",
+    "Media Room",
+    "Outdoor Patio with Pool",
+    "Fire-hardened structure with defensive landscape measures",
+    "Beach access landscape terrace"
+  ],
+  "wildfire_mitigation": {
+    "structural": [
+      "Non-flammable concrete masonry unit (CMU) block wall construction with fire-retardant U-Stucco finish",
+      "No projections or eaves extending into side yards to minimize ember collection surfaces",
+      "Ember-resistant grilles on all perimeter wall and rooftop vents",
+      "Gravel bed rooftop to reduce flammable materials and dissipate heat",
+      "Exterior rooftop and side yard sprinkler system powered by on-site pool water pump generator"
+    ],
+    "landscape": [
+      "Zone 0 non-combustible ground cover surrounding the home",
+      "Low-lying, drought-resistant plants in gravel beds",
+      "Increased building setbacks to reduce radiant heat ignition risk from neighboring structures"
+    ]
+  },
+  "additionalInfo": {
+    "Client": "Private",
+    "Contractor": "To be determined",
+    "Structural Engineers": "DA+D Inc",
+    "Certification": "Wildfire Prepared Home Designation (IBHS)",
+    "Community Contribution": "Pro bono redesign of public coastal access route"
+  },
+  "floorPlans": [
+    { "image": "malibu-oceanfront-rebuild/floor-plan-level-1.pdf", "caption": "Level 1 Floor Plan" },
+    { "image": "malibu-oceanfront-rebuild/floor-plan-level-2.pdf", "caption": "Level 2 Floor Plan" }
+  ],
+  "gallery": [
+    { "image": "malibu-oceanfront-rebuild/ariel.png", "caption": "Aerial view showcasing fire-hardened structure and beach proximity" },
+    { "image": "malibu-oceanfront-rebuild/exterior-1.png", "caption": "Ocean-facing facade with non-flammable CMU block construction" },
+    { "image": "malibu-oceanfront-rebuild/exterior-2.png", "caption": "Side elevation showing ember-resistant design features" },
+    { "image": "malibu-oceanfront-rebuild/exterior-3.png", "caption": "Outdoor patio with pool doubling as fire suppression system" },
+    { "image": "malibu-oceanfront-rebuild/exterior-4.png", "caption": "Defensive landscape with Zone 0 non-combustible ground cover" },
+    { "image": "malibu-oceanfront-rebuild/sunset-1.png", "caption": "Sunset view highlighting the home's integration with coastal environment" }
+  ]
+}

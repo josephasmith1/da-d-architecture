@@ -7,6 +7,8 @@ import { Card, CardBody, Button } from "@heroui/react";
 import { motion } from "framer-motion";
 import { FireImageModal } from "@/components/fire-mitigation/FireImageModal";
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
+import Image from "next/image";
+import { Shield, Home, Droplets, Trees } from "lucide-react";
 
 export default function FireMitigationPage() {
   return (
@@ -173,6 +175,182 @@ export default function FireMitigationPage() {
                   </div>
                 </CardBody>
               </Card>
+            </motion.div>
+          </motion.div>
+        </Section>
+
+        {/* Malibu Oceanfront Rebuild Case Study */}
+        <Section className="py-16 bg-foreground-50 dark:bg-foreground-100">
+          <motion.div
+            className="max-w-6xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.3, duration: 0.5 }}
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-center">Case Study: Malibu Oceanfront Rebuild</h2>
+            <p className="text-center text-foreground-500 mb-12 max-w-3xl mx-auto">
+              A comprehensive wildfire resilience project demonstrating our advanced mitigation strategies
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 1.4, duration: 0.5 }}
+              >
+                <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                  <CardBody>
+                    <h3 className="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                      <Home className="w-6 h-6" />
+                      Project Overview
+                    </h3>
+                    <div className="space-y-3 text-foreground-500">
+                      <p><strong>Size:</strong> 2,546 square feet</p>
+                      <p><strong>Configuration:</strong> 3 Bedroom / 3.5 Bath</p>
+                      <p><strong>Features:</strong></p>
+                      <ul className="list-disc list-inside ml-4 space-y-2">
+                        <li>Open floor plan maximizing ocean views</li>
+                        <li>Master suite with private terrace</li>
+                        <li>Media Room</li>
+                        <li>Outdoor Patio with Pool</li>
+                        <li>Fire-hardened structure with defensive landscape</li>
+                        <li>Beach access landscape terrace</li>
+                      </ul>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
+              >
+                <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                  <CardBody>
+                    <h3 className="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                      <Shield className="w-6 h-6" />
+                      The Challenge
+                    </h3>
+                    <p className="text-foreground-500 mb-4">
+                      The 2025 wildfire devastated the previous home, destroying it down to its concrete foundation. 
+                      After a thorough assessment with the homeowner's insurance company, rebuilding was determined 
+                      to be the best course of action.
+                    </p>
+                    <p className="text-foreground-500 mb-4">
+                      The existing raised concrete platform and foundation caissons were carefully examined by 
+                      DA+D Inc's structural engineers and city inspectors, and found to be structurally sound 
+                      for reuse.
+                    </p>
+                    <p className="text-foreground-500">
+                      <strong>Achievement:</strong> The home received a Wildfire Prepared Home Designation 
+                      certificate from the Insurance Institute for Business & Home Safety (IBHS), resulting 
+                      in significant annual premium savings.
+                    </p>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.6, duration: 0.5 }}
+              >
+                <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                  <CardBody>
+                    <h3 className="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                      <Droplets className="w-6 h-6" />
+                      Wildfire Mitigation Measures
+                    </h3>
+                    <ul className="space-y-3 text-foreground-500">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Non-flammable CMU block wall construction with fire-retardant U-Stucco finish</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>No projections or eaves in side yards to prevent ember collection</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Ember-resistant grilles on all perimeter wall and rooftop vents</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Gravel bed rooftop to reduce flammable materials and dissipate heat</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Exterior sprinkler system powered by on-site pool water pump generator</span>
+                      </li>
+                    </ul>
+                  </CardBody>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.7, duration: 0.5 }}
+              >
+                <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+                  <CardBody>
+                    <h3 className="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                      <Trees className="w-6 h-6" />
+                      Defensive Landscape Measures
+                    </h3>
+                    <ul className="space-y-3 text-foreground-500">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Zone 0 non-combustible ground cover surrounding the home</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Low-lying, drought-resistant plants in gravel beds requiring minimal irrigation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Increased building setbacks to reduce radiant heat ignition risk</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span>Community contribution: Redesigned public coastal access route at no cost</span>
+                      </li>
+                    </ul>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            </div>
+
+            <motion.div
+              className="mt-12 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.8, duration: 0.5 }}
+            >
+              <Image
+                src="/projects/malibu-oceanfront-rebuild/ariel.png"
+                alt="Malibu Oceanfront Rebuild aerial view"
+                width={1200}
+                height={800}
+                className="rounded-lg shadow-xl mx-auto"
+              />
+              <p className="mt-4 text-foreground-500">Aerial view of the Malibu Oceanfront Rebuild project</p>
+            </motion.div>
+
+            <motion.div
+              className="mt-12 p-6 bg-primary/10 rounded-lg"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.9, duration: 0.5 }}
+            >
+              <p className="text-center text-lg font-medium">
+                By combining advanced construction techniques, thoughtful design choices, and proactive 
+                community involvement, this Malibu oceanfront rebuild offers lasting safety, comfort, 
+                and beauty for both the homeowner and the wider neighborhood.
+              </p>
             </motion.div>
           </motion.div>
         </Section>

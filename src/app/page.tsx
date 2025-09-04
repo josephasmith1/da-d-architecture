@@ -15,14 +15,14 @@ type Project = {
 };
 
 const projectData: Project[] = [
-  { slug: "legend-project", title: "Legend Project", coverImage: "legend/Legend LGD Cam 1-L", category: "Landscape" },
-  { slug: "marinelli-project", title: "Marinelli Project", coverImage: "marinelli/Marinelli render1-L", category: "Commercial" },
-  { slug: "shia-project", title: "Shia Project", coverImage: "shia/Shia 1-L", category: "Residential" },
-  { slug: "markups-project", title: "Rendering Markups Project", coverImage: "markups/Markups Ariel1-L", category: "Interior" },
-  { slug: "beach-house", title: "Modern Beach House", coverImage: "bel-air/Bel Air 1-L", category: "Residential" },
-  { slug: "hillside-residence", title: "Hillside Residence", coverImage: "bel-air/Bel Air 2-L", category: "Residential" },
-  { slug: "urban-office", title: "Urban Office Complex", coverImage: "bel-air/Bel Air 3-L", category: "Commercial" },
-  { slug: "coastal-retreat", title: "Coastal Retreat", coverImage: "bel-air/Bel Air 1-L", category: "Residential" }
+  { slug: "legend", title: "Legend Project", coverImage: "legend/Legend LGD Cam 1-L.jpg", category: "Landscape" },
+  { slug: "marinelli", title: "Marinelli Project", coverImage: "contemporary-residence/front-facade-evening.jpg", category: "Commercial" },
+  { slug: "shia", title: "Shia Project", coverImage: "shia/Shia 1-L.jpg", category: "Residential" },
+  { slug: "markups", title: "Rendering Markups Project", coverImage: "markups/Markups_Ariel1-L.png", category: "Interior" },
+  { slug: "beach-house", title: "Modern Beach House", coverImage: "modern-luxury-residence/pool-deck-lounge.jpg", category: "Residential" },
+  { slug: "hillside-residence", title: "Hillside Residence", coverImage: "contemporary-residence/aerial-perspective.jpg", category: "Residential" },
+  { slug: "urban-office", title: "Urban Office Complex", coverImage: "contemporary-residence/courtyard-view.jpg", category: "Commercial" },
+  { slug: "malibu-oceanfront-rebuild", title: "Malibu Oceanfront Rebuild", coverImage: "malibu-oceanfront-rebuild/ariel.png", category: "Residential" }
 ];
 
 export default function Home() {
@@ -60,7 +60,7 @@ export default function Home() {
                 <Link key={project.slug} href={`/projects/${project.slug}`}>
                   <div className="relative aspect-square overflow-hidden group cursor-pointer">
                     <Image
-                      src={`/projects/${project.coverImage}${project.slug === 'markups-project' ? '.png' : '.jpg'}`}
+                      src={`/projects/${project.coverImage}`}
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -169,7 +169,7 @@ function ParallaxHome() {
               <Link key={project.slug} href={`/projects/${project.slug}`}>
                 <div className="relative aspect-square overflow-hidden group cursor-pointer">
                   <Image
-                    src={`/projects/${project.coverImage}${project.slug === 'markups-project' ? '.png' : '.jpg'}`}
+                    src={`/projects/${project.coverImage}`}
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
