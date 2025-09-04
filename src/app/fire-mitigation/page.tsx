@@ -234,12 +234,12 @@ export default function FireMitigationPage() {
                     </h3>
                     <p className="text-foreground-500 mb-4">
                       The 2025 wildfire devastated the previous home, destroying it down to its concrete foundation. 
-                      After a thorough assessment with the homeowner's insurance company, rebuilding was determined 
+                      After a thorough assessment with the homeowner&apos;s insurance company, rebuilding was determined 
                       to be the best course of action.
                     </p>
                     <p className="text-foreground-500 mb-4">
                       The existing raised concrete platform and foundation caissons were carefully examined by 
-                      DA+D Inc's structural engineers and city inspectors, and found to be structurally sound 
+                      DA+D Inc&apos;s structural engineers and city inspectors, and found to be structurally sound 
                       for reuse.
                     </p>
                     <p className="text-foreground-500">
