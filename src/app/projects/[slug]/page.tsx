@@ -1,15 +1,17 @@
 import { notFound } from "next/navigation";
-import { getProject } from "@/lib/projects";
+import { getProjectBySlug, getProjectSlugs } from "@/lib/projects-static";
 import ProjectDetailClient from "./ProjectDetailClient";
 
-// Force dynamic rendering to avoid bundling large image files
-export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs';
+// Generate static params for all projects
+export async function generateStaticParams() {
+  const slugs = getProjectSlugs();
+  return slugs.map(slug => ({ slug }));
+}
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const project = await getProject(resolvedParams.slug);
+  const project = getProjectBySlug(resolvedParams.slug);
   
   if (!project) {
     return {
@@ -41,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const project = await getProject(resolvedParams.slug);
+  const project = getProjectBySlug(resolvedParams.slug);
   
   if (!project) {
     notFound();
