@@ -1,19 +1,20 @@
-# DA+D Inc. Architecture Website
+# DA+D Architecture Website
 
-A modern architecture firm website built with Next.js 15, HeroUI, and Tailwind CSS v4.1. This website showcases architectural projects with a focus on fire mitigation design and features a responsive, animated interface.
+A modern architecture firm website built with Next.js 15, featuring responsive design, parallax animations, and comprehensive project galleries. The site showcases architectural projects with a focus on contemporary design and fire mitigation expertise.
 
 ## Features
 
-- Responsive design with mobile navigation
-- Dark mode toggle (in progress)
-- Project showcase with infinite scroll animation
-- Team member profiles (6+ members)
-- FAQ section with accordion and comprehensive content (8+ items)
-- Contact form with Zod validation
-- Fire mitigation information with inline images and CTA
-- Project detail pages with Previous/Next navigation
-- Image galleries with lightbox functionality
-- Loading skeletons for improved UX
+- ✨ Responsive design optimized for all devices
+- 🌙 Dark/Light mode theme toggle
+- 🎨 Animated project showcase with infinite scroll
+- 👥 Team member profiles
+- ❓ Comprehensive FAQ section with accordion
+- 📧 Contact form with validation (React Hook Form + Zod)
+- 🔥 Fire mitigation expertise showcase
+- 🖼️ Project galleries with lightbox functionality
+- ⚡ Loading skeletons for optimal UX
+- 📍 Interactive maps with Mapbox GL
+- 🚀 Fast performance with Next.js 15 and Turbopack
 
 ## Getting Started
 
@@ -27,7 +28,7 @@ A modern architecture firm website built with Next.js 15, HeroUI, and Tailwind C
    npm run dev
    ```
 
-3. Open [http://localhost:3008](http://localhost:3008) in your browser (port 3000 may be in use)
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Project Structure
 
@@ -57,33 +58,58 @@ src/
 │   └── projects/      # Project JSON files
 ├── public/            # Static assets
 │   └── projects/      # Project images organized by project
-│       ├── bel-air/   # Bel Air project images
-│       ├── legend/   # Legend project images
-│       ├── marinelli/ # Marinelli project images
-│       ├── markups/  # Markups project images
-│       └── shia/     # Shia project images
+│       ├── contemporary-residence/    # Contemporary Residence images
+│       ├── legend/                   # Legend project images
+│       ├── markups/                  # Markups project images
+│       ├── modern-luxury-residence/  # Modern Luxury Residence images
+│       └── shia/                     # Shia project images
 └── styles/            # Global styles
     └── globals.css
 ```
 
-## Dependencies
+## Tech Stack
 
-- **Next.js 15** with App Router and Turbopack
-- **HeroUI** for UI components
-- **Tailwind CSS v4.1** for styling with advanced features
-- **Framer Motion** for animations
-- **React Hook Form** with Zod validation for forms
-- **Mapbox GL** for maps
-- **next-themes** for dark mode
-- **react-photo-album** for image galleries
-- **yet-another-react-lightbox** for image lightbox
+### Core Framework
+- **Next.js 15** - React framework with App Router and Turbopack
+- **TypeScript** - Type-safe development
+- **React 19** - Latest React features
 
-## Development
+### UI & Styling
+- **HeroUI** - Modern UI component library (NextUI fork)
+- **Tailwind CSS v4.1** - Utility-first CSS with advanced features
+- **Framer Motion** - Production-ready animation library
+- **next-themes** - Theme management with dark mode support
 
-This project uses:
-- TypeScript for type safety
-- ESLint for code quality
-- Prettier for code formatting
-- Tailwind CSS v4.1 for styling with advanced features like container queries and 3D transforms
+### Forms & Validation
+- **React Hook Form** - Performant forms with minimal re-renders
+- **Zod** - TypeScript-first schema validation
 
-All pages are built using HeroUI components with a clean, modern aesthetic focused on showcasing architectural work. The site features responsive design, smooth animations with Framer Motion, and comprehensive project showcases with lightbox galleries.
+### Galleries & Media
+- **react-photo-album** - Responsive photo galleries
+- **yet-another-react-lightbox** - Modern lightbox component
+- **Mapbox GL** - Interactive maps with react-map-gl
+
+## Development Commands
+
+```bash
+npm run dev      # Start development server with Turbopack
+npm run build    # Build for production
+npm start        # Start production server
+npm run lint     # Run ESLint
+npx tsc --noEmit # Type checking
+```
+
+## Project Highlights
+
+- **Static Site Generation** - All content is pre-rendered at build time for optimal performance
+- **File-based Content** - JSON-based content management system
+- **Responsive Design** - Mobile-first approach with fluid layouts
+- **Accessibility** - WCAG compliant with semantic HTML and ARIA labels
+- **SEO Optimized** - Meta tags, Open Graph, and structured data
+- **Performance** - Optimized images, code splitting, and lazy loading
+
+## Deployment
+
+The site is deployed on Vercel and automatically deploys on push to main branch.
+
+Live site: [da-d-architecture.vercel.app](https://da-d-architecture.vercel.app)

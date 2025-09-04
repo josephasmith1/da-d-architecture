@@ -1,5 +1,5 @@
 {
-  "slug": "markups-project",
+  "slug": "markups",
   "title": "Rendering Markups Project",
   "category": "Interior",
   "location": "Culver City, CA",
@@ -7,7 +7,7 @@
   "size": "8,500 sq ft",
   "status": "Design Phase",
   "services": ["Architecture", "Interior Design"],
-  "coverImage": "markups/Markups_Ariel1-L",
+  "coverImage": "markups/Markups_Ariel1-L.png",
   "description": [
     "Rendering Markups Project is a purpose-built facility for a digital design agency, featuring flexible workspaces that can adapt to evolving creative processes.",
     "The design emphasizes transparency and connectivity with glass partitions and open sightlines that encourage collaboration while maintaining focus areas."

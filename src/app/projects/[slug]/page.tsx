@@ -1,16 +1,10 @@
 import { notFound } from "next/navigation";
-import { getProject, getAllProjects } from "@/lib/projects";
+import { getProject } from "@/lib/projects";
 import ProjectDetailClient from "./ProjectDetailClient";
-import fs from "fs";
-import path from "path";
 
-// Generate static params for all projects
-export async function generateStaticParams() {
-  const projects = await getAllProjects();
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
-}
+// Force dynamic rendering to avoid bundling large image files
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -23,18 +17,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: 'The requested project could not be found.',
     };
   }
-  // Resolve OpenGraph image path by checking which extension exists (.jpg or .png)
+  
+  // Simple resolution without file system access
   const resolveOgImage = (coverImage: string): string => {
     // If extension already provided, use as-is
     if (coverImage.endsWith('.jpg') || coverImage.endsWith('.png')) {
       return `/projects/${coverImage}`;
     }
-    const baseDir = path.join(process.cwd(), 'public', 'projects');
-    const jpgPath = path.join(baseDir, `${coverImage}.jpg`);
-    const pngPath = path.join(baseDir, `${coverImage}.png`);
-    if (fs.existsSync(jpgPath)) return `/projects/${coverImage}.jpg`;
-    if (fs.existsSync(pngPath)) return `/projects/${coverImage}.png`;
-    // Fallback to .jpg to avoid undefined
+    // Default to .jpg extension
     return `/projects/${coverImage}.jpg`;
   };
 

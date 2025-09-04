@@ -1,5 +1,5 @@
 {
-  "slug": "shia-project",
+  "slug": "shia",
   "title": "Shia Project",
   "category": "Residential",
   "location": "Pacific Palisades, CA",
@@ -7,7 +7,7 @@
   "size": "4,800 sq ft",
   "status": "Built",
   "services": ["Architecture", "Interior Design", "Landscape Architecture"],
-  "coverImage": "shia/Shia 1-L",
+  "coverImage": "shia/Shia 1-L.jpg",
   "description": [
     "The Shia Project is a contemporary home that embraces the natural topography of its Pacific Palisades site.",
     "Built into the hillside, the design maximizes ocean views while minimizing its visual impact on the landscape."
