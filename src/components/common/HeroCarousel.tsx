@@ -95,7 +95,7 @@ export function HeroCarousel() {
             src={shuffledImages[nextIndex]}
             alt="Preload"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="100vw"
           />
         </div>
@@ -114,7 +114,7 @@ export function HeroCarousel() {
             src={shuffledImages[currentIndex]}
             alt="Featured Project"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="100vw"
             priority
           />
