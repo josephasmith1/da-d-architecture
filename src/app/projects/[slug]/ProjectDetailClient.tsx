@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { PlanLightbox } from "@/components/projects/PlanLightbox";
 import { Button } from "@heroui/react";
+import { Download } from 'lucide-react';
 import { ServiceChip } from "@/components/common/ServiceChip";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
@@ -155,6 +156,65 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
               </div>
             </motion.div>
           </Section>
+          
+          {/* Floor Plans section - only show if floor plans exist */}
+          {project.floorPlans && project.floorPlans.length > 0 && (
+            <Section className="py-0 pb-32">
+              <motion.div 
+                className="max-w-7xl mx-auto"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.4 }}
+              >
+                <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 max-w-4xl mx-auto">Floor Plans</h2>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {project.floorPlans.map((plan: { image: string; caption: string; pdf?: string }, index: number) => (
+                    <motion.div
+                      key={index}
+                      className="relative group"
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.8, delay: 0.1 * index }}
+                    >
+                      <div className="relative overflow-hidden rounded-lg bg-foreground-50 dark:bg-foreground-900 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <ResponsiveImage
+                          name={plan.image}
+                          alt={plan.caption}
+                          width={1200}
+                          height={800}
+                          className="w-full h-auto"
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+                      </div>
+                      <div className="mt-4 flex justify-between items-center">
+                        <p className="text-sm text-foreground-600 dark:text-foreground-400">
+                          {plan.caption}
+                        </p>
+                        {plan.pdf && (
+                          <Button
+                            size="sm"
+                            variant="flat"
+                            startContent={<Download className="w-4 h-4" />}
+                            onPress={() => {
+                              const link = document.createElement('a');
+                              link.href = `/projects/${plan.pdf}`;
+                              link.download = plan.caption + '.pdf';
+                              link.click();
+                            }}
+                          >
+                            Download PDF
+                          </Button>
+                        )}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            </Section>
+          )}
           
           {/* Gallery section */}
           <Section className="py-0 pb-32">

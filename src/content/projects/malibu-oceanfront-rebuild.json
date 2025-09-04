@@ -44,8 +44,8 @@
     "Community Contribution": "Pro bono redesign of public coastal access route"
   },
   "floorPlans": [
-    { "image": "malibu-oceanfront-rebuild/floor-plan-level-1.pdf", "caption": "Level 1 Floor Plan" },
-    { "image": "malibu-oceanfront-rebuild/floor-plan-level-2.pdf", "caption": "Level 2 Floor Plan" }
+    { "image": "malibu-oceanfront-rebuild/floor-plan-level-1.png", "caption": "Level 1 Floor Plan - Main Living Areas", "pdf": "malibu-oceanfront-rebuild/floor-plan-level-1.pdf" },
+    { "image": "malibu-oceanfront-rebuild/floor-plan-level-2.png", "caption": "Level 2 Floor Plan - Bedrooms & Media Room", "pdf": "malibu-oceanfront-rebuild/floor-plan-level-2.pdf" }
   ],
   "gallery": [
     { "image": "malibu-oceanfront-rebuild/ariel.png", "caption": "Aerial view showcasing fire-hardened structure and beach proximity" },
