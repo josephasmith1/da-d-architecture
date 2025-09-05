@@ -62,6 +62,7 @@ export const metadata: Metadata = {
 
 import { Providers } from "@/app/providers";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/structured-data";
+import { WebVitals } from "@/components/seo/WebVitals";
 
 export default function RootLayout({
   children,
@@ -89,6 +90,7 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning>
         <Providers>
+          <WebVitals />
           {children}
         </Providers>
       </body>

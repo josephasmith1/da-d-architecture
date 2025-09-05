@@ -9,10 +9,11 @@ import { Button } from "@heroui/react";
 import Image from "next/image";
 import { Download } from 'lucide-react';
 import { ServiceChip } from "@/components/common/ServiceChip";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { type Project } from "@/lib/projects";
+import { generateProjectSchema, generateWebPageSchema } from "@/lib/structured-data";
 
 export default function ProjectDetailClient({ project }: { project: Project }) {
   const router = useRouter();
@@ -24,6 +25,45 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
   const heroOpacity = useTransform(scrollY, [0, 600], [1, 0]);
   const titleParallax = useTransform(scrollY, [0, 800], [0, -200]);
   const titleOpacity = useTransform(scrollY, [0, 400], [1, 0]);
+  
+  useEffect(() => {
+    const projectSchema = generateProjectSchema({
+      title: project.title,
+      description: project.description.join(' '),
+      slug: project.slug,
+      images: project.gallery?.map(g => g.image) || [],
+      location: project.location,
+      projectType: project.category,
+      year: parseInt(project.year),
+      client: project.additionalInfo?.Client
+    });
+    
+    const webPageSchema = generateWebPageSchema({
+      title: `${project.title} - Architecture Project`,
+      description: project.description[0],
+      path: `/projects/${project.slug}`,
+      breadcrumbs: [
+        { name: 'Home', url: 'https://da-designinc.com' },
+        { name: 'Projects', url: 'https://da-designinc.com/projects' },
+        { name: project.title, url: `https://da-designinc.com/projects/${project.slug}` }
+      ]
+    });
+    
+    const script1 = document.createElement('script');
+    script1.type = 'application/ld+json';
+    script1.text = JSON.stringify(projectSchema);
+    document.head.appendChild(script1);
+    
+    const script2 = document.createElement('script');
+    script2.type = 'application/ld+json';
+    script2.text = JSON.stringify(webPageSchema);
+    document.head.appendChild(script2);
+    
+    return () => {
+      if (script1.parentNode) script1.parentNode.removeChild(script1);
+      if (script2.parentNode) script2.parentNode.removeChild(script2);
+    };
+  }, [project]);
   
   return (
     <div className="min-h-screen bg-background">

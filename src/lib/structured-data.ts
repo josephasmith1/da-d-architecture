@@ -84,15 +84,17 @@ export function generateOrganizationSchema() {
   };
 }
 
-export function generateWebPageSchema(page: {
+interface WebPageSchemaProps {
   title: string;
   description: string;
   path: string;
   datePublished?: string;
   dateModified?: string;
   breadcrumbs?: Array<{ name: string; url: string }>;
-}) {
-  const schema: any = {
+}
+
+export function generateWebPageSchema(page: WebPageSchemaProps) {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": `${seoConfig.siteUrl}${page.path}#webpage`,
@@ -161,7 +163,7 @@ export function generateProjectSchema(project: {
   projectType?: string;
   year?: number;
   client?: string;
-  sqft?: number;
+  size?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -188,12 +190,7 @@ export function generateProjectSchema(project: {
     about: {
       "@type": "ArchitecturalStructure",
       name: project.title,
-      description: project.description,
-      floorSize: project.sqft ? {
-        "@type": "QuantitativeValue",
-        value: project.sqft,
-        unitCode: "FTK"
-      } : undefined
+      description: project.description
     }
   };
 }
