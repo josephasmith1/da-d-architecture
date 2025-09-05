@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node scripts/kill-port.js 3000 && next dev --turbopack",
     "dev:clean": "npx kill-port 3000 && next dev --turbopack",
+    "prebuild": "node scripts/generate-image-manifest.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

@@ -1,0 +1,417 @@
+{
+  "/projects/contemporary-residence/aerial-perspective.jpg": {
+    "base": "/projects/contemporary-residence/aerial-perspective.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/aerial-perspective.jpg",
+        "orientation": "landscape",
+        "filename": "aerial-perspective.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/architectural-detail.jpg": {
+    "base": "/projects/contemporary-residence/architectural-detail.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/architectural-detail.jpg",
+        "orientation": "landscape",
+        "filename": "architectural-detail.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/courtyard-view.jpg": {
+    "base": "/projects/contemporary-residence/courtyard-view.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/courtyard-view.jpg",
+        "orientation": "landscape",
+        "filename": "courtyard-view.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/entrance-detail.jpg": {
+    "base": "/projects/contemporary-residence/entrance-detail.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/entrance-detail.jpg",
+        "orientation": "landscape",
+        "filename": "entrance-detail.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/front-facade-daytime.jpg": {
+    "base": "/projects/contemporary-residence/front-facade-daytime.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/front-facade-daytime.jpg",
+        "orientation": "landscape",
+        "filename": "front-facade-daytime.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/front-facade-evening.jpg": {
+    "base": "/projects/contemporary-residence/front-facade-evening.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/front-facade-evening.jpg",
+        "orientation": "landscape",
+        "filename": "front-facade-evening.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/garage-entrance.jpg": {
+    "base": "/projects/contemporary-residence/garage-entrance.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/garage-entrance.jpg",
+        "orientation": "landscape",
+        "filename": "garage-entrance.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/landscape-integration.jpg": {
+    "base": "/projects/contemporary-residence/landscape-integration.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/landscape-integration.jpg",
+        "orientation": "landscape",
+        "filename": "landscape-integration.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/rear-elevation.jpg": {
+    "base": "/projects/contemporary-residence/rear-elevation.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/rear-elevation.jpg",
+        "orientation": "landscape",
+        "filename": "rear-elevation.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/side-view-modern.jpg": {
+    "base": "/projects/contemporary-residence/side-view-modern.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/side-view-modern.jpg",
+        "orientation": "landscape",
+        "filename": "side-view-modern.jpg"
+      }
+    ]
+  },
+  "/projects/legend/Legend LGD Cam 1.jpg": {
+    "base": "/projects/legend/Legend LGD Cam 1.jpg",
+    "variants": [
+      {
+        "path": "/projects/legend/Legend LGD Cam 1-L.jpg",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 1-L.jpg"
+      }
+    ]
+  },
+  "/projects/legend/Legend LGD Cam 4.jpg": {
+    "base": "/projects/legend/Legend LGD Cam 4.jpg",
+    "variants": [
+      {
+        "path": "/projects/legend/Legend LGD Cam 4-L.jpg",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 4-L.jpg"
+      }
+    ]
+  },
+  "/projects/legend/Legend LGD Cam 5.jpg": {
+    "base": "/projects/legend/Legend LGD Cam 5.jpg",
+    "variants": [
+      {
+        "path": "/projects/legend/Legend LGD Cam 5-L.jpg",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 5-L.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/ariel.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/ariel.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/ariel.png",
+        "orientation": "landscape",
+        "filename": "ariel.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/exterior-1.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/exterior-1.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/exterior-1.png",
+        "orientation": "landscape",
+        "filename": "exterior-1.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/exterior-2.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/exterior-2.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/exterior-2.png",
+        "orientation": "landscape",
+        "filename": "exterior-2.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/exterior-3.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/exterior-3.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/exterior-3.png",
+        "orientation": "landscape",
+        "filename": "exterior-3.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/exterior-4.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/exterior-4.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/exterior-4.png",
+        "orientation": "landscape",
+        "filename": "exterior-4.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/floor-plan-level-1.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/floor-plan-level-1.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/floor-plan-level-1.png",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-1.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/floor-plan-level-2.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/floor-plan-level-2.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/floor-plan-level-2.png",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-2.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/sunset-1.png": {
+    "base": "/projects/malibu-oceanfront-rebuild/sunset-1.png",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/sunset-1.png",
+        "orientation": "landscape",
+        "filename": "sunset-1.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Ariel1.png": {
+    "base": "/projects/markups/Markups_Ariel1.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Ariel1-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Ariel1-L.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Daylight1.png": {
+    "base": "/projects/markups/Markups_Daylight1.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Daylight1-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight1-L.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Daylight3.png": {
+    "base": "/projects/markups/Markups_Daylight3.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Daylight3-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight3-L.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Interior1_9.png": {
+    "base": "/projects/markups/Markups_Interior1_9.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Interior1_9-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Interior1_9-L.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Interior2.png": {
+    "base": "/projects/markups/Markups_Interior2.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Interior2-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Interior2-L.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Interior3.png": {
+    "base": "/projects/markups/Markups_Interior3.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Interior3-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Interior3-L.png"
+      }
+    ]
+  },
+  "/projects/markups/Markups_Night1.png": {
+    "base": "/projects/markups/Markups_Night1.png",
+    "variants": [
+      {
+        "path": "/projects/markups/Markups_Night1-L.png",
+        "orientation": "landscape",
+        "filename": "Markups_Night1-L.png"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/driveway-evening.jpg": {
+    "base": "/projects/modern-luxury-residence/driveway-evening.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/driveway-evening-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "driveway-evening-portrait.jpg"
+      },
+      {
+        "path": "/projects/modern-luxury-residence/driveway-evening.jpg",
+        "orientation": "landscape",
+        "filename": "driveway-evening.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/exterior-pool-view.jpg": {
+    "base": "/projects/modern-luxury-residence/exterior-pool-view.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/exterior-pool-view-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait.jpg"
+      },
+      {
+        "path": "/projects/modern-luxury-residence/exterior-pool-view.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/living-room-interior.jpg": {
+    "base": "/projects/modern-luxury-residence/living-room-interior.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/living-room-interior-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait.jpg"
+      },
+      {
+        "path": "/projects/modern-luxury-residence/living-room-interior.jpg",
+        "orientation": "landscape",
+        "filename": "living-room-interior.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/master-bedroom-city-view.jpg": {
+    "base": "/projects/modern-luxury-residence/master-bedroom-city-view.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/master-bedroom-city-view-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait.jpg"
+      },
+      {
+        "path": "/projects/modern-luxury-residence/master-bedroom-city-view.jpg",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/pool-deck-lounge.jpg": {
+    "base": "/projects/modern-luxury-residence/pool-deck-lounge.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/pool-deck-lounge-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait.jpg"
+      },
+      {
+        "path": "/projects/modern-luxury-residence/pool-deck-lounge.jpg",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge.jpg"
+      }
+    ]
+  },
+  "/projects/shia/Shia 1.jpg": {
+    "base": "/projects/shia/Shia 1.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/Shia 1-L.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 1-L.jpg"
+      }
+    ]
+  },
+  "/projects/shia/Shia 2.jpg": {
+    "base": "/projects/shia/Shia 2.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/Shia 2-L.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 2-L.jpg"
+      }
+    ]
+  },
+  "/projects/shia/Shia 3.jpg": {
+    "base": "/projects/shia/Shia 3.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/Shia 3-L.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 3-L.jpg"
+      }
+    ]
+  },
+  "/projects/shia/Shia 4.jpg": {
+    "base": "/projects/shia/Shia 4.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/Shia 4-L.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 4-L.jpg"
+      }
+    ]
+  },
+  "/projects/shia/Shia 5.jpg": {
+    "base": "/projects/shia/Shia 5.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/Shia 5-L.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 5-L.jpg"
+      }
+    ]
+  },
+  "/projects/shia/Shia 6.jpg": {
+    "base": "/projects/shia/Shia 6.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/Shia 6-L.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 6-L.jpg"
+      }
+    ]
+  }
+}
