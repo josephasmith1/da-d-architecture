@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Section } from "@/components/ui/Section";
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { PlanLightbox } from "@/components/projects/PlanLightbox";
+import { HeroVideo } from "@/components/projects/HeroVideo";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import { Download } from 'lucide-react';
@@ -71,7 +72,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
       
       <main className="relative">
         {/* Full-screen parallax hero with video or image */}
-        <div ref={heroRef} className="relative h-screen w-full overflow-hidden bg-black">
+        <div ref={heroRef} className="relative h-screen w-screen overflow-hidden bg-black -mx-[calc((100vw-100%)/2)]">
           <motion.div 
             className="absolute inset-0 w-full h-full"
             style={{ 
@@ -82,19 +83,12 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
           >
             {project.video ? (
               <>
-                {/* Video background */}
-                <video
-                  className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
-                  style={{ objectFit: 'cover' }}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                {/* Video background with forward-reverse playback */}
+                <HeroVideo
+                  mp4Src={project.video.mp4}
+                  webmSrc={project.video.webm}
                   poster={project.video.poster}
-                >
-                  <source src={project.video.webm} type="video/webm" />
-                  <source src={project.video.mp4} type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
               </>
             ) : (
