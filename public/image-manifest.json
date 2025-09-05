@@ -1,4 +1,79 @@
 {
+  "/projects/beach-house/driveway-evening.jpg": {
+    "base": "/projects/beach-house/driveway-evening.jpg",
+    "variants": [
+      {
+        "path": "/projects/beach-house/driveway-evening-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "driveway-evening-portrait.jpg"
+      },
+      {
+        "path": "/projects/beach-house/driveway-evening.jpg",
+        "orientation": "landscape",
+        "filename": "driveway-evening.jpg"
+      }
+    ]
+  },
+  "/projects/beach-house/exterior-pool-view.jpg": {
+    "base": "/projects/beach-house/exterior-pool-view.jpg",
+    "variants": [
+      {
+        "path": "/projects/beach-house/exterior-pool-view-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait.jpg"
+      },
+      {
+        "path": "/projects/beach-house/exterior-pool-view.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view.jpg"
+      }
+    ]
+  },
+  "/projects/beach-house/living-room-interior.jpg": {
+    "base": "/projects/beach-house/living-room-interior.jpg",
+    "variants": [
+      {
+        "path": "/projects/beach-house/living-room-interior-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait.jpg"
+      },
+      {
+        "path": "/projects/beach-house/living-room-interior.jpg",
+        "orientation": "landscape",
+        "filename": "living-room-interior.jpg"
+      }
+    ]
+  },
+  "/projects/beach-house/master-bedroom-city-view.jpg": {
+    "base": "/projects/beach-house/master-bedroom-city-view.jpg",
+    "variants": [
+      {
+        "path": "/projects/beach-house/master-bedroom-city-view-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait.jpg"
+      },
+      {
+        "path": "/projects/beach-house/master-bedroom-city-view.jpg",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view.jpg"
+      }
+    ]
+  },
+  "/projects/beach-house/pool-deck-lounge.jpg": {
+    "base": "/projects/beach-house/pool-deck-lounge.jpg",
+    "variants": [
+      {
+        "path": "/projects/beach-house/pool-deck-lounge-portrait.jpg",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait.jpg"
+      },
+      {
+        "path": "/projects/beach-house/pool-deck-lounge.jpg",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge.jpg"
+      }
+    ]
+  },
   "/projects/contemporary-residence/.optimized/aerial-perspective-1024w.webp": {
     "base": "/projects/contemporary-residence/.optimized/aerial-perspective-1024w.webp",
     "variants": [
@@ -1106,6 +1181,16 @@
         "path": "/projects/malibu-oceanfront-rebuild/floor-plan-level-2.png",
         "orientation": "landscape",
         "filename": "floor-plan-level-2.png"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/ocean-render-poster.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/ocean-render-poster.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/ocean-render-poster.jpg",
+        "orientation": "landscape",
+        "filename": "ocean-render-poster.jpg"
       }
     ]
   },

@@ -70,10 +70,17 @@ export function ProjectVideo({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="relative aspect-video bg-black">
+      <div className="relative aspect-video overflow-hidden">
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full"
+          style={{
+            objectFit: 'cover',
+            width: '100%',
+            height: '100%',
+            minWidth: '100%',
+            minHeight: '100%'
+          }}
           poster={poster}
           autoPlay={autoPlay}
           loop={loop}

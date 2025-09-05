@@ -18,15 +18,15 @@
     "Photographer": "Cityscape Studios"
   },
   "floorPlans": [
-    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Ground Floor Plan" },
-    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Mezzanine Level Plan" },
-    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Roof Level Plan" }
+    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Contemporary building with pool terrace" },
+    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Outdoor amenity space with loungers" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Modern interior with open plan design" }
   ],
   "gallery": [
-    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Original facade with new glass insertions" },
-    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Open office layout with exposed beams" },
-    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Conference room with smart glass partitions" },
-    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Rooftop terrace with city views" },
-    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Breakout spaces with custom furniture" }
+    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Evening view of illuminated contemporary building" },
+    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Modern architecture with infinity pool and lawn" },
+    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Pool deck with covered outdoor area" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Double-height space with sculptural lighting" },
+    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Executive suite with panoramic city views" }
   ]
 }

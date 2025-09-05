@@ -18,14 +18,14 @@
     "Photographer": "Ocean View Photography"
   },
   "floorPlans": [
-    { "image": "beach-house/living-room-interior.jpg", "caption": "Level 1 Floor Plan" },
-    { "image": "beach-house/master-bedroom-city-view.jpg", "caption": "Level 2 Floor Plan" }
+    { "image": "beach-house/living-room-interior.jpg", "caption": "Double-height living space with dramatic chandelier and floor-to-ceiling windows" },
+    { "image": "beach-house/master-bedroom-city-view.jpg", "caption": "Master bedroom with wood-paneled accent wall and city skyline views" }
   ],
   "gallery": [
-    { "image": "beach-house/exterior-pool-view.jpg", "caption": "Ocean-facing facade with natural stone accents" },
-    { "image": "beach-house/pool-deck-lounge.jpg", "caption": "Living room with panoramic sea views" },
-    { "image": "beach-house/driveway-evening.jpg", "caption": "Master bedroom suite with private deck" },
-    { "image": "beach-house/living-room-interior.jpg", "caption": "Open kitchen and dining area" },
-    { "image": "beach-house/master-bedroom-city-view.jpg", "caption": "Spa-like bathroom with minimalist fixtures" }
+    { "image": "beach-house/exterior-pool-view.jpg", "caption": "Modern two-story residence with infinity pool and expansive lawn" },
+    { "image": "beach-house/pool-deck-lounge.jpg", "caption": "Pool deck with loungers overlooking glass-walled living spaces" },
+    { "image": "beach-house/driveway-evening.jpg", "caption": "Evening view of illuminated entry courtyard with stone facades" },
+    { "image": "beach-house/living-room-interior.jpg", "caption": "Open-plan living area with contemporary furnishings and sculptural lighting" },
+    { "image": "beach-house/master-bedroom-city-view.jpg", "caption": "Spacious master suite with wood accents and panoramic urban views" }
   ]
 }

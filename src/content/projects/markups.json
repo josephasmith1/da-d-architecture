@@ -1,33 +1,37 @@
 {
   "slug": "markups",
-  "title": "Rendering Markups Project",
-  "category": "Interior",
-  "location": "Culver City, CA",
+  "title": "Modern Forest Cabin",
+  "category": "Residential",
+  "location": "Big Bear, CA",
   "year": "2024",
-  "size": "8,500 sq ft",
-  "status": "Design Phase",
-  "services": ["Architecture", "Interior Design"],
+  "size": "2,200 sq ft",
+  "status": "Built",
+  "services": ["Architecture", "Interior Design", "Landscape Design"],
   "coverImage": "markups/Markups_Ariel1-L.png",
+  "video": {
+    "mp4": "/projects/markups/aerial-render-loop.mp4",
+    "webm": "/projects/markups/aerial-render-loop.webm"
+  },
   "description": [
-    "Rendering Markups Project is a purpose-built facility for a digital design agency, featuring flexible workspaces that can adapt to evolving creative processes.",
-    "The design emphasizes transparency and connectivity with glass partitions and open sightlines that encourage collaboration while maintaining focus areas."
+    "This modern cabin retreat seamlessly blends contemporary design with the natural forest landscape, featuring a striking black metal exterior that complements the surrounding woodland.",
+    "The elongated single-story design maximizes natural light through floor-to-ceiling windows while maintaining privacy and energy efficiency with strategic orientation and high-performance glazing."
   ],
   "additionalInfo": {
-    "Client": "Markups Inc.",
-    "Contractor": "TBD",
-    "Photographer": "Design Visualization Studio"
+    "Client": "Private",
+    "Contractor": "Mountain Modern Builders",
+    "Photographer": "Forest Architecture Photography"
   },
   "floorPlans": [
-    { "image": "markups/Markups_Daylight1-L.png", "caption": "Main Floor Plan" },
-    { "image": "markups/Markups_Daylight3-L.png", "caption": "Upper Level Plan" }
+    { "image": "markups/Markups_Daylight1-L.png", "caption": "Ground floor plan with daylight analysis" },
+    { "image": "markups/Markups_Daylight3-L.png", "caption": "Roof plan showing skylight placement" }
   ],
   "gallery": [
-    { "image": "markups/Markups_Ariel1-L.png", "caption": "Aerial view of the proposed site" },
-    { "image": "markups/Markups_Daylight1-L.png", "caption": "Daylighting analysis floor plan" },
-    { "image": "markups/Markups_Daylight3-L.png", "caption": "Daylighting analysis upper level" },
-    { "image": "markups/Markups_Interior1_9-L.png", "caption": "Concept rendering of main workspace" },
-    { "image": "markups/Markups_Interior2-L.png", "caption": "Meeting room with smart technology" },
-    { "image": "markups/Markups_Interior3-L.png", "caption": "Quiet focus areas with acoustic panels" },
-    { "image": "markups/Markups_Night1-L.png", "caption": "Nighttime rendering showing lighting design" }
+    { "image": "markups/Markups_Ariel1-L.png", "caption": "Aerial view of modern black cabin nestled in forest clearing" },
+    { "image": "markups/Markups_Daylight1-L.png", "caption": "Daylight study showing natural illumination patterns" },
+    { "image": "markups/Markups_Daylight3-L.png", "caption": "Solar exposure analysis for passive heating" },
+    { "image": "markups/Markups_Interior1_9-L.png", "caption": "Open-plan living area with vaulted ceiling and modern fireplace" },
+    { "image": "markups/Markups_Interior2-L.png", "caption": "Minimalist bedroom with corner windows framing forest views" },
+    { "image": "markups/Markups_Interior3-L.png", "caption": "Modern bathroom with natural wood accents" },
+    { "image": "markups/Markups_Night1-L.png", "caption": "Evening exterior view with warm interior lighting" }
   ]
 }

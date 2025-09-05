@@ -18,12 +18,12 @@
     "Photographer": "Premier Property Photography"
   },
   "floorPlans": [
-    { "image": "legend/Legend LGD Cam 4-L.jpg", "caption": "Main Level Floor Plan" },
-    { "image": "legend/Legend LGD Cam 5-L.jpg", "caption": "Upper Level Floor Plan" }
+    { "image": "legend/Legend LGD Cam 4-L.jpg", "caption": "Open kitchen with exposed wood beams and island seating" },
+    { "image": "legend/Legend LGD Cam 5-L.jpg", "caption": "Open-plan living area with vaulted ceiling and piano" }
   ],
   "gallery": [
-    { "image": "legend/Legend LGD Cam 1-L.jpg", "caption": "Front facade with minimalist design" },
-    { "image": "legend/Legend LGD Cam 4-L.jpg", "caption": "Living spaces with panoramic windows" },
-    { "image": "legend/Legend LGD Cam 5-L.jpg", "caption": "Master suite with private balcony" }
+    { "image": "legend/Legend LGD Cam 1-L.jpg", "caption": "Modern pavilion-style structure with deck and loungers" },
+    { "image": "legend/Legend LGD Cam 4-L.jpg", "caption": "Contemporary kitchen with wood cabinetry and exposed ceiling beams" },
+    { "image": "legend/Legend LGD Cam 5-L.jpg", "caption": "Spacious living room with cathedral ceiling and floor-to-ceiling windows" }
   ]
 }

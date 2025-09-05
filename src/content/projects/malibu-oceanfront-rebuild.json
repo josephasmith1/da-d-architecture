@@ -14,8 +14,8 @@
     "The resilience of the home was reinforced by implementing fire hardening measures that exceeded local building codes. As a result, the homeowner received a Wildfire Prepared Home Designation certificate from the Insurance Institute for Business & Home Safety (IBHS), leading to significant annual premium savings."
   ],
   "video": {
-    "mp4": "/projects/malibu-oceanfront-rebuild/ocean-render.mp4",
-    "webm": "/projects/malibu-oceanfront-rebuild/ocean-render.webm",
+    "mp4": "/projects/malibu-oceanfront-rebuild/ocean-render-loop.mp4",
+    "webm": "/projects/malibu-oceanfront-rebuild/ocean-render-loop.webm",
     "poster": "/projects/malibu-oceanfront-rebuild/ocean-render-poster.jpg",
     "caption": "3D architectural visualization of the Malibu oceanfront rebuild design"
   },
@@ -54,11 +54,11 @@
     { "image": "malibu-oceanfront-rebuild/floor-plan-level-2.png", "caption": "Level 2 Floor Plan - Bedrooms & Media Room", "pdf": "malibu-oceanfront-rebuild/floor-plan-level-2.pdf" }
   ],
   "gallery": [
-    { "image": "malibu-oceanfront-rebuild/ariel.png", "caption": "Aerial view showcasing fire-hardened structure and beach proximity" },
-    { "image": "malibu-oceanfront-rebuild/exterior-1.png", "caption": "Ocean-facing facade with non-flammable CMU block construction" },
-    { "image": "malibu-oceanfront-rebuild/exterior-2.png", "caption": "Side elevation showing ember-resistant design features" },
-    { "image": "malibu-oceanfront-rebuild/exterior-3.png", "caption": "Outdoor patio with pool doubling as fire suppression system" },
-    { "image": "malibu-oceanfront-rebuild/exterior-4.png", "caption": "Defensive landscape with Zone 0 non-combustible ground cover" },
-    { "image": "malibu-oceanfront-rebuild/sunset-1.png", "caption": "Sunset view highlighting the home's integration with coastal environment" }
+    { "image": "malibu-oceanfront-rebuild/ariel.png", "caption": "Aerial view of modern beach house with solar panels and terraced landscape" },
+    { "image": "malibu-oceanfront-rebuild/exterior-1.png", "caption": "Street view of two-story modern residence with ocean backdrop" },
+    { "image": "malibu-oceanfront-rebuild/exterior-2.png", "caption": "Corner view showing geometric white facade and desert landscaping" },
+    { "image": "malibu-oceanfront-rebuild/exterior-3.png", "caption": "Rear elevation with pool terrace and mountain views" },
+    { "image": "malibu-oceanfront-rebuild/exterior-4.png", "caption": "Pool-facing facade with floor-to-ceiling glass and mountain backdrop" },
+    { "image": "malibu-oceanfront-rebuild/sunset-1.png", "caption": "Interior bedroom with decorative screens and ocean sunset view" }
   ]
 }

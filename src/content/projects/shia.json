@@ -18,16 +18,16 @@
     "Photographer": "Coastal Home Imagery"
   },
   "floorPlans": [
-    { "image": "shia/Shia 2-L.jpg", "caption": "Entry Level Floor Plan" },
-    { "image": "shia/Shia 3-L.jpg", "caption": "Living Level Floor Plan" },
-    { "image": "shia/Shia 4-L.jpg", "caption": "Bedroom Level Floor Plan" }
+    { "image": "shia/Shia 2-L.jpg", "caption": "Modern cubic volumes with horizontal canopy" },
+    { "image": "shia/Shia 3-L.jpg", "caption": "Garden view with mature trees and Japanese pine" },
+    { "image": "shia/Shia 4-L.jpg", "caption": "Entry facade with stepped landscaping and garage" }
   ],
   "gallery": [
-    { "image": "shia/Shia 1-L.jpg", "caption": "Ocean-view facade with natural materials" },
-    { "image": "shia/Shia 2-L.jpg", "caption": "Entry courtyard with water feature" },
-    { "image": "shia/Shia 3-L.jpg", "caption": "Living room with floor-to-ceiling glass" },
-    { "image": "shia/Shia 4-L.jpg", "caption": "Kitchen with panoramic ocean views" },
-    { "image": "shia/Shia 5-L.jpg", "caption": "Master bedroom with private terrace" },
-    { "image": "shia/Shia 6-L.jpg", "caption": "Pool area integrated with landscape" }
+    { "image": "shia/Shia 1-L.jpg", "caption": "Contemporary residence with horizontal roof plane and cubic volumes" },
+    { "image": "shia/Shia 2-L.jpg", "caption": "Corner view showing concrete and glass composition" },
+    { "image": "shia/Shia 3-L.jpg", "caption": "Side elevation with sculptural trees and manicured lawn" },
+    { "image": "shia/Shia 4-L.jpg", "caption": "Front approach with terraced garden and integrated garage" },
+    { "image": "shia/Shia 5-L.jpg", "caption": "Evening view with illuminated interiors" },
+    { "image": "shia/Shia 6-L.jpg", "caption": "Landscape integration with native plantings" }
   ]
 }

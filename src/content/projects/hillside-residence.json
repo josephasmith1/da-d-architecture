@@ -18,15 +18,15 @@
     "Photographer": "Hillside Imagery"
   },
   "floorPlans": [
-    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Basement Level Floor Plan" },
-    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Main Level Floor Plan" },
-    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Upper Level Floor Plan" }
+    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Evening view of stone-clad contemporary residence with courtyard" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Double-height living space with sculptural chandelier" },
+    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Master bedroom with wood-paneled feature wall" }
   ],
   "gallery": [
-    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Entry facade with corten steel elements" },
-    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Living room with floor-to-ceiling windows" },
-    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Kitchen with custom oak cabinetry" },
-    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Master suite with private terrace" },
-    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Home office with built-in shelving" }
+    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Pool terrace with loungers and covered outdoor living area" },
+    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Twilight view of illuminated modern residence with paved courtyard" },
+    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Two-story home with infinity pool and manicured lawn" },
+    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Open-plan living with contemporary furnishings and dramatic lighting" },
+    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Luxurious bedroom suite with city skyline views and wood accents" }
   ]
 }

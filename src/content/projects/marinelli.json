@@ -18,16 +18,16 @@
     "Photographer": "Architecture Visuals"
   },
   "floorPlans": [
-    { "image": "contemporary-residence/front-facade-daytime.jpg", "caption": "Ground Floor Retail Plan" },
-    { "image": "contemporary-residence/side-view-modern.jpg", "caption": "Office Levels Floor Plan" }
+    { "image": "contemporary-residence/front-facade-daytime.jpg", "caption": "Contemporary two-story residence with wood accents" },
+    { "image": "contemporary-residence/side-view-modern.jpg", "caption": "Modern architectural side elevation" }
   ],
   "gallery": [
-    { "image": "contemporary-residence/front-facade-evening.jpg", "caption": "Concept rendering showing facade details" },
-    { "image": "contemporary-residence/front-facade-daytime.jpg", "caption": "Retail space layout with flexible partitions" },
-    { "image": "contemporary-residence/side-view-modern.jpg", "caption": "Office floor with collaborative zones" },
-    { "image": "contemporary-residence/rear-elevation.jpg", "caption": "Rooftop amenity space" },
-    { "image": "contemporary-residence/aerial-perspective.jpg", "caption": "Street level facade detail" },
-    { "image": "contemporary-residence/entrance-detail.jpg", "caption": "Building context within neighborhood" },
-    { "image": "contemporary-residence/courtyard-view.jpg", "caption": "Interior perspective" }
+    { "image": "contemporary-residence/front-facade-evening.jpg", "caption": "Evening view of modern residence with illuminated windows and luxury vehicles" },
+    { "image": "contemporary-residence/front-facade-daytime.jpg", "caption": "Daytime exterior with horizontal wood louvers and glass balcony" },
+    { "image": "contemporary-residence/side-view-modern.jpg", "caption": "Corner perspective showing wood and white facade materials" },
+    { "image": "contemporary-residence/rear-elevation.jpg", "caption": "Rear elevation with outdoor living spaces" },
+    { "image": "contemporary-residence/aerial-perspective.jpg", "caption": "Contemporary home with rooftop terrace and landscaped garden" },
+    { "image": "contemporary-residence/entrance-detail.jpg", "caption": "Entry detail with modern materials" },
+    { "image": "contemporary-residence/courtyard-view.jpg", "caption": "Double-height interior living space with wood millwork and pendant lighting" }
   ]
 }
