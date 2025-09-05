@@ -3,6 +3,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroCarousel } from "@/components/common/HeroCarousel";
+import { AnimatedLogo } from "@/components/common/AnimatedLogo";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
@@ -28,6 +29,7 @@ const projectData: Project[] = [
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const [showLogo, setShowLogo] = useState(true);
 
   useEffect(() => {
     setMounted(true);
@@ -83,7 +85,17 @@ export default function Home() {
     );
   }
 
-  return <ParallaxHome />;
+  return (
+    <>
+      {showLogo && (
+        <AnimatedLogo 
+          duration={3} 
+          onAnimationComplete={() => setShowLogo(false)} 
+        />
+      )}
+      <ParallaxHome />
+    </>
+  );
 }
 
 function ParallaxHome() {
