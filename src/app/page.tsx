@@ -37,12 +37,80 @@ const projectData: Project[] = [
   { slug: "malibu-oceanfront-rebuild", title: "Malibu Oceanfront Rebuild", coverImage: "malibu-oceanfront-rebuild/ariel.png", category: "Residential" }
 ];
 
+// Project Tile Component with viewport-based animations for mobile
+function ProjectTile({ project }: { project: Project }) {
+  const tileRef = useRef(null);
+  const isInView = useInView(tileRef, { 
+    once: false, 
+    margin: "-25% 0px -25% 0px" // Trigger when 25% of the tile is visible
+  });
+  
+  return (
+    <Link href={`/projects/${project.slug}`}>
+      <div 
+        ref={tileRef}
+        className="relative aspect-square overflow-hidden group cursor-pointer"
+      >
+        <Image
+          src={`/projects/${project.coverImage}`}
+          alt={project.title}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110 md:group-hover:scale-110"
+          sizes="50vw"
+        />
+        
+        {/* Overlay - visible on hover for desktop, on viewport for mobile */}
+        <div className={`
+          absolute inset-0 transition-colors duration-500
+          bg-black/20 md:bg-black/0 md:group-hover:bg-black/20
+        `} />
+        
+        {/* Project Info - always visible on mobile when in viewport */}
+        <motion.div 
+          className="absolute inset-0 flex items-end p-4 sm:p-6 md:p-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ 
+            opacity: isInView ? 1 : 0, 
+            y: isInView ? 0 : 20 
+          }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="md:opacity-0 md:group-hover:opacity-100 md:transition-opacity md:duration-500">
+            <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-light mb-1 sm:mb-2">
+              {project.title}
+            </h3>
+            <p className="text-white/80 text-xs sm:text-sm uppercase tracking-wider">
+              {project.category}
+            </p>
+          </div>
+        </motion.div>
+        
+        {/* Touch device specific overlay - only on mobile */}
+        <div className="md:hidden">
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+          />
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 export default function Home() {
   const [mounted, setMounted] = useState(false);
-  const [showLogo, setShowLogo] = useState(true);
+  const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    // Check if animation has already played in this session
+    const hasPlayedAnimation = sessionStorage.getItem('logoAnimationPlayed');
+    if (!hasPlayedAnimation) {
+      setShowLogo(true);
+      sessionStorage.setItem('logoAnimationPlayed', 'true');
+    }
   }, []);
 
   if (!mounted) {
@@ -61,24 +129,7 @@ export default function Home() {
           <section>
             <div className="grid grid-cols-2">
               {projectData.map((project) => (
-                <Link key={project.slug} href={`/projects/${project.slug}`}>
-                  <div className="relative aspect-square overflow-hidden group cursor-pointer">
-                    <Image
-                      src={`/projects/${project.coverImage}`}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                      sizes="50vw"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
-                    <div className="absolute inset-0 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div>
-                        <h3 className="text-white text-2xl md:text-3xl font-light mb-2">{project.title}</h3>
-                        <p className="text-white/80 text-sm uppercase tracking-wider">{project.category}</p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                <ProjectTile key={project.slug} project={project} />
               ))}
             </div>
           </section>
@@ -171,26 +222,7 @@ function ParallaxHome() {
         <section>
           <div className="grid grid-cols-2">
             {projectData.map((project) => (
-              <Link key={project.slug} href={`/projects/${project.slug}`}>
-                <div className="relative aspect-square overflow-hidden group cursor-pointer">
-                  <Image
-                    src={`/projects/${project.coverImage}`}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    sizes="50vw"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
-                  
-                  {/* Project Info Overlay */}
-                  <div className="absolute inset-0 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div>
-                      <h3 className="text-white text-2xl md:text-3xl font-light mb-2">{project.title}</h3>
-                      <p className="text-white/80 text-sm uppercase tracking-wider">{project.category}</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <ProjectTile key={project.slug} project={project} />
             ))}
           </div>
         </section>
