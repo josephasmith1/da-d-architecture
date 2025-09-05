@@ -869,6 +869,176 @@
       }
     ]
   },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-3-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-1024w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-1024w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-4-1024w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-1920w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-1920w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-4-1920w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-320w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-4-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-640w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-4-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-4-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-4-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-320w.webp",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-1-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-640w.webp",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-1-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-1-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-1-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-320w.webp",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-2-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-640w.webp",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-2-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/floor-plan-level-2-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "floor-plan-level-2-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-1024w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-1024w.webp",
+        "orientation": "landscape",
+        "filename": "sunset-1-1024w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-1920w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-1920w.webp",
+        "orientation": "landscape",
+        "filename": "sunset-1-1920w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-320w.webp",
+        "orientation": "landscape",
+        "filename": "sunset-1-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-640w.webp",
+        "orientation": "landscape",
+        "filename": "sunset-1-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/sunset-1-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "sunset-1-optimized.jpg"
+      }
+    ]
+  },
   "/projects/malibu-oceanfront-rebuild/ariel.png": {
     "base": "/projects/malibu-oceanfront-rebuild/ariel.png",
     "variants": [
@@ -949,6 +1119,356 @@
       }
     ]
   },
+  "/projects/markups/.optimized/Markups_Ariel1-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Ariel1-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Ariel1-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Ariel1-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Ariel1-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Ariel1-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Ariel1-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Ariel1-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Ariel1-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Ariel1-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Ariel1-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Ariel1-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Ariel1-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Ariel1-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Ariel1-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Ariel1-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Ariel1-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Ariel1-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Ariel1-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Ariel1-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight1-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight1-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight1-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight1-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight1-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight1-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight1-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight1-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight1-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight1-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight1-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight1-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight1-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight1-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight1-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight1-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight1-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Daylight1-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight1-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight1-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight3-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight3-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight3-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight3-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight3-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight3-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight3-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight3-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight3-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight3-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight3-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight3-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight3-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Daylight3-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight3-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight3-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Daylight3-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Daylight3-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Daylight3-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Daylight3-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior1_9-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior1_9-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior1_9-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior1_9-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior1_9-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior1_9-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior1_9-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior1_9-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior1_9-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior1_9-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior1_9-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior1_9-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior1_9-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior1_9-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior1_9-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior1_9-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior1_9-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Interior1_9-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior1_9-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Interior1_9-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior2-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior2-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior2-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior2-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior2-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior2-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior2-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior2-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior2-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior2-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior2-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior2-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior2-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior2-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior2-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior2-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior2-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Interior2-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior2-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Interior2-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior3-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior3-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior3-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior3-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior3-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior3-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior3-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior3-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior3-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior3-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior3-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior3-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior3-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Interior3-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior3-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Interior3-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Interior3-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Interior3-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Interior3-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Interior3-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Night1-L-1024w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Night1-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Night1-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Night1-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Night1-L-1920w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Night1-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Night1-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Night1-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Night1-L-320w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Night1-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Night1-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Night1-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Night1-L-640w.webp": {
+    "base": "/projects/markups/.optimized/Markups_Night1-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Night1-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Markups_Night1-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/markups/.optimized/Markups_Night1-L-optimized.jpg": {
+    "base": "/projects/markups/.optimized/Markups_Night1-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/markups/.optimized/Markups_Night1-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Markups_Night1-L-optimized.jpg"
+      }
+    ]
+  },
   "/projects/markups/Markups_Ariel1.png": {
     "base": "/projects/markups/Markups_Ariel1.png",
     "variants": [
@@ -1016,6 +1536,496 @@
         "path": "/projects/markups/Markups_Night1-L.png",
         "orientation": "landscape",
         "filename": "Markups_Night1-L.png"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-1024w.webp",
+        "orientation": "landscape",
+        "filename": "driveway-evening-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-1920w.webp",
+        "orientation": "landscape",
+        "filename": "driveway-evening-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-320w.webp",
+        "orientation": "landscape",
+        "filename": "driveway-evening-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-640w.webp",
+        "orientation": "landscape",
+        "filename": "driveway-evening-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "driveway-evening-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-1024w.webp",
+        "orientation": "portrait",
+        "filename": "driveway-evening-portrait-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-320w.webp",
+        "orientation": "portrait",
+        "filename": "driveway-evening-portrait-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-640w.webp",
+        "orientation": "portrait",
+        "filename": "driveway-evening-portrait-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/driveway-evening-portrait-optimized.jpg",
+        "orientation": "portrait",
+        "filename": "driveway-evening-portrait-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-1024w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-1920w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-320w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-640w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-pool-view-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-1024w.webp",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-1920w.webp",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-320w.webp",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-640w.webp",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/exterior-pool-view-portrait-optimized.jpg",
+        "orientation": "portrait",
+        "filename": "exterior-pool-view-portrait-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-1024w.webp",
+        "orientation": "landscape",
+        "filename": "living-room-interior-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-1920w.webp",
+        "orientation": "landscape",
+        "filename": "living-room-interior-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-320w.webp",
+        "orientation": "landscape",
+        "filename": "living-room-interior-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-640w.webp",
+        "orientation": "landscape",
+        "filename": "living-room-interior-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "living-room-interior-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-1024w.webp",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-1920w.webp",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-320w.webp",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-640w.webp",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/living-room-interior-portrait-optimized.jpg",
+        "orientation": "portrait",
+        "filename": "living-room-interior-portrait-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-1024w.webp",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-1920w.webp",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-320w.webp",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-640w.webp",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "master-bedroom-city-view-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-1024w.webp",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-1920w.webp",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-320w.webp",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-640w.webp",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/master-bedroom-city-view-portrait-optimized.jpg",
+        "orientation": "portrait",
+        "filename": "master-bedroom-city-view-portrait-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-1024w.webp",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-1920w.webp",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-320w.webp",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-640w.webp",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "pool-deck-lounge-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-1024w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-1024w.webp",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait-1024w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-1920w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-1920w.webp",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait-1920w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-320w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-320w.webp",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait-320w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-640w.webp": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-640w.webp",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait-640w.webp"
+      }
+    ]
+  },
+  "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-optimized.jpg": {
+    "base": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/modern-luxury-residence/.optimized/pool-deck-lounge-portrait-optimized.jpg",
+        "orientation": "portrait",
+        "filename": "pool-deck-lounge-portrait-optimized.jpg"
       }
     ]
   },
@@ -1091,6 +2101,306 @@
         "path": "/projects/modern-luxury-residence/pool-deck-lounge.jpg",
         "orientation": "landscape",
         "filename": "pool-deck-lounge.jpg"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 1-L-1024w.webp": {
+    "base": "/projects/shia/.optimized/Shia 1-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 1-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 1-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 1-L-1920w.webp": {
+    "base": "/projects/shia/.optimized/Shia 1-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 1-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 1-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 1-L-320w.webp": {
+    "base": "/projects/shia/.optimized/Shia 1-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 1-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 1-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 1-L-640w.webp": {
+    "base": "/projects/shia/.optimized/Shia 1-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 1-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 1-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 1-L-optimized.jpg": {
+    "base": "/projects/shia/.optimized/Shia 1-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 1-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 1-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 2-L-1024w.webp": {
+    "base": "/projects/shia/.optimized/Shia 2-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 2-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 2-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 2-L-1920w.webp": {
+    "base": "/projects/shia/.optimized/Shia 2-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 2-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 2-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 2-L-320w.webp": {
+    "base": "/projects/shia/.optimized/Shia 2-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 2-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 2-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 2-L-640w.webp": {
+    "base": "/projects/shia/.optimized/Shia 2-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 2-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 2-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 2-L-optimized.jpg": {
+    "base": "/projects/shia/.optimized/Shia 2-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 2-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 2-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 3-L-1024w.webp": {
+    "base": "/projects/shia/.optimized/Shia 3-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 3-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 3-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 3-L-1920w.webp": {
+    "base": "/projects/shia/.optimized/Shia 3-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 3-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 3-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 3-L-320w.webp": {
+    "base": "/projects/shia/.optimized/Shia 3-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 3-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 3-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 3-L-640w.webp": {
+    "base": "/projects/shia/.optimized/Shia 3-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 3-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 3-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 3-L-optimized.jpg": {
+    "base": "/projects/shia/.optimized/Shia 3-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 3-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 3-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 4-L-1024w.webp": {
+    "base": "/projects/shia/.optimized/Shia 4-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 4-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 4-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 4-L-1920w.webp": {
+    "base": "/projects/shia/.optimized/Shia 4-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 4-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 4-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 4-L-320w.webp": {
+    "base": "/projects/shia/.optimized/Shia 4-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 4-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 4-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 4-L-640w.webp": {
+    "base": "/projects/shia/.optimized/Shia 4-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 4-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 4-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 4-L-optimized.jpg": {
+    "base": "/projects/shia/.optimized/Shia 4-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 4-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 4-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 5-L-1024w.webp": {
+    "base": "/projects/shia/.optimized/Shia 5-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 5-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 5-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 5-L-1920w.webp": {
+    "base": "/projects/shia/.optimized/Shia 5-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 5-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 5-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 5-L-320w.webp": {
+    "base": "/projects/shia/.optimized/Shia 5-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 5-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 5-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 5-L-640w.webp": {
+    "base": "/projects/shia/.optimized/Shia 5-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 5-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 5-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 5-L-optimized.jpg": {
+    "base": "/projects/shia/.optimized/Shia 5-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 5-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 5-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 6-L-1024w.webp": {
+    "base": "/projects/shia/.optimized/Shia 6-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 6-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 6-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 6-L-1920w.webp": {
+    "base": "/projects/shia/.optimized/Shia 6-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 6-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 6-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 6-L-320w.webp": {
+    "base": "/projects/shia/.optimized/Shia 6-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 6-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 6-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 6-L-640w.webp": {
+    "base": "/projects/shia/.optimized/Shia 6-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 6-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Shia 6-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/shia/.optimized/Shia 6-L-optimized.jpg": {
+    "base": "/projects/shia/.optimized/Shia 6-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/shia/.optimized/Shia 6-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Shia 6-L-optimized.jpg"
       }
     ]
   },

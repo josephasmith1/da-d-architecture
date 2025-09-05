@@ -15,42 +15,44 @@ const featuredImages = [
   '/hero-marinelli.jpg',
 ];
 
-const transitions = [
-  {
-    name: 'crossfade',
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    exit: { opacity: 0 },
-    transition: { duration: 0.7, ease: 'easeInOut' as const }
+const luxuryTransition = {
+  name: 'luxury-dissolve',
+  initial: { 
+    opacity: 0,
+    scale: 1.02,
+    filter: 'blur(8px)'
   },
-  {
-    name: 'slide',
-    initial: { x: '100%', opacity: 0.8 },
-    animate: { x: 0, opacity: 1 },
-    exit: { x: '-100%', opacity: 0.8 },
-    transition: { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] as const }
+  animate: { 
+    opacity: 1,
+    scale: 1,
+    filter: 'blur(0px)'
   },
-  {
-    name: 'scale',
-    initial: { scale: 1.1, opacity: 0 },
-    animate: { scale: 1, opacity: 1 },
-    exit: { scale: 0.95, opacity: 0 },
-    transition: { duration: 0.8, ease: 'easeInOut' as const }
+  exit: { 
+    opacity: 0,
+    scale: 0.98,
+    filter: 'blur(8px)'
   },
-  {
-    name: 'parallax',
-    initial: { scale: 1.3, x: 100, opacity: 0 },
-    animate: { scale: 1, x: 0, opacity: 1 },
-    exit: { scale: 1.1, x: -100, opacity: 0 },
-    transition: { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] as const }
+  transition: { 
+    duration: 2.5,
+    ease: [0.16, 1, 0.3, 1] as const,
+    opacity: {
+      duration: 2,
+      ease: [0.25, 0.46, 0.45, 0.94] as const
+    },
+    scale: {
+      duration: 3,
+      ease: [0.25, 0.46, 0.45, 0.94] as const
+    },
+    filter: {
+      duration: 2.2
+    }
   }
-];
+};
 
 export function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(1);
   const [shuffledImages, setShuffledImages] = useState<string[]>([]);
-  const [currentTransition, setCurrentTransition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
@@ -67,11 +69,10 @@ export function HeroCarousel() {
         setNextIndex((currentIndex + 1) % shuffledImages.length);
         setTimeout(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % shuffledImages.length);
-          setCurrentTransition((prevTransition) => (prevTransition + 1) % transitions.length);
           setIsTransitioning(false);
         }, 50);
       }
-    }, 5000);
+    }, 7000); // Increased to 7 seconds for more luxurious pacing
 
     return () => clearInterval(interval);
   }, [shuffledImages, currentIndex, isTransitioning]);
@@ -83,8 +84,6 @@ export function HeroCarousel() {
   }, [currentIndex, shuffledImages]);
 
   if (shuffledImages.length === 0) return null;
-
-  const currentEffect = transitions[currentTransition];
 
   return (
     <section className="relative h-screen overflow-hidden bg-black">
@@ -102,14 +101,15 @@ export function HeroCarousel() {
         </div>
       )}
       
-      <AnimatePresence mode="sync">
+      <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
           className="absolute inset-0"
-          initial={currentEffect.initial}
-          animate={currentEffect.animate}
-          exit={currentEffect.exit}
-          transition={currentEffect.transition}
+          initial={luxuryTransition.initial}
+          animate={luxuryTransition.animate}
+          exit={luxuryTransition.exit}
+          transition={luxuryTransition.transition}
+          style={{ willChange: 'opacity, transform, filter' }}
         >
           <ResponsiveImage
             name={shuffledImages[currentIndex]}
@@ -122,29 +122,34 @@ export function HeroCarousel() {
           />
           
           <motion.div
-            className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+            className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.8, duration: 1.5 }}
           />
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
         {shuffledImages.map((_, index) => (
           <motion.button
             key={index}
             onClick={() => {
-              setCurrentIndex(index);
-              setCurrentTransition((prevTransition) => (prevTransition + 1) % transitions.length);
+              if (!isTransitioning && index !== currentIndex) {
+                setIsTransitioning(true);
+                setTimeout(() => {
+                  setCurrentIndex(index);
+                  setIsTransitioning(false);
+                }, 50);
+              }
             }}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+            className={`rounded-full transition-all duration-700 ease-out ${
               index === currentIndex
-                ? 'bg-white w-8'
-                : 'bg-white/40 hover:bg-white/60'
+                ? 'bg-white w-12 h-1.5'
+                : 'bg-white/30 hover:bg-white/50 w-1.5 h-1.5'
             }`}
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.95 }}
           />
         ))}
       </div>

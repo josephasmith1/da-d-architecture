@@ -1,16 +1,13 @@
 export function ResourceHints() {
   return (
     <>
-      {/* DNS Prefetch for external domains */}
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-      <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-      <link rel="dns-prefetch" href="https://api.mapbox.com" />
-      <link rel="dns-prefetch" href="https://tiles.mapbox.com" />
-      
       {/* Preconnect to establish early connections */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link rel="preconnect" href="https://api.mapbox.com" />
+      
+      {/* DNS Prefetch for additional domains */}
+      <link rel="dns-prefetch" href="https://tiles.mapbox.com" />
       
       {/* Prefetch critical resources */}
       <link rel="prefetch" href="/api/contact" as="fetch" crossOrigin="anonymous" />

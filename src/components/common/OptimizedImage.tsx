@@ -81,7 +81,7 @@ export function OptimizedImage({
   };
   
   if (fill) {
-    return <Image {...commonProps} fill />;
+    return <Image {...commonProps} fill alt={alt} />;
   }
   
   return (
@@ -89,6 +89,7 @@ export function OptimizedImage({
       {...commonProps}
       width={width || 1920}
       height={height || 1080}
+      alt={alt}
     />
   );
 }
