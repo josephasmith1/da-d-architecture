@@ -1,4 +1,404 @@
 {
+  "/projects/contemporary-residence/.optimized/aerial-perspective-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/aerial-perspective-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/aerial-perspective-1024w.webp",
+        "orientation": "landscape",
+        "filename": "aerial-perspective-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/aerial-perspective-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/aerial-perspective-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/aerial-perspective-320w.webp",
+        "orientation": "landscape",
+        "filename": "aerial-perspective-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/aerial-perspective-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/aerial-perspective-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/aerial-perspective-640w.webp",
+        "orientation": "landscape",
+        "filename": "aerial-perspective-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/aerial-perspective-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/aerial-perspective-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/aerial-perspective-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "aerial-perspective-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/architectural-detail-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/architectural-detail-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/architectural-detail-1024w.webp",
+        "orientation": "landscape",
+        "filename": "architectural-detail-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/architectural-detail-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/architectural-detail-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/architectural-detail-320w.webp",
+        "orientation": "landscape",
+        "filename": "architectural-detail-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/architectural-detail-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/architectural-detail-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/architectural-detail-640w.webp",
+        "orientation": "landscape",
+        "filename": "architectural-detail-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/architectural-detail-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/architectural-detail-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/architectural-detail-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "architectural-detail-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/courtyard-view-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/courtyard-view-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/courtyard-view-1024w.webp",
+        "orientation": "landscape",
+        "filename": "courtyard-view-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/courtyard-view-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/courtyard-view-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/courtyard-view-320w.webp",
+        "orientation": "landscape",
+        "filename": "courtyard-view-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/courtyard-view-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/courtyard-view-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/courtyard-view-640w.webp",
+        "orientation": "landscape",
+        "filename": "courtyard-view-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/courtyard-view-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/courtyard-view-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/courtyard-view-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "courtyard-view-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/entrance-detail-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/entrance-detail-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/entrance-detail-1024w.webp",
+        "orientation": "landscape",
+        "filename": "entrance-detail-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/entrance-detail-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/entrance-detail-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/entrance-detail-320w.webp",
+        "orientation": "landscape",
+        "filename": "entrance-detail-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/entrance-detail-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/entrance-detail-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/entrance-detail-640w.webp",
+        "orientation": "landscape",
+        "filename": "entrance-detail-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/entrance-detail-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/entrance-detail-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/entrance-detail-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "entrance-detail-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-daytime-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-daytime-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-daytime-1024w.webp",
+        "orientation": "landscape",
+        "filename": "front-facade-daytime-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-daytime-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-daytime-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-daytime-320w.webp",
+        "orientation": "landscape",
+        "filename": "front-facade-daytime-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-daytime-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-daytime-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-daytime-640w.webp",
+        "orientation": "landscape",
+        "filename": "front-facade-daytime-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-daytime-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-daytime-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-daytime-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "front-facade-daytime-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-evening-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-evening-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-evening-1024w.webp",
+        "orientation": "landscape",
+        "filename": "front-facade-evening-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-evening-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-evening-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-evening-320w.webp",
+        "orientation": "landscape",
+        "filename": "front-facade-evening-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-evening-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-evening-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-evening-640w.webp",
+        "orientation": "landscape",
+        "filename": "front-facade-evening-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/front-facade-evening-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/front-facade-evening-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/front-facade-evening-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "front-facade-evening-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/garage-entrance-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/garage-entrance-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/garage-entrance-1024w.webp",
+        "orientation": "landscape",
+        "filename": "garage-entrance-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/garage-entrance-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/garage-entrance-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/garage-entrance-320w.webp",
+        "orientation": "landscape",
+        "filename": "garage-entrance-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/garage-entrance-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/garage-entrance-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/garage-entrance-640w.webp",
+        "orientation": "landscape",
+        "filename": "garage-entrance-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/garage-entrance-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/garage-entrance-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/garage-entrance-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "garage-entrance-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/landscape-integration-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/landscape-integration-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/landscape-integration-1024w.webp",
+        "orientation": "landscape",
+        "filename": "landscape-integration-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/landscape-integration-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/landscape-integration-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/landscape-integration-320w.webp",
+        "orientation": "landscape",
+        "filename": "landscape-integration-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/landscape-integration-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/landscape-integration-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/landscape-integration-640w.webp",
+        "orientation": "landscape",
+        "filename": "landscape-integration-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/landscape-integration-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/landscape-integration-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/landscape-integration-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "landscape-integration-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/rear-elevation-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/rear-elevation-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/rear-elevation-1024w.webp",
+        "orientation": "landscape",
+        "filename": "rear-elevation-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/rear-elevation-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/rear-elevation-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/rear-elevation-320w.webp",
+        "orientation": "landscape",
+        "filename": "rear-elevation-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/rear-elevation-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/rear-elevation-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/rear-elevation-640w.webp",
+        "orientation": "landscape",
+        "filename": "rear-elevation-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/rear-elevation-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/rear-elevation-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/rear-elevation-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "rear-elevation-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/side-view-modern-1024w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/side-view-modern-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/side-view-modern-1024w.webp",
+        "orientation": "landscape",
+        "filename": "side-view-modern-1024w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/side-view-modern-320w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/side-view-modern-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/side-view-modern-320w.webp",
+        "orientation": "landscape",
+        "filename": "side-view-modern-320w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/side-view-modern-640w.webp": {
+    "base": "/projects/contemporary-residence/.optimized/side-view-modern-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/side-view-modern-640w.webp",
+        "orientation": "landscape",
+        "filename": "side-view-modern-640w.webp"
+      }
+    ]
+  },
+  "/projects/contemporary-residence/.optimized/side-view-modern-optimized.jpg": {
+    "base": "/projects/contemporary-residence/.optimized/side-view-modern-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/contemporary-residence/.optimized/side-view-modern-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "side-view-modern-optimized.jpg"
+      }
+    ]
+  },
   "/projects/contemporary-residence/aerial-perspective.jpg": {
     "base": "/projects/contemporary-residence/aerial-perspective.jpg",
     "variants": [
@@ -99,6 +499,156 @@
       }
     ]
   },
+  "/projects/legend/.optimized/Legend LGD Cam 1-L-1024w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 1-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 1-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 1-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 1-L-1920w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 1-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 1-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 1-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 1-L-320w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 1-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 1-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 1-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 1-L-640w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 1-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 1-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 1-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 1-L-optimized.jpg": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 1-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 1-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 1-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 4-L-1024w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 4-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 4-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 4-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 4-L-1920w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 4-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 4-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 4-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 4-L-320w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 4-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 4-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 4-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 4-L-640w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 4-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 4-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 4-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 4-L-optimized.jpg": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 4-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 4-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 4-L-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 5-L-1024w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 5-L-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 5-L-1024w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 5-L-1024w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 5-L-1920w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 5-L-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 5-L-1920w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 5-L-1920w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 5-L-320w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 5-L-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 5-L-320w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 5-L-320w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 5-L-640w.webp": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 5-L-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 5-L-640w.webp",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 5-L-640w.webp"
+      }
+    ]
+  },
+  "/projects/legend/.optimized/Legend LGD Cam 5-L-optimized.jpg": {
+    "base": "/projects/legend/.optimized/Legend LGD Cam 5-L-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/legend/.optimized/Legend LGD Cam 5-L-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "Legend LGD Cam 5-L-optimized.jpg"
+      }
+    ]
+  },
   "/projects/legend/Legend LGD Cam 1.jpg": {
     "base": "/projects/legend/Legend LGD Cam 1.jpg",
     "variants": [
@@ -126,6 +676,196 @@
         "path": "/projects/legend/Legend LGD Cam 5-L.jpg",
         "orientation": "landscape",
         "filename": "Legend LGD Cam 5-L.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/ariel-1024w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-1024w.webp",
+        "orientation": "landscape",
+        "filename": "ariel-1024w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/ariel-1920w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-1920w.webp",
+        "orientation": "landscape",
+        "filename": "ariel-1920w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/ariel-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-320w.webp",
+        "orientation": "landscape",
+        "filename": "ariel-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/ariel-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-640w.webp",
+        "orientation": "landscape",
+        "filename": "ariel-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/ariel-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/ariel-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "ariel-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-1024w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-1024w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-1-1024w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-1920w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-1920w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-1-1920w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-320w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-1-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-640w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-1-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-1-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-1-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-1024w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-1024w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-2-1024w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-1920w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-1920w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-2-1920w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-320w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-2-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-640w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-2-640w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-optimized.jpg": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-optimized.jpg",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-2-optimized.jpg",
+        "orientation": "landscape",
+        "filename": "exterior-2-optimized.jpg"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-1024w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-1024w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-1024w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-3-1024w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-1920w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-1920w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-1920w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-3-1920w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-320w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-320w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-320w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-3-320w.webp"
+      }
+    ]
+  },
+  "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-640w.webp": {
+    "base": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-640w.webp",
+    "variants": [
+      {
+        "path": "/projects/malibu-oceanfront-rebuild/.optimized/exterior-3-640w.webp",
+        "orientation": "landscape",
+        "filename": "exterior-3-640w.webp"
       }
     ]
   },

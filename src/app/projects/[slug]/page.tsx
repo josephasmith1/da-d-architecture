@@ -1,8 +1,13 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { getProjectBySlug, getProjectSlugs } from "@/lib/projects-static";
-import ProjectDetailClient from "./ProjectDetailClient";
+import dynamic from "next/dynamic";
 import { seoConfig } from "@/lib/seo-config";
+
+// Dynamic import with loading state for better code splitting
+const ProjectDetailClient = dynamic(() => import("./ProjectDetailClient"), {
+  loading: () => <div className="min-h-screen bg-background animate-pulse" />,
+});
 
 // Generate static params for all projects
 export async function generateStaticParams() {

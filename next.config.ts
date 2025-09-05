@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
@@ -15,7 +19,12 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizeCss: true,
+    webVitalsAttribution: ['CLS', 'LCP', 'FCP', 'FID', 'TTFB', 'INP'],
   },
+  compress: true,
+  poweredByHeader: false,
+  generateEtags: true,
+  reactStrictMode: true,
   async headers() {
     return [
       {
@@ -137,4 +146,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

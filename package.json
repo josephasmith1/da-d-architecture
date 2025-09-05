@@ -10,7 +10,10 @@
     "start": "next start",
     "lint": "eslint",
     "optimize:images": "node scripts/optimize-images.js",
-    "generate:blur": "node scripts/generate-blur-placeholders.js"
+    "generate:blur": "node scripts/generate-blur-placeholders.js",
+    "analyze": "ANALYZE=true next build",
+    "analyze:server": "BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@heroui/react": "^2.8.3",
@@ -38,6 +41,7 @@
   "devDependencies": {
     "@axe-core/cli": "^4.10.2",
     "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.5.2",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^24.3.0",

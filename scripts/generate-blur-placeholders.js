@@ -25,7 +25,17 @@ async function generateBlurDataURL(imagePath) {
 
 async function processProjectImages() {
   const projectsDir = path.join(process.cwd(), 'public', 'projects');
-  const blurData = {};
+  const outputPath = path.join(process.cwd(), 'src', 'lib', 'blur-placeholders.json');
+  let blurData = {};
+  
+  // Load existing blur data if it exists
+  try {
+    const existingData = await fs.readFile(outputPath, 'utf-8');
+    blurData = JSON.parse(existingData);
+    console.log(`📁 Loaded ${Object.keys(blurData).length} existing blur placeholders`);
+  } catch (err) {
+    console.log('🆕 Creating new blur placeholders file');
+  }
   
   try {
     const projects = await fs.readdir(projectsDir);
@@ -42,7 +52,13 @@ async function processProjectImages() {
             const imagePath = path.join(projectPath, file);
             const relativePath = `/projects/${project}/${file}`;
             
-            console.log(`Generating blur placeholder for ${relativePath}...`);
+            // Check if blur data already exists
+            if (blurData[relativePath]) {
+              console.log(`⏭️  Skipping ${relativePath} (already exists)`);
+              continue;
+            }
+            
+            console.log(`🇺 Generating blur placeholder for ${relativePath}...`);
             const blurDataURL = await generateBlurDataURL(imagePath);
             
             if (blurDataURL) {
@@ -54,10 +70,9 @@ async function processProjectImages() {
     }
     
     // Save blur data to a JSON file
-    const outputPath = path.join(process.cwd(), 'src', 'lib', 'blur-placeholders.json');
     await fs.writeFile(outputPath, JSON.stringify(blurData, null, 2));
     
-    console.log(`✅ Generated ${Object.keys(blurData).length} blur placeholders`);
+    console.log(`\n✅ Total blur placeholders: ${Object.keys(blurData).length}`);
     console.log(`📁 Saved to ${outputPath}`);
   } catch (error) {
     console.error('Error processing images:', error);

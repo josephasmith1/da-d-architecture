@@ -2,12 +2,22 @@
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { HeroCarousel } from "@/components/common/HeroCarousel";
-import { AnimatedLogo } from "@/components/common/AnimatedLogo";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
+import dynamic from 'next/dynamic';
+
+// Dynamic imports for better code splitting
+const HeroCarousel = dynamic(() => import('@/components/common/HeroCarousel').then(mod => ({ default: mod.HeroCarousel })), {
+  loading: () => <div className="h-screen bg-background animate-pulse" />,
+  ssr: true,
+});
+
+const AnimatedLogo = dynamic(() => import('@/components/common/AnimatedLogo').then(mod => ({ default: mod.AnimatedLogo })), {
+  loading: () => <div className="w-full h-32" />,
+  ssr: false,
+});
 
 type Project = {
   slug: string;

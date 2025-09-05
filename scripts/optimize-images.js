@@ -31,6 +31,21 @@ async function optimizeImage(inputPath, outputDir, config) {
       const outputPath = path.join(outputDir, outputName);
       
       try {
+        // Check if file already exists
+        try {
+          const existingStats = await fs.stat(outputPath);
+          console.log(`⏭️  Skipping ${outputName} (already exists, ${(existingStats.size / 1024).toFixed(1)}KB)`);
+          results.push({
+            path: outputPath,
+            size: existingStats.size,
+            width,
+            format,
+            skipped: true
+          });
+          continue;
+        } catch (err) {
+          // File doesn't exist, proceed with creation
+        }
         const image = sharp(inputPath);
         const metadata = await image.metadata();
         
@@ -66,6 +81,14 @@ async function optimizeImage(inputPath, outputDir, config) {
   // Also optimize the original JPEG
   const jpegOutputPath = path.join(outputDir, `${filename}-optimized.jpg`);
   try {
+    // Check if optimized JPEG already exists
+    try {
+      const existingStats = await fs.stat(jpegOutputPath);
+      console.log(`⏭️  Skipping optimized JPEG (already exists, ${(existingStats.size / 1024).toFixed(1)}KB)`);
+      return results;
+    } catch (err) {
+      // File doesn't exist, proceed with optimization
+    }
     await sharp(inputPath)
       .jpeg({ quality: config.quality.jpeg || 80, progressive: true })
       .toFile(jpegOutputPath);
@@ -99,6 +122,8 @@ async function processDirectory(dirPath, configType = 'gallery') {
   
   let totalOriginalSize = 0;
   let totalOptimizedSize = 0;
+  let skippedCount = 0;
+  let createdCount = 0;
   
   for (const file of imageFiles) {
     const inputPath = path.join(dirPath, file);
@@ -109,10 +134,14 @@ async function processDirectory(dirPath, configType = 'gallery') {
     const results = await optimizeImage(inputPath, outputDir, CONFIGS[configType]);
     
     totalOptimizedSize += results.reduce((sum, r) => sum + r.size, 0);
+    skippedCount += results.filter(r => r.skipped).length;
+    createdCount += results.filter(r => !r.skipped).length;
   }
   
   const savings = ((1 - totalOptimizedSize / totalOriginalSize) * 100).toFixed(1);
   console.log(`\n✅ Optimization complete!`);
+  console.log(`Files created: ${createdCount}`);
+  console.log(`Files skipped: ${skippedCount}`);
   console.log(`Original: ${(totalOriginalSize / 1024 / 1024).toFixed(2)}MB`);
   console.log(`Optimized: ${(totalOptimizedSize / 1024 / 1024).toFixed(2)}MB`);
   console.log(`Savings: ${savings}%`);

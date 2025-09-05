@@ -106,6 +106,7 @@ export const metadata: Metadata = {
 import { Providers } from "@/app/providers";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/structured-data";
 import { WebVitals } from "@/components/seo/WebVitals";
+import { ResourceHints } from "@/components/seo/ResourceHints";
 
 export default function RootLayout({
   children,
@@ -118,6 +119,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${calSans.variable}`} suppressHydrationWarning>
       <head>
+        <ResourceHints />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
