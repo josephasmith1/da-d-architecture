@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "node scripts/kill-port.js 3000 && next dev --turbopack",
     "dev:clean": "npx kill-port 3000 && next dev --turbopack",
-    "prebuild": "node scripts/generate-image-manifest.js",
+    "prebuild": "node scripts/generate-image-manifest.js && node scripts/generate-blur-placeholders.js",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize:images": "node scripts/optimize-images.js",
+    "generate:blur": "node scripts/generate-blur-placeholders.js"
   },
   "dependencies": {
     "@heroui/react": "^2.8.3",
@@ -27,7 +29,6 @@
     "react-hook-form": "^7.62.0",
     "react-map-gl": "^8.0.4",
     "react-photo-album": "^3.1.0",
-    "sharp": "^0.34.3",
     "tailwind-merge": "^3.3.1",
     "web-vitals": "^5.1.0",
     "yet-another-react-lightbox": "^3.25.0",
@@ -41,6 +42,7 @@
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "@types/sharp": "^0.31.1",
     "autoprefixer": "^10.4.21",
     "axe-core": "^4.10.3",
     "eslint": "^9.34.0",
@@ -48,6 +50,7 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
+    "sharp": "^0.34.3",
     "tailwindcss": "^4.1.12",
     "typescript": "^5.9.2"
   }

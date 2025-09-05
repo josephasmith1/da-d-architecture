@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import imageManifestData from '../../../public/image-manifest.json';
+import blurPlaceholders from '@/lib/blur-placeholders.json';
 
 interface ImageVariant {
   path: string;
@@ -28,6 +29,7 @@ interface ResponsiveImageProps {
   sizes?: string;
   priority?: boolean;
   objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
+  loading?: 'lazy' | 'eager';
 }
 
 export function ResponsiveImage({ 
@@ -39,7 +41,8 @@ export function ResponsiveImage({
   fill = true,
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
   priority = false,
-  objectFit = 'cover'
+  objectFit = 'cover',
+  loading = 'lazy'
 }: ResponsiveImageProps) {
   const [isPortraitViewport, setIsPortraitViewport] = useState(false);
   const [currentSrc, setCurrentSrc] = useState<string>("");
@@ -148,6 +151,10 @@ export function ResponsiveImage({
         sizes={sizes}
         style={{ objectFit }}
         priority={priority}
+        loading={priority ? 'eager' : loading}
+        placeholder={blurPlaceholders[currentSrc as keyof typeof blurPlaceholders] ? 'blur' : 'empty'}
+        blurDataURL={blurPlaceholders[currentSrc as keyof typeof blurPlaceholders]}
+        quality={85}
         onError={handleError}
       />
     );
@@ -163,6 +170,10 @@ export function ResponsiveImage({
       sizes={sizes}
       style={{ objectFit }}
       priority={priority}
+      loading={priority ? 'eager' : loading}
+      placeholder={blurPlaceholders[currentSrc as keyof typeof blurPlaceholders] ? 'blur' : 'empty'}
+      blurDataURL={blurPlaceholders[currentSrc as keyof typeof blurPlaceholders]}
+      quality={85}
       onError={handleError}
     />
   );

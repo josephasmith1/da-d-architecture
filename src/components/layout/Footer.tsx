@@ -39,8 +39,8 @@ export function Footer() {
                 </a>
               </p>
               <p className="text-gray-400 text-lg font-light">
-                <a href="mailto:info@dadinc.com" className="hover:text-white transition-colors">
-                  info@dadinc.com
+                <a href="mailto:scott@da-designinc.com" className="hover:text-white transition-colors">
+                  scott@da-designinc.com
                 </a>
               </p>
             </div>
@@ -50,15 +50,27 @@ export function Footer() {
           <div></div>
         </div>
 
-        {/* Logo */}
-        <div>
-          <Image
-            src="/DAd LOGO copy-03.svg"
-            alt="DA+D"
-            width={200}
-            height={77}
-            className="h-16 w-auto"
-          />
+        {/* Logo and Credits */}
+        <div className="border-t border-gray-800 pt-8 mt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div>
+              <Image
+                src="/DAd LOGO copy-03.svg"
+                alt="DA+D"
+                width={200}
+                height={77}
+                className="h-16 w-auto"
+              />
+            </div>
+            <div className="mt-4 md:mt-0 text-center md:text-right">
+              <p className="text-gray-400 text-sm">
+                Scott DeLoache, AIA, LEED GA, NCARB
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                © {new Date().getFullYear()} DA+D Inc. All rights reserved.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

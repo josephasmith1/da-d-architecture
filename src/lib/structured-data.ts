@@ -59,12 +59,30 @@ export function generateOrganizationSchema() {
     },
     founder: {
       "@type": "Person",
-      name: seoConfig.author,
+      name: "Scott DeLoache",
+      honorificSuffix: "AIA, LEED GA, NCARB",
       jobTitle: "Principal Architect",
       alumniOf: {
         "@type": "CollegeOrUniversity",
         name: "Architecture School"
-      }
+      },
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "AIA (American Institute of Architects)",
+          credentialCategory: "Professional Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "LEED Green Associate",
+          credentialCategory: "Professional Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "NCARB (National Council of Architectural Registration Boards)",
+          credentialCategory: "Professional License"
+        }
+      ]
     },
     numberOfEmployees: {
       "@type": "QuantitativeValue",

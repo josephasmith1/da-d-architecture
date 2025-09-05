@@ -4,6 +4,7 @@ import { Card, CardBody, CardFooter, Chip } from "@heroui/react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import blurPlaceholders from '@/lib/blur-placeholders.json';
 
 interface Project {
   slug: string;
@@ -44,6 +45,10 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover hover:scale-105 transition-transform duration-300"
             priority={index < 6}
+            loading={index < 6 ? 'eager' : 'lazy'}
+            placeholder={blurPlaceholders[imagePath as keyof typeof blurPlaceholders] ? 'blur' : 'empty'}
+            blurDataURL={blurPlaceholders[imagePath as keyof typeof blurPlaceholders]}
+            quality={85}
           />
         </CardBody>
         <CardFooter className="flex-col items-start gap-3 p-5">

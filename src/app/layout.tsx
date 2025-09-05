@@ -1,10 +1,27 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: 'swap',
+  preload: true,
+  adjustFontFallback: true,
+});
+
+const calSans = localFont({
+  src: [
+    {
+      path: '../../node_modules/cal-sans/fonts/webfonts/CalSans-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-cal-sans',
+  display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -14,8 +31,8 @@ export const metadata: Metadata = {
     template: "%s | DA+D"
   },
   description: "Since 2001, DeLoache Architecture & Design has been transforming visions into exceptional spaces where people live, work, and thrive. Specializing in innovative residential and commercial projects with sustainable design and fire mitigation expertise.",
-  keywords: ["architecture", "design", "fire mitigation", "residential design", "commercial design", "sustainable design", "Scott DeLoache", "AIA", "Los Angeles architect"],
-  authors: [{ name: "Scott DeLoache, AIA" }],
+  keywords: ["architecture", "design", "fire mitigation", "residential design", "commercial design", "sustainable design", "Scott DeLoache", "AIA", "LEED GA", "NCARB", "Los Angeles architect"],
+  authors: [{ name: "Scott DeLoache, AIA, LEED GA, NCARB" }],
   creator: "DA+D Architecture & Design",
   publisher: "DA+D Architecture & Design",
   robots: {
@@ -54,9 +71,35 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+      { url: "/apple-touch-icon-152x152.png", sizes: "152x152" },
+      { url: "/apple-touch-icon-120x120.png", sizes: "120x120" },
+      { url: "/apple-touch-icon-76x76.png", sizes: "76x76" },
+      { url: "/apple-touch-icon-60x60.png", sizes: "60x60" },
+    ],
+    other: [
+      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#000000" },
+      { rel: "manifest", url: "/site.webmanifest" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "DA+D Architecture",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  other: {
+    "msapplication-TileColor": "#000000",
+    "msapplication-config": "/browserconfig.xml",
+    "msapplication-TileImage": "/mstile-144x144.png",
   },
 };
 
@@ -73,7 +116,7 @@ export default function RootLayout({
   const websiteSchema = generateWebSiteSchema();
   
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${calSans.variable}`} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

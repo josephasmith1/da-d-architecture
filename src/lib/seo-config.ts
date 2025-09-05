@@ -2,12 +2,14 @@ export const seoConfig = {
   siteName: "DA+D Architecture & Design",
   siteUrl: "https://da-designinc.com",
   siteDescription: "Since 2001, DeLoache Architecture & Design has been transforming visions into exceptional spaces where people live, work, and thrive. Specializing in innovative residential and commercial projects with sustainable design and fire mitigation expertise.",
-  author: "Scott DeLoache, AIA",
+  author: "Scott DeLoache, AIA, LEED GA, NCARB",
   twitterHandle: "@DADArchitecture",
   
   defaultKeywords: [
     "architecture firm Los Angeles",
     "Scott DeLoache AIA",
+    "Scott DeLoache LEED GA",
+    "Scott DeLoache NCARB",
     "sustainable architecture",
     "fire mitigation design",
     "residential architect",
@@ -19,20 +21,21 @@ export const seoConfig = {
     "California architect",
     "architectural planning",
     "interior design",
-    "DA+D Architecture"
+    "DA+D Architecture",
+    "DA+D Inc"
   ],
   
   business: {
-    name: "DeLoache Architecture & Design",
-    legalName: "DeLoache Architecture & Design, Inc.",
-    alternateName: "DA+D",
-    telephone: "+1-310-555-0100",
-    email: "info@da-designinc.com",
+    name: "DA+D Inc.",
+    legalName: "DA+D Inc.",
+    alternateName: "DeLoache Architecture & Design",
+    telephone: "+1-213-304-0992",
+    email: "scott@da-designinc.com",
     address: {
-      streetAddress: "123 Main Street",
+      streetAddress: "",
       addressLocality: "Los Angeles",
       addressRegion: "CA",
-      postalCode: "90001",
+      postalCode: "90049",
       addressCountry: "US"
     },
     geo: {

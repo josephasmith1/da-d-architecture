@@ -55,8 +55,8 @@ export default function ContactPage() {
                 <CardBody className="text-center">
                   <h3 className="font-display text-lg font-bold mb-3">Studio Location</h3>
                   <p className="text-foreground-500 text-sm">
-                    123 Architecture Way<br />
-                    Los Angeles, CA 90210<br />
+                    DA+D Inc.<br />
+                    Los Angeles, CA 90049<br />
                     United States
                   </p>
                 </CardBody>
@@ -93,7 +93,7 @@ export default function ContactPage() {
                       Phone: <a href="tel:+12133040992" className="hover:text-primary transition-colors">213.304.0992</a>
                     </p>
                     <p className="mb-1">
-                      Email: <a href="mailto:info@dadinc.com" className="hover:text-primary transition-colors">info@dadinc.com</a>
+                      Email: <a href="mailto:scott@da-designinc.com" className="hover:text-primary transition-colors">scott@da-designinc.com</a>
                     </p>
                     <p>Quick response guaranteed</p>
                   </div>
