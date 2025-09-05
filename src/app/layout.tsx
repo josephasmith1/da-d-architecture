@@ -61,14 +61,32 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "@/app/providers";
+import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/structured-data";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = generateOrganizationSchema();
+  const websiteSchema = generateWebSiteSchema();
+  
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+      </head>
       <body suppressHydrationWarning>
         <Providers>
           {children}

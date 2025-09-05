@@ -88,11 +88,15 @@ export default function ContactPage() {
               <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
                 <CardBody className="text-center">
                   <h3 className="font-display text-lg font-bold mb-3">Get in Touch</h3>
-                  <p className="text-foreground-500 text-sm">
-                    Phone: (310) 555-0123<br />
-                    Email: info@dadinc.com<br />
-                    Quick response guaranteed
-                  </p>
+                  <div className="text-foreground-500 text-sm">
+                    <p className="mb-1">
+                      Phone: <a href="tel:+12133040992" className="hover:text-primary transition-colors">213.304.0992</a>
+                    </p>
+                    <p className="mb-1">
+                      Email: <a href="mailto:info@dadinc.com" className="hover:text-primary transition-colors">info@dadinc.com</a>
+                    </p>
+                    <p>Quick response guaranteed</p>
+                  </div>
                 </CardBody>
               </Card>
             </motion.div>
