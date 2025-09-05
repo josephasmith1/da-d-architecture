@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
+import { ResponsiveImage } from '@/components/common/ResponsiveImage';
 import { useState, useEffect } from 'react';
 
 const featuredImages = [
@@ -91,12 +91,13 @@ export function HeroCarousel() {
       {/* Preload next image */}
       {shuffledImages[nextIndex] && (
         <div className="absolute inset-0 opacity-0 pointer-events-none">
-          <Image
-            src={shuffledImages[nextIndex]}
+          <ResponsiveImage
+            name={shuffledImages[nextIndex]}
             alt="Preload"
             fill
             className="object-contain"
             sizes="100vw"
+            objectFit="contain"
           />
         </div>
       )}
@@ -110,13 +111,14 @@ export function HeroCarousel() {
           exit={currentEffect.exit}
           transition={currentEffect.transition}
         >
-          <Image
-            src={shuffledImages[currentIndex]}
+          <ResponsiveImage
+            name={shuffledImages[currentIndex]}
             alt="Featured Project"
             fill
             className="object-contain"
             sizes="100vw"
             priority
+            objectFit="contain"
           />
           
           <motion.div
