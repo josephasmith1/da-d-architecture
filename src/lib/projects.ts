@@ -14,6 +14,12 @@ export type Project = {
   services: string[];
   coverImage: string;
   description: string[];
+  video?: {
+    mp4: string;
+    webm: string;
+    poster?: string;
+    caption?: string;
+  };
   additionalInfo: {
     Client: string;
     Contractor: string;

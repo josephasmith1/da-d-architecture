@@ -70,7 +70,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
       <Header />
       
       <main className="relative">
-        {/* Full-screen parallax hero */}
+        {/* Full-screen parallax hero with video or image */}
         <div ref={heroRef} className="relative h-screen w-full overflow-hidden bg-black">
           <motion.div 
             className="absolute inset-0 w-full h-full"
@@ -80,14 +80,36 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
               opacity: heroOpacity
             }}
           >
-            <div className="relative w-full h-full">
-              <ResponsiveImage
-                name={project.coverImage}
-                alt={project.title}
-                className="object-cover brightness-[0.7]"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+            {project.video ? (
+              <>
+                {/* Video background */}
+                <video
+                  className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
+                  style={{ objectFit: 'cover' }}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster={project.video.poster}
+                >
+                  <source src={project.video.webm} type="video/webm" />
+                  <source src={project.video.mp4} type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
+              </>
+            ) : (
+              <>
+                {/* Image fallback */}
+                <div className="relative w-full h-full">
+                  <ResponsiveImage
+                    name={project.coverImage}
+                    alt={project.title}
+                    className="object-cover brightness-[0.7]"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+              </>
+            )}
           </motion.div>
           
           {/* Hero content overlay */}

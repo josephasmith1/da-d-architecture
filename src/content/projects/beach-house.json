@@ -7,7 +7,7 @@
   "size": "3,800 sq ft",
   "status": "Built",
   "services": ["Architecture", "Interior Design"],
-  "coverImage": "modern-luxury-residence/exterior-pool-view.jpg",
+  "coverImage": "beach-house/exterior-pool-view.jpg",
   "description": [
     "This contemporary beach house reimagines coastal living with clean lines and expansive glass walls that frame ocean views.",
     "The design emphasizes natural light and seamless indoor-outdoor transitions through large sliding doors and covered terraces."
@@ -18,14 +18,14 @@
     "Photographer": "Ocean View Photography"
   },
   "floorPlans": [
-    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Level 1 Floor Plan" },
-    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Level 2 Floor Plan" }
+    { "image": "beach-house/living-room-interior.jpg", "caption": "Level 1 Floor Plan" },
+    { "image": "beach-house/master-bedroom-city-view.jpg", "caption": "Level 2 Floor Plan" }
   ],
   "gallery": [
-    { "image": "modern-luxury-residence/exterior-pool-view.jpg", "caption": "Ocean-facing facade with natural stone accents" },
-    { "image": "modern-luxury-residence/pool-deck-lounge.jpg", "caption": "Living room with panoramic sea views" },
-    { "image": "modern-luxury-residence/driveway-evening.jpg", "caption": "Master bedroom suite with private deck" },
-    { "image": "modern-luxury-residence/living-room-interior.jpg", "caption": "Open kitchen and dining area" },
-    { "image": "modern-luxury-residence/master-bedroom-city-view.jpg", "caption": "Spa-like bathroom with minimalist fixtures" }
+    { "image": "beach-house/exterior-pool-view.jpg", "caption": "Ocean-facing facade with natural stone accents" },
+    { "image": "beach-house/pool-deck-lounge.jpg", "caption": "Living room with panoramic sea views" },
+    { "image": "beach-house/driveway-evening.jpg", "caption": "Master bedroom suite with private deck" },
+    { "image": "beach-house/living-room-interior.jpg", "caption": "Open kitchen and dining area" },
+    { "image": "beach-house/master-bedroom-city-view.jpg", "caption": "Spa-like bathroom with minimalist fixtures" }
   ]
 }

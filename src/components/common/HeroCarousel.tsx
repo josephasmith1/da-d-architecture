@@ -7,20 +7,20 @@ import { useState, useEffect } from 'react';
 const featuredImages = [
   '/projects/legend/Legend LGD Cam 1-L.jpg',
   '/projects/shia/Shia 1-L.jpg',
-  '/projects/contemporary-residence/front-facade-evening.jpg',
   '/projects/malibu-oceanfront-rebuild/ariel.png',
-  '/projects/modern-luxury-residence/pool-deck-lounge.jpg',
-  '/projects/contemporary-residence/aerial-perspective.jpg',
   '/projects/markups/Markups_Ariel1-L.png',
-  '/hero-marinelli.jpg',
+  '/projects/contemporary-residence/front-facade-evening.jpg',
+  '/projects/contemporary-residence/aerial-perspective.jpg',
+  '/projects/modern-luxury-residence/pool-deck-lounge.jpg',
+  '/projects/modern-luxury-residence/exterior-pool-view.jpg',
 ];
 
 const luxuryTransition = {
   name: 'luxury-dissolve',
   initial: { 
     opacity: 0,
-    scale: 1.02,
-    filter: 'blur(8px)'
+    scale: 1.01,
+    filter: 'blur(4px)'
   },
   animate: { 
     opacity: 1,
@@ -29,22 +29,22 @@ const luxuryTransition = {
   },
   exit: { 
     opacity: 0,
-    scale: 0.98,
-    filter: 'blur(8px)'
+    scale: 0.99,
+    filter: 'blur(4px)'
   },
   transition: { 
-    duration: 2.5,
-    ease: [0.16, 1, 0.3, 1] as const,
+    duration: 1.8,
+    ease: [0.43, 0.13, 0.23, 0.96] as const,
     opacity: {
+      duration: 1.2,
+      ease: 'easeInOut' as const
+    },
+    scale: {
       duration: 2,
       ease: [0.25, 0.46, 0.45, 0.94] as const
     },
-    scale: {
-      duration: 3,
-      ease: [0.25, 0.46, 0.45, 0.94] as const
-    },
     filter: {
-      duration: 2.2
+      duration: 1.5
     }
   }
 };
@@ -86,7 +86,7 @@ export function HeroCarousel() {
   if (shuffledImages.length === 0) return null;
 
   return (
-    <section className="relative h-screen overflow-hidden bg-black">
+    <section className="relative h-[90vh] overflow-hidden bg-black">
       {/* Preload next image */}
       {shuffledImages[nextIndex] && (
         <div className="absolute inset-0 opacity-0 pointer-events-none">
@@ -101,7 +101,21 @@ export function HeroCarousel() {
         </div>
       )}
       
-      <AnimatePresence mode="wait">
+      {/* Base image layer - always visible */}
+      {shuffledImages[(currentIndex - 1 + shuffledImages.length) % shuffledImages.length] && (
+        <div className="absolute inset-0">
+          <ResponsiveImage
+            name={shuffledImages[(currentIndex - 1 + shuffledImages.length) % shuffledImages.length]}
+            alt="Background"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            objectFit="cover"
+          />
+        </div>
+      )}
+      
+      <AnimatePresence mode="sync">
         <motion.div
           key={currentIndex}
           className="absolute inset-0"
@@ -122,10 +136,10 @@ export function HeroCarousel() {
           />
           
           <motion.div
-            className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"
+            className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 1.5 }}
+            transition={{ delay: 0.5, duration: 1 }}
           />
         </motion.div>
       </AnimatePresence>

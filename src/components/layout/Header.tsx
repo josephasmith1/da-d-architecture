@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <header className="bg-black z-50 relative">
-      <nav className="px-6 py-8 flex items-center justify-between">
+      <nav className="px-6 py-6 flex items-center justify-between">
         {/* Logo */}
         <NextLink href="/" className="relative z-50">
           <Image
@@ -28,7 +28,7 @@ export function Header() {
             alt="DA+D"
             width={120}
             height={46}
-            className="h-10 w-auto"
+            className="h-9 w-auto"
             priority
           />
         </NextLink>

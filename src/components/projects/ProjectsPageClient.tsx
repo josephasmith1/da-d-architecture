@@ -24,7 +24,8 @@ function ProjectSection({ project, index }: { project: Project; index: number })
   return (
     <section 
       ref={sectionRef}
-      className="relative h-screen overflow-hidden"
+      className="relative overflow-hidden"
+      style={{ height: 'calc(100vh - 64px)' }}
     >
       <Link href={`/projects/${project.slug}`} className="block h-full group cursor-pointer">
         <motion.div 
@@ -100,10 +101,11 @@ export default function ProjectsPageClient({ projects }: { projects: Project[] }
     <div className="min-h-screen bg-black">
       <Header />
       
-      {/* Full-screen project showcase */}
-      {projects.map((project, index) => (
-        <ProjectSection key={project.slug} project={project} index={index} />
-      ))}
+      {/* Full-screen project showcase with header compensation */}
+      <div className="relative" style={{ marginTop: '-1px' }}>
+        {projects.map((project, index) => (
+          <ProjectSection key={project.slug} project={project} index={index} />
+        ))}</div>
       
       {/* Footer */}
       <section className="relative bg-background">
