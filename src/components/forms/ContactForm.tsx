@@ -1,17 +1,17 @@
 'use client';
 
-import { 
-  Input, 
-  Textarea, 
-  Select, 
-  SelectItem, 
-  Button, 
-  Card, 
-  CardBody, 
-  CheckboxGroup, 
-  Checkbox, 
-  RadioGroup, 
-  Radio 
+import {
+  Input,
+  Textarea,
+  Select,
+  SelectItem,
+  Button,
+  Card,
+  CardBody,
+  CheckboxGroup,
+  Checkbox,
+  RadioGroup,
+  Radio
 } from "@heroui/react";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
@@ -71,12 +71,12 @@ const timelines = [
 
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
-  const { 
-    handleSubmit, 
-    control, 
-    formState: { errors, isSubmitting }, 
-    reset 
+
+  const {
+    handleSubmit,
+    control,
+    formState: { errors, isSubmitting },
+    reset
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -112,11 +112,11 @@ export function ContactForm() {
             Thank You for Your Inquiry!
           </h3>
           <p className="text-default-600 mb-6">
-            We&apos;ve received your project details and will review them carefully. 
+            We&apos;ve received your project details and will review them carefully.
             Our team will get back to you within 24-48 hours to discuss your architectural needs.
           </p>
-          <Button 
-            color="success" 
+          <Button
+            color="success"
             variant="flat"
             onPress={() => {
               setIsSubmitted(false);
@@ -135,7 +135,7 @@ export function ContactForm() {
       <Card>
         <CardBody className="space-y-6 p-6">
           <h3 className="text-xl font-semibold">Personal Information</h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium">
@@ -157,7 +157,7 @@ export function ContactForm() {
                 )}
               />
             </div>
-            
+
             <div className="space-y-2">
               <label className="text-sm font-medium">
                 Last Name <span className="text-danger">*</span>
@@ -179,7 +179,7 @@ export function ContactForm() {
               />
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium">
@@ -201,7 +201,7 @@ export function ContactForm() {
                 )}
               />
             </div>
-            
+
             <div className="space-y-2">
               <label className="text-sm font-medium">Phone Number</label>
               <Controller
@@ -219,7 +219,7 @@ export function ContactForm() {
               />
             </div>
           </div>
-          
+
           <div className="space-y-2">
             <label className="text-sm font-medium">Company/Organization</label>
             <Controller
@@ -242,7 +242,7 @@ export function ContactForm() {
       <Card>
         <CardBody className="space-y-6 p-6">
           <h3 className="text-xl font-semibold">Project Details</h3>
-          
+
           <div className="space-y-2">
             <label className="text-sm font-medium">
               Project Type <span className="text-danger">*</span>
@@ -376,7 +376,7 @@ export function ContactForm() {
       <Card>
         <CardBody className="space-y-6 p-6">
           <h3 className="text-xl font-semibold">Project Description</h3>
-          
+
           <div className="space-y-2">
             <label className="text-sm font-medium">
               Tell us about your project <span className="text-danger">*</span>

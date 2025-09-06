@@ -49,9 +49,12 @@ export default function FAQClient({ faqData }: { faqData: FAQItem[] }) {
 
   const categories = Array.from(new Set(faqData.map(faq => faq.category)));
 
-  return (
-    <div className="space-y-8">
-      <div className="max-w-2xl mx-auto">
+return (
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+                space-y-6 sm:space-y-8 lg:space-y-12">
+
+      <div className="w-full mx-auto max-w-md sm:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+
         <Input
           size="lg"
           placeholder="Search FAQs..."
@@ -80,7 +83,7 @@ export default function FAQClient({ faqData }: { faqData: FAQItem[] }) {
       </div>
 
       {filteredFAQs.length === 0 ? (
-        <Card className="max-w-2xl mx-auto">
+        <Card className="w-full mx-auto max-w-md sm:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
           <CardBody className="text-center py-12">
             <p className="text-lg">No FAQs found matching your search.</p>
           </CardBody>
@@ -93,22 +96,22 @@ export default function FAQClient({ faqData }: { faqData: FAQItem[] }) {
         >
           <Accordion
             variant="shadow"
-            className="max-w-2xl mx-auto"
+            className="mx-auto"
             selectionMode="multiple"
           >
             {filteredFAQs.map((faq) => (
               <AccordionItem
                 key={faq.id}
                 title={
-                  <div className="flex flex-col gap-1">
+                  <div className="flex flex-col gap-3 p-4">
                     <span className="text-small text-default-500">{faq.category}</span>
-                    <span>{faq.question}</span>
+                    <span className="text-2xl">{faq.question}</span>
                   </div>
                 }
                 textValue={faq.question}
               >
                 <div className="pb-4">
-                  <p className="text-default-600">{faq.answer}</p>
+                  <p className="text-default-600 text-lg font-normal">{faq.answer}</p>
                 </div>
               </AccordionItem>
             ))}
