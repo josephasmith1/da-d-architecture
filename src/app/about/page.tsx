@@ -414,7 +414,7 @@ export default function AboutPage() {
           </div>
         </Section>*/}
         {/* Scott DeLoache Profile - Updated by Raees*/}
-        <Section>
+        <Section className="bg-white">
           <motion.div
             className="max-w-7xl mx-auto py-10"
             initial={{ opacity: 0, y: 50 }}
@@ -438,7 +438,7 @@ export default function AboutPage() {
                     Principal & Founder
                   </p>
                   <p className="text-[#666666] leading-relaxed text-md">
-                    Founder of DeLoache Architecture & Design, bringing a unique
+                    DeLoache Architecture & Design, bringing a unique
                     global perspective to every project through diverse
                     experience across residential, commercial, and international
                     developments.
