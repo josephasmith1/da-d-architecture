@@ -64,8 +64,8 @@ export default function FAQPage() {
 
       <Section>
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold my-6">Frequently Asked Questions</h1>
+          <p className="text-lg text-[#666666] max-w-2xl mx-auto">
             Find answers to common questions about our services, process, and expertise.
           </p>
         </div>

@@ -24,6 +24,7 @@ import {
   Briefcase,
   Globe,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutPage() {
   const services = [
@@ -82,7 +83,7 @@ export default function AboutPage() {
         {/* Hero Section with Statistics */}
         <Section className="relative overflow-hidden bg-[#F8F8F7] m-2">
           <motion.div
-            className="flex flex-col text-center max-w-4xl mx-auto relative z-10 gap-10"
+            className="flex flex-col text-center max-w-8xl mx-auto relative z-10 gap-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -98,9 +99,9 @@ export default function AboutPage() {
                 variant="flat"
                 color="primary"
                 size="lg"
-                className="px-4 py-2 mt-8"
+                className="px-4 py-2 mt-8 gap-3"
               >
-                <span className="text-2xl font-bold">
+                <span className="text-2xl font-bold ">
                   {" "}
                   Established 2001
                 </span>
@@ -132,7 +133,7 @@ export default function AboutPage() {
               variants={fadeIn(0.8)}
               initial="hidden"
               animate="show"
-              className="mt-12 grid grid-cols-3 gap-10 md:gap-20 max-w-2xl mx-auto"
+              className="mt-12 grid grid-cols-3 gap-10 md:gap-20 mx-auto"
             >
               <StatItem value="23+" label="Years Experience" />
               <StatItem value="100" label="Projects Completed" />
@@ -146,7 +147,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="container px-6 py-24"
+            className="max-w-8xl px-6 py-24"
           >
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <motion.div>
@@ -173,19 +174,22 @@ export default function AboutPage() {
                   design and functionality, creating spaces that not only meet
                   today's needs but adapt to tomorrow's possibilities.
                 </p>
+                <Link href="/projects">
                 <Button className="w-fit my-5 text-lg bg-black text-[#91836B] hover:bg-gray-800">
                   View Our Projects
                 </Button>
+                </Link>
               </motion.div>
             </div>
           </motion.section>
         </Section>
         {/* Services Updated by Raees*/}
         <motion.section
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="bg-white py-24"
+           initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  viewport={{ once: true, amount: 0.3 }}
+          className="bg-white py-24 max-w-8xl"
         >
           <div className="container mx-auto px-6">
             <motion.h2
@@ -207,7 +211,7 @@ export default function AboutPage() {
               ].map((service, i) => (
                 <motion.div
                   key={service}
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1, duration: 0.5 }}
                   className="flex items-start space-x-4"
@@ -321,9 +325,10 @@ export default function AboutPage() {
         <section className="py-24 md:py-24 relative overflow-hidden bg-[#F8F8F7] m-5">
           <motion.div
             className="text-center mb-12"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            initial={{ opacity: 0 , x:-50}}
+            whileInView={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  viewport={{ once: true, amount: 0.3 }}
           >
             <motion.h2
               variants={fadeIn()}
@@ -345,7 +350,7 @@ export default function AboutPage() {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 + index * 0.1, duration: 0.6 }}
-                  className="h-full" // ensures motion.div stretches full height
+                  className="h-full max-w-8xl" // ensures motion.div stretches full height
                 >
                   <Card className="border-0 bg-white backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col m-5 md:h-full lg:h-full items-center justify-center">
                     <CardBody className="text-center p-6 flex flex-col justify-between h-full items-center">
@@ -417,9 +422,10 @@ export default function AboutPage() {
         <Section className="bg-white">
           <motion.div
             className="max-w-7xl mx-auto py-10"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  viewport={{ once: true, amount: 0.3 }}
           >
             <div className="container mx-auto px-6">
               <div className="grid md:grid-cols-3 gap-18">
@@ -678,9 +684,9 @@ export default function AboutPage() {
           {/* Call to Action Updated by Raees */}
           <motion.section
             initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
+            whileInView={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  viewport={{ once: true, amount: 0.3 }}
         className="relative bg-black text-white py-24"
         style={{
           backgroundImage: 'url(https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=3540&auto=format&fit=crop)',
@@ -694,12 +700,16 @@ export default function AboutPage() {
           <motion.h2 variants={fadeIn()} className="text-3xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto">Ready to Start Your Project?</motion.h2>
           <motion.p variants={fadeIn(0.2)} className="text-[#E5E5E3] max-w-2xl mx-auto mb-8">We are committed to creating exceptional architectural solutions that enhance the way people live and work. Let's discuss how we can bring your vision to life.</motion.p>
           <motion.div variants={fadeIn(0.4)} className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <Link href="/contact">
             <button className="bg-white text-black px-8 py-3 font-semibold tracking-wider uppercase text-sm hover:bg-opacity-90 transition-all duration-300 w-full sm:w-auto">
               Schedule Consultation
             </button>
+            </Link>
+            <Link href='/projects'>
             <button className="border border-white/50 text-white px-8 py-3 font-semibold tracking-wider uppercase text-sm hover:bg-white hover:text-black transition-all duration-300 w-full sm:w-auto">
               View Portfolio
             </button>
+            </Link>
           </motion.div>
         </div>
       </motion.section>

@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <header className="bg-black z-50 relative">
-      <nav className="px-6 py-6 flex items-center justify-between">
+      <nav className="px-10 py-6 flex items-center justify-between">
         {/* Logo */}
         <NextLink href="/" className="relative z-50">
           <Image

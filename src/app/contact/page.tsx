@@ -51,7 +51,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.5 }}
             >
-              <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+              <Card className="border-0 bg-white backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col m-5 md:h-full lg:h-full items-center justify-center">
                 <CardBody className="text-center">
                   <h3 className="font-display text-lg font-bold mb-3">Studio Location</h3>
                   <p className="text-foreground-500 text-sm">
@@ -68,7 +68,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
             >
-              <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+              <Card className="border-0 bg-white backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col m-5 md:h-full lg:h-full items-center justify-center">
                 <CardBody className="text-center">
                   <h3 className="font-display text-lg font-bold mb-3">Business Hours</h3>
                   <p className="text-foreground-500 text-sm">
@@ -85,7 +85,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.5 }}
             >
-              <Card className="border-0 bg-background/60 backdrop-blur-md h-full">
+              <Card className="border-0 bg-white backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col m-5 md:h-full lg:h-full items-center justify-center">
                 <CardBody className="text-center">
                   <h3 className="font-display text-lg font-bold mb-3">Get in Touch</h3>
                   <div className="text-foreground-500 text-sm">
@@ -115,7 +115,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.1, duration: 0.5 }}
             >
-              <Card className="border-0 bg-background/60 backdrop-blur-md">
+              <Card>
                 <CardBody className="p-8">
                   <div className="text-center mb-8">
                     <h2 className="font-display text-3xl font-bold mb-4">Start Your Project</h2>
@@ -129,6 +129,8 @@ export default function ContactPage() {
             </motion.div>
           </motion.div>
         </Section>
+        {/* Contact Form Updated by Raees */}
+        
       </main>
       
       <Footer />

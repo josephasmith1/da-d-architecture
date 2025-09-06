@@ -9,9 +9,10 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-white py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+    <footer className="bg-black text-white py-10">
+      <div className="w-full mx-auto px-10">
+        <div className="max-w-7xl mx-auto px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 ">
           {/* Studio Section */}
           <div>
             <h2 className="text-2xl md:text-3xl font-light mb-8 tracking-wider">STUDIO</h2>
@@ -49,9 +50,10 @@ export function Footer() {
           {/* Empty column for spacing */}
           <div></div>
         </div>
+        </div>
 
         {/* Logo and Credits */}
-        <div className="border-t border-gray-800 pt-8 mt-8">
+        <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div>
               <Image

@@ -16,7 +16,7 @@ export default function FireMitigationPage() {
       <Header />
       
       <main className="flex-grow">
-        <Section className="py-24 md:py-32">
+        <Section className="py-24 md:py-32 w-full">
           <motion.div 
             className="text-center max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export default function FireMitigationPage() {
             transition={{ duration: 0.5 }}
           >
             <motion.h1 
-              className="font-display text-4xl md:text-6xl font-bold mb-6"
+              className="font-display text-4xl md:text-7xl font-bold mb-6 text-black"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
@@ -32,7 +32,7 @@ export default function FireMitigationPage() {
               Fire Mitigation
             </motion.h1>
             <motion.p 
-              className="text-xl text-foreground-500"
+              className="text-xl md:text-2xl text-foreground-600 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
@@ -182,7 +182,7 @@ export default function FireMitigationPage() {
         {/* Malibu Oceanfront Rebuild Case Study */}
         <Section className="py-16 bg-foreground-50 dark:bg-foreground-100">
           <motion.div
-            className="max-w-6xl mx-auto"
+            className="max-w-8xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.3, duration: 0.5 }}

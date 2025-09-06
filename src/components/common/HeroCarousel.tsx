@@ -98,6 +98,7 @@ export function HeroCarousel() {
             sizes="100vw"
             objectFit="cover"
           />
+          
         </div>
       )}
       

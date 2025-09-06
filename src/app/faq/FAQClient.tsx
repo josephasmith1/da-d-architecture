@@ -66,7 +66,7 @@ return (
             </svg>
           }
         />
-        <div className="flex gap-2 mt-4 flex-wrap">
+        <div className="flex gap-2 mt-4 flex-wrap ">
           {categories.map(category => (
             <Chip
               key={category}
@@ -74,7 +74,7 @@ return (
               onClick={() => {
                 setSearchTerm(category);
               }}
-              className="cursor-pointer"
+              className="cursor-pointer p-4 text-lg bg-gray-200 hover:bg-gray-300 rounded-lg transform transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md cursor-pointer gap-2"
             >
               {category}
             </Chip>
@@ -84,7 +84,7 @@ return (
 
       {filteredFAQs.length === 0 ? (
         <Card className="w-full mx-auto max-w-md sm:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
-          <CardBody className="text-center py-12">
+          <CardBody className="text-center py-12 ">
             <p className="text-lg">No FAQs found matching your search.</p>
           </CardBody>
         </Card>
@@ -111,7 +111,7 @@ return (
                 textValue={faq.question}
               >
                 <div className="pb-4">
-                  <p className="text-default-600 text-lg font-normal">{faq.answer}</p>
+                  <p className="text-[#666666] text-lg font-normal leading-relaxed">{faq.answer}</p>
                 </div>
               </AccordionItem>
             ))}
